@@ -1,10 +1,10 @@
 <launch>
-    <arg name="namespace" default="puddles" doc="Name of the vehicle"/>
+    <arg name="robot" default="puddles" doc="Name of the vehicle"/>
 
-    <group ns="$(arg namespace)">
+    <group ns="$(arg robot)">
         <node pkg="riptide_gazebo" name="depth_remap" type="depth_remap.py" />
         <node pkg="riptide_gazebo" name="thrust_remap" type="thrust_remap.py">
-            <param name="vehicle_config" value="$(find riptide_descriptions)/config/$(arg namespace).yaml" />
+            <param name="vehicle_config" value="$(find riptide_descriptions)/config/$(arg robot).yaml" />
         </node>
         
         <node name="stereo_image_proc" type="stereo_image_proc" pkg="stereo_image_proc" output="screen" ns="stereo">

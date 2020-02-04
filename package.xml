@@ -25,6 +25,10 @@
   <depend>gazebo_ros</depend>
   <exec_depend>gazebo</exec_depend>
   <exec_depend>uuv_simulator</exec_depend>
+  <exec_depend>uuv_assistants</exec_depend>
+  <exec_depend>uuv_sensor_ros_plugins</exec_depend>
+  <exec_depend>uuv_gazebo_ros_plugins</exec_depend>
+  <exec_depend>uuv_descriptions</exec_depend>
 
   <export>
     <gazebo_ros gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>
