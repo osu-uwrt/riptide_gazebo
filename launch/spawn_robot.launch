@@ -1,4 +1,4 @@
-<!-- Spawns Puddles vehicle in the simulation -->
+<!-- Spawns vehicle in the simulation -->
 <launch>
   <arg name="robot" default="puddles" doc="Name of the vehicle to spawn"/>
   <arg name="debug" default="0" doc="Starts the Gazebo plugins in debug mode for more verbose output"/>
