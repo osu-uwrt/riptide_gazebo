@@ -84,7 +84,7 @@
               <color sid="emission">0.7991028 0.1529262 0 1</color>
             </emission>
             <diffuse>
-              <color sid="diffuse">0.8000001 0.151749 0 1</color>
+              <color sid="diffuse">0.4 0.075 0 1</color>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>

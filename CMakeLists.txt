@@ -1,23 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(riptide_gazebo)
-add_compile_options(-std=c++11)
 
-find_package(catkin REQUIRED COMPONENTS
-   sensor_msgs
-   riptide_msgs
-   roscpp
-   tf
-)
+find_package(catkin REQUIRED)
 
-
-catkin_package(
-   CATKIN_DEPENDS
-      uuv_sensor_ros_plugins_msgs
-      geometry_msgs
-      sensor_msgs
-      std_msgs
-      riptide_msgs
-      rospy
-)
-
-include_directories(${catkin_INCLUDE_DIRS})
+catkin_package()

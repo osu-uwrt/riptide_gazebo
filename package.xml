@@ -2,29 +2,29 @@
 <package format="2">
   <name>riptide_gazebo</name>
   <version>0.0.1</version>
-  <description>Common simulation package for The OSU Underwater Robotics Team's Riptide AUV software platform.</description>
+  <description>Worlds, models, and code to interface with the robot simulator gazebo</description>
 
-  <maintainer email="justice.251@osu.edu">Benji Justice</maintainer>
+  <maintainer email="osu.uwrt@gmail.com">OSU UWRT</maintainer>
 
   <license>BSD</license>
 
   <url type="website">http://go.osu.edu/uwrt</url>
-  <url type="repository">http://github.com/uwrt-osu/sim_software</url>
+  <url type="repository">http://github.com/uwrt-osu/riptide_gazebo</url>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <depend>eigen_conversions</depend>
-  <depend>tf</depend>
   
   <depend>uuv_sensor_ros_plugins_msgs</depend>
-  <depend>geometry_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>std_msgs</depend>
   <depend>riptide_msgs</depend>
   <depend>rospy</depend>
-  <depend>roscpp</depend>
   <depend>gazebo_ros</depend>
   <exec_depend>gazebo</exec_depend>
   <exec_depend>uuv_simulator</exec_depend>
+  <exec_depend>uuv_assistants</exec_depend>
+  <exec_depend>uuv_sensor_ros_plugins</exec_depend>
+  <exec_depend>uuv_gazebo_ros_plugins</exec_depend>
+  <exec_depend>uuv_descriptions</exec_depend>
 
   <export>
     <gazebo_ros gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>
