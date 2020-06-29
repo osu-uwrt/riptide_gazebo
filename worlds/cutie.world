@@ -20,13 +20,19 @@
       </ode>
     </physics>
     <scene>
-      <ambient>0.01 0.01 0.01 1</ambient>
+      <ambient>0.01 1 0.01 1</ambient>
       <sky>
         <clouds>
-          <speed>12</speed>
+          <speed>0</speed>
         </clouds>
       </sky>
-      <shadows>1</shadows>
+      <fog>
+        <type>linear</type>
+        <density>0.01</density>
+        <start>0</start>
+        <end>10000</end>
+      </fog>
+      <shadows>.5</shadows>
       <background>0.7 0.7 0.7 1</background>
     </scene>
     <spherical_coordinates>
@@ -296,7 +302,7 @@
       <light name='sun1'>
         <pose frame=''>50 0 150 0 -0 0</pose>
       </light>
-    </state>
+    </state> 
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose frame=''>5 -5 2 0 0.275643 2.35619</pose>

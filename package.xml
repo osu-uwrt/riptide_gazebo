@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0"?> 
 <package format="2">
   <name>riptide_gazebo</name>
   <version>0.0.1</version>
@@ -25,6 +25,7 @@
   <exec_depend>uuv_sensor_ros_plugins</exec_depend>
   <exec_depend>uuv_gazebo_ros_plugins</exec_depend>
   <exec_depend>uuv_descriptions</exec_depend>
+  <exec_depend>roslaunch</exec_depend>
 
   <export>
     <gazebo_ros gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>

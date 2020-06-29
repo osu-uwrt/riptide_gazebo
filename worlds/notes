@@ -1,0 +1,55 @@
+fog rules
+-a high <end> makes fog further from cam, low makes it closer
+
+ambient 
+-color of water
+
+.yaml files that change the world parameters 
+
+a script that takes user inputs for brightness, color, obstacle locations and
+generates .yaml files for a  for the parameters to the world
+
+MY IDEA:
+-write a python script that generates yaml files and .world
+ xacro files, run1.yaml  and thus run1.world for the
+ simulation.launch file to have arg world be 'run1', 
+ run2.yaml and run2.world for run2, etc 
+     -the user decides in script's UI/commandline what 
+      type of values they want for each run
+     -values for ambient, fog, shadows, props and prop locations
+     -some defaults for colors keyword 'dark blue' or 'cutie'
+     -script essentially creates yaml files the args that affect
+      the simulation.launch file, allowing you to design runs
+      and try these different runs out with the roslaunch 
+     -script also allows for you to just add args to yaml maybe??? build
+     with just run1-10 for now, should be able to work
+     -so run1 might have ambient = [0.01 1 0.01 1], 2 bouy models at 
+     [2.03149 2.15982 0 0 -0 0] and [5.03149 2.15982 0 0 -0 0]
+    -launching run1 would look like this:
+            roslaunch riptide_bringup simulation.launch run:=run1
+    -launching run2 would look like this:
+            roslaunch riptide_bringup simulation.launch run:=run2
+-write simulation.launch file that has args for run1 run2 run3
+ all the way to say run12
+-
+
+
+
+
+have the competition map with variation to buoy locations
+
+
+IDEA 2 revised:
+
+-python script that reads a simulation parameters file. This parameters file has been
+ edited by the user to configure what they want.
+        -how many runs?
+        -run1, run2, etc
+-the python script reads the parameters file and generates n amount of xml world files for each run. They all go to the worlds folder
+-the python scripts also generates a .yaml file that creates the n amount of launch args for the user to launch each run
+-to simulate run1 "roslaunch simulation.launch run:=run1"
+
+
+-to simulate the competition course with obstacle variation "roslaunch obstacleVariation.launch" which is a different launch file that
+ first spawns obstacles at random locations with respect to their anchors. yaml files generated for each location variation that Run1.yaml
+ will edit the args for spawn_cutie.launch or spawn_gate.launch 

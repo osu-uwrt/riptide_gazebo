@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Noah Limes email: noahjlimes1@gmail.ocm -->
+<runs>
+
+    <!--
+    run
+        <number>#</number>
+        <scene>
+            <ambient>0.0 0.0 0.0 1</ambient>
+            <sky>
+                <clouds>
+                <speed>0</speed>
+                </clouds>
+            </sky>
+            <fog>
+                <type>linear</type>
+                <density>0.01</density>
+                <start>0</start>
+                <end>10000</end>
+            </fog>
+            <shadows>1</shadows>
+            <background>0.7 0.7 0.7 1</background>
+            </scene>
+    -->
+
+    <run name='run0'>
+
+        <prop preset='buoy'>
+            <pose frame=''>2.03149 22.15982 0 0 0 0</pose>
+            <pose frame=''>2.03149 32.15982 0 0 0 0</pose>
+        </prop>
+
+        <scene>
+            <ambient>0.01 0.01 0.02 1</ambient>
+            <sky>
+                <clouds>
+                <speed>0</speed>
+                </clouds>
+            </sky>
+            <fog>
+                <type>linear</type>
+                <density>0.01</density>
+                <start>0</start>
+                <end>10000</end>
+            </fog>
+            <shadows>1</shadows>
+            <background>0.7 0.7 0.7 1</background>
+        </scene>
+    </run>
+    <run name='run1'>
+
+        <prop preset='buoy'>
+            <pose frame=''>5.03149 22.15982 0 0 0 0</pose>
+            <pose frame=''>10.03149 32.15982 0 0 0 0</pose>
+        </prop>
+
+        <scene>
+            <ambient>0.6 0.01 0.5 1</ambient>
+            <sky>
+                <clouds>
+                <speed>0</speed>
+                </clouds>
+            </sky>
+            <fog>
+                <type>linear</type>
+                <density>0.01</density>
+                <start>0</start>
+                <end>10000</end>
+            </fog>
+            <shadows>1</shadows>
+            <background>0.7 0.7 0.7 1</background>
+        </scene>
+    </run>
+</runs>

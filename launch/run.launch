@@ -1,5 +1,5 @@
 <launch>
-    <arg name="world" default="2019_finals" doc="Which world to spawn the robot in" />
+    <arg name="world" default="run0" doc="Which world to spawn the robot in" />
     <arg name="gui" default="true" doc="Whether to display gazebo gui" />
     <arg name="paused" default="false" doc="Start gazebo paused" />
 
