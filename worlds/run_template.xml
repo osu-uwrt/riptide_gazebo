@@ -25,12 +25,6 @@
           <speed>0</speed>
         </clouds>
       </sky>
-      <fog>
-        <type>linear</type>
-        <density>0.01</density>
-        <start>0</start>
-        <end>10000</end>
-      </fog>
       <shadows>1</shadows>
       <background>0.7 0.7 0.7 1</background>
     </scene>

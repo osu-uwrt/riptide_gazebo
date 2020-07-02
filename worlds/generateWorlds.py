@@ -21,7 +21,7 @@ import shutil
 #presets: a list of strings, each the name of a preset model 
     #xml for the world file
 
-def buildWorldFile(index, ambiences, props_poses=[], presets=[]):
+def buildWorldFile(index, ambiences, props_poses, presets, fog):
     fileName = "run" + str(index) + ".world"
     runWorldFile = open(fileName, "w")
 
@@ -29,12 +29,17 @@ def buildWorldFile(index, ambiences, props_poses=[], presets=[]):
     world = tree.getroot()
 
     for scene in world.findall('scene'):
+        #Ambient
         ambient = ElementTree.SubElement(scene, 'ambient')
         ambient.text = ambiences[index]
+
+        #Fog
+        scene.append(fog)
 
     models_template = ElementTree.parse('models_template.xml')
     models = models_template.getroot()
     
+    #Props
     for i in range(len(props_poses)):
         for preset in models.findall('model'):
             preset_inst = 0
@@ -44,7 +49,10 @@ def buildWorldFile(index, ambiences, props_poses=[], presets=[]):
                     models_template = ElementTree.parse('models_template.xml')
                     models = models_template.getroot()
                     for preset_ in models_template.findall('model'):
-                        if (preset_.attrib['name'] == presets[preset_inst]['preset']):
+                        #print(preset_.attrib['name'])
+                        print(presets[i]['preset'])
+
+                        if (preset_.attrib['name'] == presets[i]['preset']):
                             prop_pose = ElementTree.SubElement(preset_, 'pose', {'frame':''})
                             prop_pose.text = pose
                             pose_count += 1
@@ -92,6 +100,9 @@ for run in runs.findall('run'):
     ambient = str(scene.findall('ambient')[0].text)
     ambiences.append(ambient)
 
+    #Fog
+    fog = scene.findall('fog')[0]
+
     #Props
     for prop in run.findall('prop'):
         preset = prop.attrib
@@ -101,8 +112,9 @@ for run in runs.findall('run'):
             pose = str(pose.text)
             poses.append(pose)
         props_poses.append(poses)
+    print(presets)
 
     #TODO: Lights
 
 for i in range(n_runs):
-    buildWorldFile(i, ambiences, props_poses, presets)
+    buildWorldFile(i, ambiences, props_poses, presets, fog)

@@ -25,15 +25,15 @@
           <speed>0</speed>
         </clouds>
       </sky>
-      <fog>
-        <type>linear</type>
-        <density>0.01</density>
-        <start>0</start>
-        <end>10000</end>
-      </fog>
       <shadows>1</shadows>
       <background>0.7 0.7 0.7 1</background>
-    <ambient>0.01 0.01 0.02 1</ambient></scene>
+    <ambient>0.01 0.01 0.02 1</ambient><fog>
+                <type>linear</type>
+                <density>0.01</density>
+                <start>0</start>
+                <end>10000</end>
+            </fog>
+            </scene>
     <spherical_coordinates>
       <latitude_deg>47.6279</latitude_deg>
       <longitude_deg>9.33455</longitude_deg>
@@ -225,7 +225,26 @@
       </link>
       <pose frame="">2.03149 2.15982 0 0 -0 0</pose>
     </model>
-  <model name="buoy1">
+  <model name="gate1"> 
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://gate/meshes/gate.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">7.03149 22.15982 -1.5 0 0 0</pose></model>
+
+    <model name="buoy1">
         <static>1</static>
         <link name="link">
             <pose frame="">0 0 0 0 0 0</pose>
@@ -263,7 +282,8 @@
             <kinematic>0</kinematic>
         </link>
     <pose frame="">2.03149 22.15982 0 0 0 0</pose></model>
-<model name="buoy2">
+
+    <model name="buoy2">
         <static>1</static>
         <link name="link">
             <pose frame="">0 0 0 0 0 0</pose>
@@ -301,4 +321,5 @@
             <kinematic>0</kinematic>
         </link>
     <pose frame="">2.03149 32.15982 0 0 0 0</pose></model>
-</world></sdf>
+
+    </world></sdf>
