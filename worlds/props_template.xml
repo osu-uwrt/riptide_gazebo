@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<models>
+    <model name='buoy'>
+        <static>1</static>
+        <link name='link'>
+            <pose frame=''>0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name='collision'>
+                <geometry>
+                    <mesh>
+                    <uri>model://buoy/meshes/buoy.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode/>
+                    </contact>
+                    <bounce/>
+                    <friction>
+                    <torsional>
+                        <ode/>
+                    </torsional>
+                    <ode/>
+                    </friction>
+                </surface>
+            </collision>
+            <visual name='visual'>
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://buoy/meshes/buoy.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    </model>
+
+    <model name='cutie'>
+        <static>1</static>
+        <link name='link'>
+            <pose frame=''>0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name='collision'>
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode/>
+                    </contact>
+                    <bounce/>
+                    <friction>
+                    <torsional>
+                        <ode/>
+                    </torsional>
+                    <ode/>
+                    </friction>
+                </surface>
+            </collision>
+            <visual name='visual'>
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    </model>
+
+    <model name='gate'> 
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://gate/meshes/gate.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+
+    <model name='crucifix_tower'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+
+    <model name='garlic'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://garlic/meshes/garlic.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+
+    <model name='path'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://path/meshes/path.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+
+    <model name='slay_vampires'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://slay_vampires/meshes/slay_vampires.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+
+    <model name='drop_garlic'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://drop_garlic/meshes/drop_garlic.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>  
+
+    <model name='stake_through_heart'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://stake_through_heart/meshes/stake_through_heart.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+
+    <model name='pinger'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://pinger/meshes/pinger.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+
+    <model name='expose_to_sunlight'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://expose_to_sunlight/meshes/expose_to_sunlight.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+</models>

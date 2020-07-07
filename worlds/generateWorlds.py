@@ -13,6 +13,8 @@ import shutil
 
 #ambiences: a list of ambiences for each run
 
+#lights: the xml light element snippets from config for each run
+
 #props_poses: a list of lists of poses for each run
     #len(props_poses) = number of prop presets
     #len(props_poses[0]) = number of poses of a prop preset
@@ -21,23 +23,29 @@ import shutil
 #presets: a list of strings, each the name of a preset model 
     #xml for the world file
 
-def buildWorldFile(index, ambiences, props_poses, presets, fog):
+def buildWorldFile(index, ambiences, lights, props_poses, presets, fog):
     fileName = "run" + str(index) + ".world"
     runWorldFile = open(fileName, "w")
 
     tree = ElementTree.parse('run_template.xml')
     world = tree.getroot()
 
+
+    #light
+    world.append(lights[index])
+
+
     for scene in world.findall('scene'):
         #Ambient
         ambient = ElementTree.SubElement(scene, 'ambient')
         ambient.text = ambiences[index]
+        print('ambience: ' + ambient.text)
 
         #Fog
         scene.append(fog)
 
-    models_template = ElementTree.parse('models_template.xml')
-    models = models_template.getroot()
+    props_template = ElementTree.parse('props_template.xml')
+    models = props_template.getroot()
     
     #Props
     for i in range(len(props_poses)):
@@ -46,11 +54,11 @@ def buildWorldFile(index, ambiences, props_poses, presets, fog):
             if (preset.attrib['name'] == presets[i]['preset']):
                 pose_count = 0
                 for pose in props_poses[i]:
-                    models_template = ElementTree.parse('models_template.xml')
-                    models = models_template.getroot()
-                    for preset_ in models_template.findall('model'):
+                    props_template = ElementTree.parse('props_template.xml')
+                    models = props_template.getroot()
+                    for preset_ in props_template.findall('model'):
                         #print(preset_.attrib['name'])
-                        print(presets[i]['preset'])
+                        #print(presets[i]['preset'])
 
                         if (preset_.attrib['name'] == presets[i]['preset']):
                             prop_pose = ElementTree.SubElement(preset_, 'pose', {'frame':''})
@@ -81,10 +89,12 @@ def buildWorldFile(index, ambiences, props_poses, presets, fog):
     runWorldFile.close()
 
 # read the configuration file in scripts/run_config.xml
-run_config = ElementTree.parse('run_config.xml')
+run_config = ElementTree.parse('run_config2.xml')
 runs = run_config.getroot()
 
 ambiences = []
+
+lights = []
 
 n_runs = 0
 
@@ -95,6 +105,11 @@ for run in runs.findall('run'):
     
     n_runs += 1
     
+    #light
+    light = run.findall('light')[0]
+    lights.append(light)
+
+
     #Ambience
     scene = run.findall('scene')[0]
     ambient = str(scene.findall('ambient')[0].text)
@@ -112,9 +127,7 @@ for run in runs.findall('run'):
             pose = str(pose.text)
             poses.append(pose)
         props_poses.append(poses)
-    print(presets)
-
-    #TODO: Lights
+    #print(presets)
 
 for i in range(n_runs):
-    buildWorldFile(i, ambiences, props_poses, presets, fog)
+    buildWorldFile(i, ambiences, lights, props_poses, presets, fog)

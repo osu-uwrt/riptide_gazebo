@@ -32,6 +32,13 @@
 
     <run name='run0'>
 
+        <light name='sun' type='directional'>
+            <pose>0 0 0 0 0 0</pose>
+            <diffuse></diffuse>
+            <specular></specular>
+            <direction></direction>
+        </light>
+
         <prop preset='gate'>
             <pose frame=''>7.03149 22.15982 -1.5 0 0 0</pose>
         </prop>
@@ -41,8 +48,12 @@
             <pose frame=''>2.03149 32.15982 0 0 0 0</pose>
         </prop>
 
+        <prop preset='crucifix_tower'>
+            <pose frame=''>2.03149 30 0 0 0 0</pose>
+        </prop>
+
         <scene>
-            <ambient>0.01 0.01 0.02 1</ambient>
+            <ambient>0.01 0.01 0.01 1</ambient>
             <sky>
                 <clouds>
                 <speed>0</speed>
@@ -60,13 +71,52 @@
     </run>
     <run name='run1'>
 
+        <light name='sun' type='directional'>
+            <pose>0 0 100 0 0 0</pose>
+            <diffuse></diffuse>
+            <specular></specular>
+            <direction></direction>
+        </light>
+
         <prop preset='buoy'>
             <pose frame=''>5.03149 22.15982 0 0 0 0</pose>
             <pose frame=''>10.03149 32.15982 0 0 0 0</pose>
         </prop>
 
         <scene>
-            <ambient>0.6 0.01 0.5 1</ambient>
+            <ambient>0.01 0.01 0.01 1</ambient>
+            <sky>
+                <clouds>
+                <speed>0</speed>
+                </clouds>
+            </sky>
+            <fog>
+                <type>linear</type>
+                <density>0.01</density>
+                <start>0</start>
+                <end>10000</end>
+            </fog>
+            <shadows>1</shadows>
+            <background>0.7 0.7 0.7 1</background>
+        </scene>
+    </run>
+
+    <run name='run2'>
+    
+        <light name='sun' type='directional'>
+            <pose>0 0 200 0 0 0</pose>
+            <diffuse></diffuse>
+            <specular></specular>
+            <direction></direction>
+        </light>
+
+        <prop preset='buoy'>
+            <pose frame=''>5.03149 22.15982 0 0 0 0</pose>
+            <pose frame=''>10.03149 32.15982 0 0 0 0</pose>
+        </prop>
+
+        <scene>
+            <ambient>0.01 0.01 0.01 1</ambient>
             <sky>
                 <clouds>
                 <speed>0</speed>
