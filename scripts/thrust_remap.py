@@ -16,7 +16,7 @@ class ThrustConverter(object):
         with open(self._vehicle_config_file, 'r') as stream:
             self._coeff = yaml.safe_load(stream)['thruster']['rotor_constant']
 
-        for i in range(len(self._thrusters)):
+        for i in range(len(self._vehicle_config_file["thrusters"])):
             input_topic = "thrusters/%d/input" % i
             pub = rospy.Publisher(input_topic, FloatStamped, queue_size=1)
             self._pubs[i] = pub
@@ -25,7 +25,7 @@ class ThrustConverter(object):
 
     def command_cb(self, msg):
         """Convert thrust to angular velocity commands for uuv_thruster_ros_plugin"""
-        for i in range(len(self._thrusters)):
+        for i in range(len(self._vehicle_config_file["thrusters"])):
             cmd = FloatStamped()
             force = msg.data[i]
 
