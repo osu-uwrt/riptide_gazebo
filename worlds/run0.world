@@ -115,7 +115,7 @@
           <geometry>
             <mesh>
               <uri>model://transdec/meshes/transdec.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>0.75 0.75 0.75</scale>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -137,7 +137,7 @@
           <geometry>
             <mesh>
               <uri>model://water_surface/meshes/water_surface.dae</uri>
-              <scale>0.5 0.5 0.5</scale>
+              <scale>1 1 1</scale>
             </mesh>
           </geometry>
           <material>
@@ -192,7 +192,7 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name="transdec_bridge">
+    <model name="transdec_bridge"> 
       <static>1</static>
       <link name="link">
         <pose frame="">0 0 0 0 -0 0</pose>
@@ -209,7 +209,7 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame="">2.03149 2.15982 0 0 -0 0</pose>
+      <pose frame="">0 0 0 0 0 0</pose>
     </model>
   <light name="sun" type="directional"><pose>1.07970162171 -1.36573499138 -0.185953466877 1.29784089476 -1.85756944588 0.385881041989</pose><diffuse>1.03806523475 1.29743703705 1.08241302458 1.12829143351</diffuse><specular>0.0931632685334 0.10577320942 0.113369655058 0.989895145183</specular><direction>-0.31575642631 -0.424340088517 -1.20843743324</direction></light><model name="gate1"> 
       <static>1</static>
@@ -251,14 +251,6 @@
       <link name="gate_success_zones">
         <pose frame="">0 0 0 0 0 0</pose>
         <must_be_base_link>1</must_be_base_link>
-        <visual name="visual">
-          <cast_shadows>0</cast_shadows>
-          <geometry>
-            <mesh>
-              <uri>model://gate/meshes/gate_success_zones.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
         <collision name="collision">
             <geometry>
                 <mesh>
@@ -403,14 +395,6 @@
       <link name="gate_success_zones">
         <pose frame="">0 0 0 0 0 0</pose>
         <must_be_base_link>1</must_be_base_link>
-        <visual name="visual">
-          <cast_shadows>0</cast_shadows>
-          <geometry>
-            <mesh>
-              <uri>model://gate/meshes/gate_success_zones.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
         <collision name="collision">
             <geometry>
                 <mesh>
@@ -555,14 +539,6 @@
       <link name="gate_success_zones">
         <pose frame="">0 0 0 0 0 0</pose>
         <must_be_base_link>1</must_be_base_link>
-        <visual name="visual">
-          <cast_shadows>0</cast_shadows>
-          <geometry>
-            <mesh>
-              <uri>model://gate/meshes/gate_success_zones.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
         <collision name="collision">
             <geometry>
                 <mesh>

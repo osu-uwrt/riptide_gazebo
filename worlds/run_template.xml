@@ -115,7 +115,7 @@
           <geometry>
             <mesh>
               <uri>model://transdec/meshes/transdec.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>0.75 0.75 0.75</scale>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -137,7 +137,7 @@
           <geometry>
             <mesh>
               <uri>model://water_surface/meshes/water_surface.dae</uri>
-              <scale>0.5 0.5 0.5</scale>
+              <scale>1 1 1</scale>
             </mesh>
           </geometry>
           <material>
@@ -192,7 +192,7 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name='transdec_bridge'>
+    <model name='transdec_bridge'> 
       <static>1</static>
       <link name='link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -209,6 +209,6 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame=''>2.03149 2.15982 0 0 -0 0</pose>
+      <pose frame=''>0 0 0 0 0 0</pose>
     </model>
   </world>
