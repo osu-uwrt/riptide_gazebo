@@ -34,7 +34,7 @@
       </sky>
       <shadows>1</shadows>
       <background>0.7 0.7 0.7 1</background>
-    <ambient>0.3 0.06 0.1 0.8</ambient><fog><color>0.0856508046974 0.184444484336 0.31744103949 1.00057939213</color><type>linear</type><start>2</start><end>0</end></fog></scene>
+    <ambient>0.3 0.1 0.2 0.9</ambient><fog><color>0.0856508046974 0.184444484336 0.31744103949 1.00057939213</color><type>linear</type><start>2</start><end>0</end></fog></scene>
     <spherical_coordinates>
       <latitude_deg>47.6279</latitude_deg>
       <longitude_deg>9.33455</longitude_deg>
@@ -218,7 +218,7 @@
       </link>
       <pose frame="">0 0 0 0 0 0</pose>
     </model>
-  <light name="sun" type="directional"><pose>0.205418690096 1.78031321894 0.535196201683 0.647852091791 0.0843935979518 0.355051734455</pose><diffuse>0.960664130806 0.925275139702 1.16668977598 0.944286909524</diffuse><specular>0.11257499159 0.0908791010517 0.10146232973 0.976065445409</specular><direction>-0.254473916046 -0.154720121242 -0.84671491051</direction></light><model name="gate1"> 
+  <light name="sun" type="directional"><pose>-0.213223513008 0.954097809855 0.792466863458 0.393795862451 0.336695390205 1.98130773038</pose><diffuse>0.959468059722 1.01992509966 1.05319828821 0.981132209787</diffuse><specular>0.0941090217539 0.0778201456103 0.098067465818 1.01263344272</specular><direction>0.202544709387 -0.0652244132374 -1.0908925302</direction></light><model name="gate1"> 
       <static>1</static>
       <link name="link">
         <pose frame="">0 0 0 0 -0 0</pose>

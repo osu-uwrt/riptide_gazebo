@@ -1,5 +1,12 @@
 <sdf version='1.6'>
 <world name="lake">
+
+    <gui>
+      <camera name="user_camera">
+        <pose>0 0 50 0 1.57 0</pose>
+      </camera>
+    </gui>
+
     <physics default="1" name="default_physics" type="ode">
       <max_step_size>0.002</max_step_size>
       <real_time_factor>1</real_time_factor>
@@ -27,7 +34,7 @@
       </sky>
       <shadows>1</shadows>
       <background>0.7 0.7 0.7 1</background>
-    <ambient>0.02 0.7 0.5 0.3</ambient><fog><type>linear</type><start>161</start><end>13972</end></fog></scene>
+    <ambient>0.2 0.3 0.3 0.8</ambient><fog><color>0.0856508046974 0.184444484336 0.31744103949 1.00057939213</color><type>linear</type><start>2</start><end>0</end></fog></scene>
     <spherical_coordinates>
       <latitude_deg>47.6279</latitude_deg>
       <longitude_deg>9.33455</longitude_deg>
@@ -115,7 +122,7 @@
           <geometry>
             <mesh>
               <uri>model://transdec/meshes/transdec.dae</uri>
-              <scale>0.75 0.75 0.75</scale>
+              <scale>1 1 1</scale>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -211,7 +218,7 @@
       </link>
       <pose frame="">0 0 0 0 0 0</pose>
     </model>
-  <light name="sun" type="directional"><pose>1.07970162171 -1.36573499138 -0.185953466877 1.29784089476 -1.85756944588 0.385881041989</pose><diffuse>1.03806523475 1.29743703705 1.08241302458 1.12829143351</diffuse><specular>0.0931632685334 0.10577320942 0.113369655058 0.989895145183</specular><direction>-0.31575642631 -0.424340088517 -1.20843743324</direction></light><model name="gate1"> 
+  <light name="sun" type="directional"><pose>-0.915063474136 0.855943226176 0.0614920992824 0.474582354443 1.81811455716 0.821425161747</pose><diffuse>0.954013152318 1.0938843569 0.949056358701 0.875172680433</diffuse><specular>0.0939445883892 0.100877248826 0.102310794316 0.989077905424</specular><direction>0.214107767468 -0.191475923561 -1.00364144789</direction></light><model name="gate1"> 
       <static>1</static>
       <link name="link">
         <pose frame="">0 0 0 0 -0 0</pose>
@@ -231,51 +238,25 @@
                 </mesh>
             </geometry>
             <max_contacts>10</max_contacts>
-            <surface>
-                <contact>
-                <ode />
-                </contact>
-                <bounce />
-                <friction>
-                <torsional>
-                    <ode />
-                </torsional>
-                <ode />
-                </friction>
-            </surface>
         </collision>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
-      </link>
-      <link name="gate_success_zones">
-        <pose frame="">0 0 0 0 0 0</pose>
-        <must_be_base_link>1</must_be_base_link>
-        <collision name="collision">
-            <geometry>
+
+        <sensor name="gate_success_zones" type="contact">
+          <contact>
+            <collision>
+              <geometry>
                 <mesh>
                 <uri>model://gate/meshes/gate_success_zones.dae</uri>
                 </mesh>
-            </geometry>
-            <max_contacts>10</max_contacts>
-            <surface>
-                <contact>
-                <ode />
-                </contact>
-                <bounce />
-                <friction>
-                <torsional>
-                    <ode />
-                </torsional>
-                <ode />
-                </friction>
-            </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
       </link>
-    <pose frame="">8.80422955726 23.9148340522 -0.104277122194 -1.21670494313 -0.0176784122044 0.647096784047</pose></model>
+    <pose frame="">22.864818928 22.5140133445 2.1303577771 0.223362027393 0.704142757944 1.75171634896</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -314,7 +295,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">2.94448260422 19.6611873148 -0.726257573756 0.105282401417 -0.957847280387 0.303552838857</pose></model>
+    <pose frame="">30.2423078599 17.1190126782 -2.45916983619 -0.062706209352 -0.120742148205 1.62630985206</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -353,7 +334,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">3.28754840558 33.5235622263 -0.170187748982 0.890198280629 -1.33415412933 -0.278815490189</pose></model>
+    <pose frame="">27.6652745438 19.3562512274 0.415517495618 -0.104908956084 -0.178241091563 1.21566810988</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -375,51 +356,25 @@
                 </mesh>
             </geometry>
             <max_contacts>10</max_contacts>
-            <surface>
-                <contact>
-                <ode />
-                </contact>
-                <bounce />
-                <friction>
-                <torsional>
-                    <ode />
-                </torsional>
-                <ode />
-                </friction>
-            </surface>
         </collision>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
-      </link>
-      <link name="gate_success_zones">
-        <pose frame="">0 0 0 0 0 0</pose>
-        <must_be_base_link>1</must_be_base_link>
-        <collision name="collision">
-            <geometry>
+
+        <sensor name="gate_success_zones" type="contact">
+          <contact>
+            <collision>
+              <geometry>
                 <mesh>
                 <uri>model://gate/meshes/gate_success_zones.dae</uri>
                 </mesh>
-            </geometry>
-            <max_contacts>10</max_contacts>
-            <surface>
-                <contact>
-                <ode />
-                </contact>
-                <bounce />
-                <friction>
-                <torsional>
-                    <ode />
-                </torsional>
-                <ode />
-                </friction>
-            </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
       </link>
-    <pose frame="">8.24486094217 19.2994301768 -3.23226287482 -0.766756856103 -0.649490422322 -0.220064423994</pose></model>
+    <pose frame="">25.3500900424 17.9955850424 -2.86732964292 -0.183225915143 -0.450508938054 1.73283427799</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -458,7 +413,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">-0.405815810755 21.8906656696 -1.41989861682 1.07599718584 1.08346427863 0.327909312777</pose></model>
+    <pose frame="">28.011643472 20.1367110799 -2.18001649992 0.164045222768 -0.000511756001907 1.59263223213</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -497,7 +452,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">1.80446832228 34.4916568394 0.176059907861 -1.21910815415 0.907208850989 -0.0535391914497</pose></model>
+    <pose frame="">25.4765293359 18.8358462189 -0.433051052817 -0.12908134799 0.128809157759 1.46459949116</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -519,51 +474,25 @@
                 </mesh>
             </geometry>
             <max_contacts>10</max_contacts>
-            <surface>
-                <contact>
-                <ode />
-                </contact>
-                <bounce />
-                <friction>
-                <torsional>
-                    <ode />
-                </torsional>
-                <ode />
-                </friction>
-            </surface>
         </collision>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
-      </link>
-      <link name="gate_success_zones">
-        <pose frame="">0 0 0 0 0 0</pose>
-        <must_be_base_link>1</must_be_base_link>
-        <collision name="collision">
-            <geometry>
+
+        <sensor name="gate_success_zones" type="contact">
+          <contact>
+            <collision>
+              <geometry>
                 <mesh>
                 <uri>model://gate/meshes/gate_success_zones.dae</uri>
                 </mesh>
-            </geometry>
-            <max_contacts>10</max_contacts>
-            <surface>
-                <contact>
-                <ode />
-                </contact>
-                <bounce />
-                <friction>
-                <torsional>
-                    <ode />
-                </torsional>
-                <ode />
-                </friction>
-            </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
       </link>
-    <pose frame="">8.65127715044 20.7300865118 -2.16396566365 -0.647957152612 0.552203015062 0.229194573016</pose></model>
+    <pose frame="">27.1657946093 22.0562157969 -4.06622175094 0.277229699286 -0.417838726207 1.50978220773</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -602,7 +531,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">4.44718057066 22.9962666513 -0.103108509543 1.31040307343 -0.136262794022 0.34339298183</pose></model>
+    <pose frame="">28.6224746647 17.2876564458 1.22088667185 -0.0452851816803 -0.0170644890208 1.66420987687</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -641,6 +570,832 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">3.15977674525 32.4285132011 0.153147604783 2.14934776041 1.07640897493 -1.046823172</pose></model>
+    <pose frame="">24.9497702451 18.7456462317 1.73550353986 0.0643153795398 -0.296316823565 1.97248282827</pose></model>
+
+    <model name="gate1"> 
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://gate/meshes/gate.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate.dae</uri>
+                </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+
+        <sensor name="gate_success_zones" type="contact">
+          <contact>
+            <collision>
+              <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate_success_zones.dae</uri>
+                </mesh>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
+      </link>
+    <pose frame="">22.7566957018 21.5763687742 -3.85198573412 0.609354929564 -0.319644801817 1.47956301116</pose></model>
+
+    <model name="cutie1">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">26.1662189043 20.7003940956 -0.224209876217 -0.0291308219774 -0.0444987302653 1.67239670105</pose></model>
+
+    <model name="cutie2">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">21.969442022 20.7151895809 -0.458470677582 -0.180022948 -0.373142859621 1.36329233346</pose></model>
+
+    <model name="gate1"> 
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://gate/meshes/gate.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate.dae</uri>
+                </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+
+        <sensor name="gate_success_zones" type="contact">
+          <contact>
+            <collision>
+              <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate_success_zones.dae</uri>
+                </mesh>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
+      </link>
+    <pose frame="">22.0863664958 18.6883436811 -1.99022509457 0.601908423411 -0.291280522262 1.45070655826</pose></model>
+
+    <model name="cutie1">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">27.4544677626 19.8251868809 -0.0953047679569 -0.0415559327024 -0.247700702474 1.58058379627</pose></model>
+
+    <model name="cutie2">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">27.1405802963 18.3230942064 1.5730929822 0.180047712898 -0.583828802674 2.13368124646</pose></model>
+
+    <model name="gate1"> 
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://gate/meshes/gate.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate.dae</uri>
+                </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+
+        <sensor name="gate_success_zones" type="contact">
+          <contact>
+            <collision>
+              <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate_success_zones.dae</uri>
+                </mesh>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
+      </link>
+    <pose frame="">24.2601163905 19.0931959 0.373090925718 0.211256242293 -0.283046641044 1.80323691</pose></model>
+
+    <model name="cutie1">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">27.6688090385 22.2692254157 0.446515135836 0.0162714618031 -0.0151280462978 1.58221172318</pose></model>
+
+    <model name="cutie2">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">26.7388988546 22.0515213525 0.198018864355 0.280963854254 0.414736619506 1.53144891129</pose></model>
+
+    <model name="gate1"> 
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://gate/meshes/gate.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate.dae</uri>
+                </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+
+        <sensor name="gate_success_zones" type="contact">
+          <contact>
+            <collision>
+              <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate_success_zones.dae</uri>
+                </mesh>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
+      </link>
+    <pose frame="">21.8344929264 18.1593421594 -2.82290513451 0.0212246123138 0.085300410812 1.47702380634</pose></model>
+
+    <model name="cutie1">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">27.8409341955 21.352007541 1.54802463919 0.124312199754 -0.0259599149341 1.58792427422</pose></model>
+
+    <model name="cutie2">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">27.3412464549 18.9530940899 -1.2479217094 0.304457599521 0.315392726681 1.18122318554</pose></model>
+
+    <model name="gate1"> 
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://gate/meshes/gate.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate.dae</uri>
+                </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+
+        <sensor name="gate_success_zones" type="contact">
+          <contact>
+            <collision>
+              <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate_success_zones.dae</uri>
+                </mesh>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
+      </link>
+    <pose frame="">25.0922331397 21.2460689582 -4.62367918661 0.312033239333 0.407940300439 1.45473048189</pose></model>
+
+    <model name="cutie1">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">28.8728271935 17.1361666858 0.348209325822 0.0895037256963 -0.0605105773903 1.62459910366</pose></model>
+
+    <model name="cutie2">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">30.54027398 20.7046794835 1.22208725102 -0.396456557291 -0.430810149763 1.73918752336</pose></model>
+
+    <model name="gate1"> 
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://gate/meshes/gate.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate.dae</uri>
+                </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+
+        <sensor name="gate_success_zones" type="contact">
+          <contact>
+            <collision>
+              <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate_success_zones.dae</uri>
+                </mesh>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
+      </link>
+    <pose frame="">24.5818445667 16.725610584 -2.18151223262 -0.129120924323 0.333414368116 1.4839453817</pose></model>
+
+    <model name="cutie1">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">24.8468948452 19.925713036 0.442502550259 -0.0366956050151 0.116366293878 1.58573561445</pose></model>
+
+    <model name="cutie2">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">30.9640626564 14.389401184 -0.652990010857 -0.0687099836443 -0.128487446387 1.24535075126</pose></model>
+
+    <model name="gate1"> 
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://gate/meshes/gate.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate.dae</uri>
+                </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+
+        <sensor name="gate_success_zones" type="contact">
+          <contact>
+            <collision>
+              <geometry>
+                <mesh>
+                <uri>model://gate/meshes/gate_success_zones.dae</uri>
+                </mesh>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
+      </link>
+    <pose frame="">22.5081952116 16.9739505763 -2.50420758466 -0.0461675573384 0.056405150786 1.60224552165</pose></model>
+
+    <model name="cutie1">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">24.827424247 16.6634470536 -0.505172748619 -0.0356148927803 0.0253198801161 1.44433674791</pose></model>
+
+    <model name="cutie2">
+        <static>1</static>
+        <link name="link">
+            <pose frame="">0 0 0 0 0 0</pose>
+            <must_be_base_link>1</must_be_base_link>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                    <uri>model://cutie/meshes/cutie.dae</uri>
+                    </mesh>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                    <ode />
+                    </contact>
+                    <bounce />
+                    <friction>
+                    <torsional>
+                        <ode />
+                    </torsional>
+                    <ode />
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+            <cast_shadows>0</cast_shadows>
+            <geometry>
+                <mesh>
+                <uri>model://cutie/meshes/cutie.dae</uri>
+                </mesh>
+            </geometry>
+            </visual>
+            <self_collide>0</self_collide>
+            <enable_wind>0</enable_wind>
+            <kinematic>0</kinematic>
+        </link>
+    <pose frame="">30.5613618317 24.2614563644 0.312624328627 -0.27386878494 0.146390119154 1.47987230324</pose></model>
 
     </world></sdf>

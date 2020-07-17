@@ -99,49 +99,23 @@
                 </mesh>
             </geometry>
             <max_contacts>10</max_contacts>
-            <surface>
-                <contact>
-                <ode/>
-                </contact>
-                <bounce/>
-                <friction>
-                <torsional>
-                    <ode/>
-                </torsional>
-                <ode/>
-                </friction>
-            </surface>
         </collision>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
-      </link>
-      <link name='gate_success_zones'>
-        <pose frame=''>0 0 0 0 0 0</pose>
-        <must_be_base_link>1</must_be_base_link>
-        <collision name='collision'>
-            <geometry>
+
+        <sensor name='gate_success_zones' type='contact'>
+          <contact>
+            <collision>
+              <geometry>
                 <mesh>
                 <uri>model://gate/meshes/gate_success_zones.dae</uri>
                 </mesh>
-            </geometry>
-            <max_contacts>10</max_contacts>
-            <surface>
-                <contact>
-                <ode/>
-                </contact>
-                <bounce/>
-                <friction>
-                <torsional>
-                    <ode/>
-                </torsional>
-                <ode/>
-                </friction>
-            </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
+              </geometry>
+            </collision>
+          </contact>
+        </sensor>
+
       </link>
     </model>
 

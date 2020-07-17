@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
   <world name='lake'>
+
+    <gui>
+      <camera name='user_camera'>
+        <pose>0 0 50 0 1.57 0</pose>
+      </camera>
+    </gui>
+
     <physics name='default_physics' default='1' type='ode'>
       <max_step_size>0.002</max_step_size>
       <real_time_factor>1</real_time_factor>
@@ -115,7 +122,7 @@
           <geometry>
             <mesh>
               <uri>model://transdec/meshes/transdec.dae</uri>
-              <scale>0.75 0.75 0.75</scale>
+              <scale>1 1 1</scale>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>

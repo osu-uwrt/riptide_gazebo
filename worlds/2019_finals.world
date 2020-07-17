@@ -1,5 +1,11 @@
 <sdf version='1.6'>
-  <world name='lake'>
+  <world name='transdec'>
+    <gui>
+      <camera name='user_camera'>
+        <pose>0 0 100 0 1.57 1.57</pose>
+      </camera>
+    </gui>
+
     <physics name='default_physics' default='1' type='ode'>
       <max_step_size>0.002</max_step_size>
       <real_time_factor>1</real_time_factor>
@@ -23,14 +29,15 @@
       <ambient>0.01 0.01 0.01 1</ambient>
       <sky>
         <clouds>
-          <speed>0</speed>
+          <speed>12</speed>
         </clouds>
       </sky>
       <fog>
+        <color>0.1 0.2 0.3 1.0</color>
         <type>linear</type>
         <density>0.01</density>
-        <start>0</start>
-        <end>10000</end>
+        <start>5</start>
+        <end>0</end>
       </fog>
       <shadows>1</shadows>
       <background>0.7 0.7 0.7 1</background>
@@ -44,12 +51,12 @@
     </spherical_coordinates>
     <!-- Global light source -->
     <light type="directional" name="sun_diffuse">
-      <pose>-50 0 -150 0 0 0</pose>
-      <diffuse>0.6 0.6 0.6 1</diffuse>
-      <specular>0 0 0 1</specular>
+      <pose>0 0 0 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
       <direction>-0.3 -0.3 -1</direction>
       <cast_shadows>false</cast_shadows>
-    </light>
+    </light> 
     <model name='world_ned'>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <static>1</static>
@@ -152,7 +159,7 @@
           <geometry>
             <mesh>
               <uri>model://water_surface/meshes/water_surface.dae</uri>
-              <scale>0.5 0.5 0.5</scale>
+              <scale>1 1 1</scale>
             </mesh>
           </geometry>
           <material>

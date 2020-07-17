@@ -6,6 +6,14 @@
     a sample run might look like:
 
     <run name='run#'
+
+        <light name='sun' type='directional'>
+            <pose>0 0 0 0 0 0</pose>
+            <diffuse></diffuse>
+            <specular></specular>
+            <direction></direction>
+        </light>
+
         <prop preset='buoy'>
             <pose frame=''>2.03149 22.15982 0 0 0 0</pose>
             <pose frame=''>2.03149 32.15982 0 0 0 0</pose>
@@ -123,10 +131,11 @@
                 </clouds>
             </sky>
             <fog>
+                <color>0.1 0.2 0.3 1.0<color>
                 <type>linear</type>
                 <density>0.01</density>
-                <start>0</start>
-                <end>10000</end>
+                <start>5</start>
+                <end>0</end>
             </fog>
             <shadows>1</shadows>
             <background>0.7 0.7 0.7 1</background>

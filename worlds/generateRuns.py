@@ -13,31 +13,39 @@ def round_sig(x, sig=1):
 #this script generates runs with varying random ambiences
 
 #total number of runs
-num_runs = 3
+num_runs = 10
 
 #Ambience parameters
 amb_anchor = [0.01, 0.01, 0.01, 1]
-amb_variation = 0.8
+amb_variation = 0.3
 run_ambiences = []
 
 #Fogs parameters
 fog_profile = 'linear'
-fog_start_mean = 0
-fog_start_std = 200
-fog_end_mean = 10000
-fog_end_std = 5000
+fog_color_mean = [0.1, 0.2, 0.3, 1.0]
+fog_color_std = [0.01, 0.02, 0.03, 0.001]
+fog_start_mean = 2.5
+fog_start_std = 1
+fog_end_mean = 0
+fog_end_std = 1
 run_fog_starts = []
 run_fog_ends = []
 
 #generate fogs
+i = 0
+fog_color_dist = []
+for f_c_comp in fog_color_mean:
+    f_c_comp_dist = np.random.normal(loc=f_c_comp, scale=fog_color_std[i], size=num_runs)
+    fog_color_dist.append(f_c_comp_dist)
+    i += 1
 run_fog_starts = np.random.normal(loc=fog_start_mean, scale=fog_start_std, size=num_runs)
 run_fog_ends = np.random.normal(loc=fog_end_mean, scale=fog_end_std, size=num_runs)
 
 #Prop location parameters
 # {'prop_preset_name':[list of locations]}
 # len(prop_locations['gate']) = number of props of type
-props_locations_means = {'gate': [[7, 22, -1.5, 0, 0, 0]], 'cutie': [[2, 22, 0, 0, 0, 0],[2, 32, 0, 0, 0, 0]]}
-props_locations_stds = {'gate': [[2, 2, 2, 1, 1, 1]], 'cutie': [[2, 2, 1, 1, 1, 1],[2, 2, 1, 1, 1, 1]]}
+props_locations_means = {'gate': [[25, 20, -1.5, 0, 0, 1.57]], 'cutie': [[27, 20, 0, 0, 0, 1.57],[27, 20, 0, 0, 0, 1.57]]}
+props_locations_stds = {'gate': [[2, 2, 2, .3, .3, .3]], 'cutie': [[2, 2, 1, .1, .1, .1],[2, 2, 1, .3, .3, .3]]}
 
 
 #generate location variations
@@ -115,7 +123,7 @@ for i in range(num_runs):
         ambience.append(round_sig(amb_comp))
     #ambience.append(1.0)
     run_ambiences.append(ambience)
-
+ 
 #update run_config.xml
 fileName = "run_config2.xml"
 tree = ElementTree.parse(fileName)
@@ -159,6 +167,8 @@ for ri in range(num_runs):
         run_fog_starts[ri] = 0
 
     fog = ElementTree.SubElement(scene, 'fog')
+    fog_color = ElementTree.SubElement(fog, 'color')
+    fog_color.text = str(fog_color_dist[0][ri]) + ' ' + str(fog_color_dist[1][ri]) + ' ' + str(fog_color_dist[2][ri]) + ' ' + str(fog_color_dist[3][ri])
     fog_type = ElementTree.SubElement(fog, 'type')
     fog_type.text = fog_profile
     fog_start = ElementTree.SubElement(fog, 'start')
@@ -167,7 +177,6 @@ for ri in range(num_runs):
     fog_end.text = str(int(run_fog_ends[ri]))
 
 openFile = open(fileName, "w")
-#tree = prettify(tostring(tree))
 tree.write(openFile)
 openFile.close()
 
