@@ -1,5 +1,7 @@
 # Riptide Gazebo
 
+![Transdec in Simulator](transdec 2019_finals world.png)
+
 The team's simulator runs on Ubuntu 16.04 with ROS Kinetic but newest updates can only run on 18.04 with ROS Melodic. For latest developments (most of this readme refers to), checkout branch "/tweaker". This package is still a work in progress.
 
 ## Setup
