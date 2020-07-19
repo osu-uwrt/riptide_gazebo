@@ -46,7 +46,7 @@ run_template.xml - sdf skeleton used by generateWorlds.py
 If you wish to generate random worlds with random environment variations, switch over to git branch "/tweaker". You must switch riptide_descriptions and riptide_bringup to this branch as well. The OS must be 18.04 with ROS Melodic. 
 
 ### Understanding the Environment Parameters
-These descriptions help give users a background for how to specify parameters.
+These descriptions help give users a background for how to specify parameters. Please also refer to http://sdformat.org/spec?ver=1.6&elem=scene
 
 #### Ambience
 Ambience refers to "color of ambient light" and can be thought of as the world's color tint. It is defined by 4 floats. For example, the default ambience is 0.4 0.4 0.4 1
