@@ -73,3 +73,10 @@ First, delete all past generated run#.world files that might be inside of the ri
 Make sure that num_runs matches with the amount of worlds you generated or how ever many you wish to test through. Then run "python automation_handler.py" and this should launch and kill every run#.world with the robot also spawning inside. Right now, nothing happens during the world's lifetime; it just waits for 60 seconds before killing and 10 more seconds before launching the next run#.world.
 
 ## FAQ and Troubleshooting
+
+on 2 seperate machines running 18.04 gazebo i got:
+
+[Err] [REST.cc:205] Error in REST request
+libcurl: (51) SSL: no alternative certificate subject name matches target host name 'api.ignitionfuel.org'
+
+on both occasions this was resolved by a) installing gazebo9 and b) running "sudo apt upgrade libignition-math2"
