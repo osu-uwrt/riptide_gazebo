@@ -60,4 +60,16 @@ Fog has a color and a "thickness" that works by defining the start and end of a 
 #### Lights (Sun)
 Direction, location, brightness
 
+## Using generateWorlds.py
+
+Specify in the run_config.xml file what you want each run's environment paramters to be. generateWorlds.py reads this config file so be sure to specify the correct one.
+
+## Using generateRuns.py then generateWorlds.py
+
+First, delete all past generated run#.world files that might be inside of the riptide_gazebo/worlds folder. In generateRuns.py, specify the means and standard deviations of the environment parameters as well as number of runs. Run the script using "python generateRuns.py" and it will the generate appropriate number of random worlds and write to run_config2.xml. Make sure generateWorlds.py is reading run_config2.xml and not run_config.xml, then run generateWorlds.py. You should see all of the run#.world files pop up inside the world folder. Specifying num_runs to be 10 would create run0.world to run9.world.
+
+## Using automation_handler.py
+
+Make sure that num_runs matches with the amount of worlds you generated or how ever many you wish to test through. Then run "python automation_handler.py" and this should launch and kill every run#.world with the robot also spawning inside. Right now, nothing happens during the world's lifetime; it just waits for 60 seconds before killing and 10 more seconds before launching the next run#.world.
+
 ## FAQ and Troubleshooting
