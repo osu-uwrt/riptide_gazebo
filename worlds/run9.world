@@ -34,7 +34,7 @@
       </sky>
       <shadows>1</shadows>
       <background>0.7 0.7 0.7 1</background>
-    <ambient>0.015707496265195034 0.004148076149282799 0.013197453416731062 1.0091889712211892</ambient><fog><color>0.08323107835545064 0.17625374810384964 0.27891875801420496 0.999854553028197</color><type>linear</type><start>2</start><end>0</end></fog></scene>
+    <ambient>0.014166385970306193 -0.005536485317977135 0.007870953622590217 1.0066780691753334</ambient><fog><color>0.07626134330987212 0.21953858880570498 0.2742952749173838 1.0001194853341802</color><type>linear</type><start>3</start><end>0</end></fog></scene>
     <spherical_coordinates>
       <latitude_deg>47.6279</latitude_deg>
       <longitude_deg>9.33455</longitude_deg>
@@ -218,7 +218,7 @@
       </link>
       <pose frame="">0 0 0 0 0 0</pose>
     </model>
-  <light name="sun" type="directional"><pose>-0.3378070061081387 0.3754205880166846 -0.18028939071470546 -1.0608200601227715 -0.15152502010808408 0.8120452160017991</pose><diffuse>0.8733791639958156 1.0164868690927837 0.8749800410770399 0.9297368509978722</diffuse><specular>0.10752974526176891 0.10249437898885679 0.10092805581354404 0.9690454138105288</specular><direction>0.3196294402952508 -0.41866887603019687 -0.830131374403549</direction></light><model name="gate1"> 
+  <light name="sun" type="directional"><pose>-0.7859424413161625 -0.19654277771382317 0.7335809259949622 1.5583295020430779 0.16787097875726695 0.048632491599370914</pose><diffuse>0.708971435130169 1.1774172945117378 0.9601974038526996 1.1015224850491203</diffuse><specular>0.0998648090931912 0.1058855018119891 0.08866264073724955 0.986238527796166</specular><direction>0.11678118353593424 0.3070796907310188 -1.160410134696998</direction></light><model name="gate1"> 
       <static>1</static>
       <link name="link">
         <pose frame="">0 0 0 0 -0 0</pose>
@@ -256,7 +256,7 @@
         </sensor>
 
       </link>
-    <pose frame="">25.63592324361334 17.711652060685186 -4.28052521329618 -0.6238060209740707 0.19402997825538218 1.3808240684286754</pose></model>
+    <pose frame="">22.23313590647161 20.585426039342707 2.4500065930391837 -0.4755967883684592 0.04078371620420001 1.6022847924153132</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -295,7 +295,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">25.943162728489373 19.597621535135595 1.6443786399956255 -0.025428370013141438 -0.08641315664056223 1.7093477393728227</pose></model>
+    <pose frame="">24.52399210405542 18.797863093589505 -0.1418004749076401 -0.05779942446706232 -0.07880822549136332 1.4931464886311003</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -334,7 +334,26 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">27.03471294308183 22.73707564594902 0.33659206663523217 0.11214913078253116 0.36759489146707164 1.590519417326837</pose></model>
+    <pose frame="">26.532366802471785 22.95650783503256 0.7889706613827251 0.26378500649634895 0.024014865146979685 1.599565734029738</pose></model>
+
+    <model name="crucifix_tower1">
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">26.330634155535783 27.19451520940146 1.5868957141226319 0.01982556093285362 -0.12740735979559595 1.4417996569967526</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -374,7 +393,7 @@
         </sensor>
 
       </link>
-    <pose frame="">26.384551526485122 16.317097752247008 0.8220311998874434 0.3191693227253547 -0.4079540373266209 1.3750918508304262</pose></model>
+    <pose frame="">25.153887306584906 21.510133933373424 1.0638956278500222 0.011482235573117743 -0.3000944549211338 1.010501753162987</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -413,7 +432,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">23.37950828473575 17.34149045455138 0.4579783026204306 -0.16375692417809648 0.1201179420472574 1.6690341290082293</pose></model>
+    <pose frame="">26.28711238725753 19.937443684654184 0.8721063783957882 -0.03413618499271833 -0.13139847989898254 1.675941310150706</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -452,7 +471,26 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">25.253915391659774 18.105679550440286 -1.8977512715461446 0.10439051865122088 -0.31199154278140756 1.1242949706131582</pose></model>
+    <pose frame="">26.70408964731031 20.158804231958328 -1.071080275206955 -0.22264327388800978 -0.26883093651471235 1.545555603100832</pose></model>
+
+    <model name="crucifix_tower1">
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">23.91305573638689 24.85550872477932 0.6363821438895974 -0.09964335651873729 -0.14726513249511017 1.648370874157613</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -492,7 +530,7 @@
         </sensor>
 
       </link>
-    <pose frame="">24.991672544121485 21.252557460949735 -1.1522912805116725 0.3824758555106025 -0.1693095618228286 1.7900823401313821</pose></model>
+    <pose frame="">29.314499096370994 19.18354943581613 -0.566941684713301 -0.4357661566354178 0.2726078580508601 1.777423955646493</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -531,7 +569,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">23.635547146480263 17.52765673576775 -2.243921366053804 0.09651694286346335 0.036307155292296396 1.5188822048682806</pose></model>
+    <pose frame="">25.514914945543637 21.35735477440855 -1.77665872763172 0.05125656553350814 -0.03309858208131247 1.5757956889992917</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -570,7 +608,26 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">29.59153080641098 23.4991525519014 1.64982432628098 -0.24784152925805256 -0.12262145764136684 1.7494668266020854</pose></model>
+    <pose frame="">26.7898381595683 23.413718932197213 0.040762408678214866 -0.3108029613449628 0.1206681591504664 1.4641270301217066</pose></model>
+
+    <model name="crucifix_tower1">
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">25.125150609988825 24.319513789748523 1.750758830863266 -0.034866745472612176 0.04710402121886262 1.3740196318722073</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -610,7 +667,7 @@
         </sensor>
 
       </link>
-    <pose frame="">28.598682814098623 22.17091421050661 -1.6426384693426417 -0.24119702621112554 0.21486402703624088 1.9184108214588955</pose></model>
+    <pose frame="">25.813329176905498 23.33228760505327 -2.405644381499909 0.41748336483314896 -0.5850275820861288 1.1635912516813272</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -649,7 +706,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">25.98247269155842 19.546168903368304 -0.3644250506211568 0.15155101247194025 -0.13054380381747063 1.5520248960106773</pose></model>
+    <pose frame="">28.18987876183104 17.03736581989012 0.5202688405987291 -0.09465670595975878 0.06329436766291914 1.5745982830931902</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -688,7 +745,26 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">30.82096121304016 19.272227075497725 0.8384119379977126 0.6244279627883714 -0.10017842564220984 1.8521358204348468</pose></model>
+    <pose frame="">28.56490485942702 21.185645105578367 -0.48665134711134517 0.1509500989244555 0.15696775184098288 1.5657768262622136</pose></model>
+
+    <model name="crucifix_tower1">
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">25.274370535204575 25.057328432579432 3.160308462907517 0.11684073289759155 0.1770928416181242 1.4356709448415237</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -728,7 +804,7 @@
         </sensor>
 
       </link>
-    <pose frame="">26.87550714799484 18.996054972070223 1.1912581074193858 -0.17975050222070288 0.10903337165794638 1.4665600013720328</pose></model>
+    <pose frame="">24.523817534919306 22.23787172894517 -2.3829270965852576 0.026288460908082543 0.09322985302315523 1.575935112199667</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -767,7 +843,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">25.39935247430859 19.87546189439897 -0.4763053062915603 0.1689036450405926 -0.13795254720445083 1.6606022548040404</pose></model>
+    <pose frame="">29.338700549150058 21.17810440157628 0.22866738326242947 0.19293523607962682 0.08114265599552373 1.595490050274484</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -806,7 +882,26 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">25.74880687337969 21.998150439548755 1.188786265222609 0.06544621408707432 -0.03657824638344364 1.421434484684525</pose></model>
+    <pose frame="">29.71619225170084 20.923347911427822 2.725279411686344 0.1117664044235033 0.281479301783362 1.950869804618571</pose></model>
+
+    <model name="crucifix_tower1">
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">24.12606527135108 25.30876508123834 1.1448601669958138 0.08248928740776214 0.1335445014779887 1.5588618997998351</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -846,7 +941,7 @@
         </sensor>
 
       </link>
-    <pose frame="">27.064245465281402 19.696990303702613 4.837949776189178 0.058688523469241395 0.0549208210631038 1.3404624665321296</pose></model>
+    <pose frame="">25.58225593275858 16.733445496831145 2.0345161691068383 -0.3338024980629691 0.17415746590120415 1.7874581948825323</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -885,7 +980,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">25.679833579018496 21.013435701252163 0.17320297422131528 0.003548113762157516 0.06004082944867198 1.5082809860497384</pose></model>
+    <pose frame="">28.12576583267005 19.476236237353106 -0.5672755891567022 -0.0906511075230634 -0.10555069548277983 1.6437575606870378</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -924,7 +1019,26 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">23.413651783706403 19.139395442699595 -0.46925323539051 0.06295717339904833 -0.24515266057355883 0.9988714329887339</pose></model>
+    <pose frame="">25.448397777733874 19.38958152584642 -1.086149790906331 0.11332466667989863 0.4766673308729356 1.3784935460689156</pose></model>
+
+    <model name="crucifix_tower1">
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">23.61238663658249 23.984747462029024 1.4065863370986154 0.030062459593384466 -0.004959172848459543 1.5935163309372036</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -964,7 +1078,7 @@
         </sensor>
 
       </link>
-    <pose frame="">23.3045628796112 21.249732928421558 -0.7471927907603618 0.04709612159581743 0.06671038452969857 2.079847957665845</pose></model>
+    <pose frame="">22.200079974788586 20.059167982292447 -2.4861902339142032 0.43858049288221057 -0.11823948229636275 2.1626413987105244</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -1003,7 +1117,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">26.108560746895296 16.374305171181494 1.6163767873673334 -0.0380205314734115 0.14673432298964384 1.613064167807379</pose></model>
+    <pose frame="">24.77449892892637 19.909799651118053 2.8236292158749974 0.03916276127415085 0.03479320441561163 1.5561520507884516</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -1042,7 +1156,26 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">28.343924441237856 21.441172954334924 0.5546723657344831 -0.13644484779412705 -0.03459019193544851 1.556769844731822</pose></model>
+    <pose frame="">25.63063999254938 16.922253927687006 -0.5960701895079258 0.24143493953472372 0.049792343826927835 1.4157122746356956</pose></model>
+
+    <model name="crucifix_tower1">
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">26.99997222185875 25.48585290470088 0.6467579679851285 -0.15444416654129392 0.05957050886909099 1.3267836346369273</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -1082,7 +1215,7 @@
         </sensor>
 
       </link>
-    <pose frame="">25.32310269640923 21.483640977729976 -1.097604655824428 0.5126583583151216 -0.11996118965764177 1.373382973054255</pose></model>
+    <pose frame="">23.85579719624026 20.051296130779527 -1.200858630822973 -0.0829066059803613 -0.3284991490147208 2.1631643780145016</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -1121,7 +1254,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">25.76549066962622 19.297713334178567 -1.706703185476927 0.15401272701288116 0.14517236000807204 1.6426065455645456</pose></model>
+    <pose frame="">29.926592811444397 16.124693022352655 0.37251168058692896 0.19208124494863033 0.039964687094842605 1.6524661403900114</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -1160,7 +1293,26 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">23.123725582072375 19.73750598983572 -1.1164717045016712 -0.08225642458337783 0.10950727662058356 1.0132099432992274</pose></model>
+    <pose frame="">30.4263621300859 20.916148703353457 1.476944147084206 -0.22782925022149297 -0.007121995118561534 1.5393523494316241</pose></model>
+
+    <model name="crucifix_tower1">
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">25.51979068475413 26.033833855114363 2.8625493140174187 -0.028293595006775075 -0.009475016012094654 1.4694723129204839</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -1200,7 +1352,7 @@
         </sensor>
 
       </link>
-    <pose frame="">25.58765519066329 21.13792685459877 -1.0593631972484445 -0.3063300697206351 0.04119215540179578 1.2439857090216582</pose></model>
+    <pose frame="">23.938314629670124 19.356071028603377 1.568930748210184 -0.016806208162457127 0.17100818479541308 1.3230342536995983</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -1239,7 +1391,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">28.308169572792327 18.741738462137395 1.6789045197454338 -0.02252153760742355 0.14961255736098547 1.5439543248391046</pose></model>
+    <pose frame="">27.280770719487617 20.464894216948178 0.08366580653485944 0.08905246037932486 0.04541953699438403 1.6365616112068868</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -1278,7 +1430,26 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">26.70393199187761 20.548806323824067 -0.18781218947046924 0.23785445937624483 0.292505049007469 1.3847780787490596</pose></model>
+    <pose frame="">25.039500968696984 20.74012782795928 1.5570616444118344 0.34910914416392175 -0.5545468497438583 1.6549950909077336</pose></model>
+
+    <model name="crucifix_tower1">
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">25.044502101215393 24.942619332635523 0.4774785841061818 0.04728735004247035 0.09144281382191505 1.519635516312501</pose></model>
 
     <model name="gate1"> 
       <static>1</static>
@@ -1318,7 +1489,7 @@
         </sensor>
 
       </link>
-    <pose frame="">29.57322985913446 17.552233754340016 -1.48593626381223 -0.002196740680220517 -0.20756294000740128 2.0241681919251207</pose></model>
+    <pose frame="">29.444092851425765 18.49289754667618 -2.0169158841541845 0.3958353590324921 -0.04934975710296987 1.6272563486139806</pose></model>
 
     <model name="cutie1">
         <static>1</static>
@@ -1357,7 +1528,7 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">26.195224774313246 23.470848310196235 -2.0360694629396967 -0.06302627746352289 -0.0020461071929525855 1.4797285069391046</pose></model>
+    <pose frame="">28.970129373693418 19.295277621099277 1.5534268108951743 0.018584728804335888 -0.03546444320249821 1.551906573924807</pose></model>
 
     <model name="cutie2">
         <static>1</static>
@@ -1396,6 +1567,25 @@
             <enable_wind>0</enable_wind>
             <kinematic>0</kinematic>
         </link>
-    <pose frame="">26.80134986638435 19.86596811497977 -0.9673321962606835 0.4972519538076193 -0.3086578602597822 1.6944022108403447</pose></model>
+    <pose frame="">26.013887529986306 18.25732679418269 0.28426192962431224 0.19361909468367156 0.11782283964068341 1.8921457845499867</pose></model>
+
+    <model name="crucifix_tower1">
+      <static>1</static>
+      <link name="link">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://crucifix_tower/meshes/crucifix_tower.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    <pose frame="">25.06363306318623 25.75047940587705 0.11000791786632724 -0.11667043949747243 0.09359030197798118 1.6137515917329384</pose></model>
 
     </world></sdf>

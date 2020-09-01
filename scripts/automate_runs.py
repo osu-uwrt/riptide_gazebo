@@ -11,7 +11,7 @@ num_runs = 10
 package = "riptide_bringup"
 launch_file = "simulation.launch"
 
-#Ambient Color parameters
+#Ambient Color Parameters
 amb_means = [0.01, 0.01, 0.01, 1]
 amb_stds = [0.01, 0.01, 0.01, 0.01]
 
@@ -24,11 +24,11 @@ fog_start_std = 1
 fog_end_mean = 0
 fog_end_std = 1
 
-#Prop location parameters
+#Prop Location parameters
 # {'prop_preset_name':[list of locations]}
 # len(prop_locations['gate']) = number of props of type
-props_locations_means = {'gate': [[25, 20, -1.5, 0, 0, 1.57]], 'cutie': [[27, 20, 0, 0, 0, 1.57],[27, 20, 0, 0, 0, 1.57]]}
-props_locations_stds = {'gate': [[2, 2, 2, .3, .3, .3]], 'cutie': [[2, 2, 1, .1, .1, .1],[2, 2, 1, .3, .3, .3]]}
+props_locations_means = {'gate': [[25, 20, -1.5, 0, 0, 1.57]], 'cutie': [[27, 20, 0, 0, 0, 1.57],[27, 20, 0, 0, 0, 1.57]], 'crucifix_tower': [[25, 25, 1, 0, 0, 1.57]]}
+props_locations_stds = {'gate': [[2, 2, 2, .3, .3, .3]], 'cutie': [[2, 2, 1, .1, .1, .1],[2, 2, 1, .3, .3, .3]], 'crucifix_tower': [[1, 1, 1, 0.1, 0.1, 0.1]]}
 
 #Light Parameters
 light_pose_mean = [0, 0, 0, 0, 0, 0]

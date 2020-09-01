@@ -28,7 +28,7 @@ def buildWorldFile(run_config, index, ambiences, lights, props_poses, presets, f
     currentPath = os.getcwd()
     world_file_path = os.path.abspath(os.path.join(currentPath,os.pardir)) + file_name
     runWorldFile = open(world_file_path, "w")
-
+    print('--- Run ' + str(index) + ' ---')
     tree = ElementTree.parse('run_template.xml')
     world = tree.getroot()
 
@@ -39,7 +39,7 @@ def buildWorldFile(run_config, index, ambiences, lights, props_poses, presets, f
         #Ambient
         ambient = ElementTree.SubElement(scene, 'ambient')
         ambient.text = ambiences[index]
-        print('ambience: ' + ambient.text)
+        print('ambient: ' + ambient.text)
 
         #Fog
         scene.append(fog)
@@ -59,7 +59,6 @@ def buildWorldFile(run_config, index, ambiences, lights, props_poses, presets, f
                     for preset_ in props_template.findall('model'):
                         #print(preset_.attrib['name'])
                         #print(presets[i]['preset'])
-
                         if (preset_.attrib['name'] == presets[i]['preset']):
                             prop_pose = ElementTree.SubElement(preset_, 'pose', {'frame':''})
                             prop_pose.text = pose
@@ -67,7 +66,7 @@ def buildWorldFile(run_config, index, ambiences, lights, props_poses, presets, f
                             name = presets[i]['preset'] + str(pose_count)
                             preset_.set('name',name)
                             world.append(preset_)
-                            print('     ' + name + ':  ' + str(pose))
+                            print('' + name + ':  ' + str(pose))
                 preset_inst += 1
 
     #change from xml to sdf format
