@@ -213,10 +213,6 @@
     <atmosphere type='adiabatic'/>
     <wind/>
     <state world_name='lake'>
-      <sim_time>320 580000000</sim_time>
-      <real_time>60 666272505</real_time>
-      <wall_time>1582148730 923426823</wall_time>
-      <iterations>30238</iterations>
       <model name='gate'>
         <pose frame=''>3.21125 1.08573 -1.84806 0 0 -1.57375</pose>
         <scale>1 1 1</scale>
