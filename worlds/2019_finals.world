@@ -36,7 +36,7 @@
         <color>0.1 0.2 0.3 1.0</color>
         <type>linear</type>
         <density>0.01</density>
-        <start>5</start>
+        <start>2.5</start>
         <end>0</end>
       </fog>
       <shadows>1</shadows>
@@ -55,6 +55,9 @@
       <diffuse>1 1 1 1</diffuse>
       <specular>.1 .1 .1 1</specular>
       <direction>-0.3 -0.3 -1</direction>
+      <attenuation>
+        <constant>1</constant>
+      </attenuation>
       <cast_shadows>false</cast_shadows>
     </light> 
     <model name='world_ned'>
