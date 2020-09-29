@@ -7,7 +7,7 @@ import numpy
 from riptide_msgs.msg import ThrustStamped, Thrust
 from uuv_gazebo_ros_plugins_msgs.msg import FloatStamped
 
-class ThrustConverter(object):
+class ThrustRemap(object):
 
     def __init__(self):
         self._vehicle_config_file = rospy.get_param("~vehicle_config")
@@ -47,6 +47,6 @@ class ThrustConverter(object):
             self._pubs[i].publish(cmd)
 
 if __name__ == "__main__":
-    rospy.init_node('thrust_converter')
-    tc = ThrustConverter()
+    rospy.init_node('thrust_remap')
+    tc = ThrustRemap()
     rospy.spin()

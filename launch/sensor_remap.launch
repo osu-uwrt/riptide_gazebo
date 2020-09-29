@@ -4,6 +4,9 @@
     <group ns="$(arg robot)">
         <node pkg="riptide_gazebo" name="depth_remap" type="depth_remap.py" />
         <node pkg="riptide_gazebo" name="kill_switch_publisher" type="kill_switch_publisher.py" />
+        <node pkg="riptide_gazebo" name="imu_remap" type="imu_remap.py">
+            <param name="vehicle_config" value="$(find riptide_descriptions)/config/$(arg robot).yaml" />
+        </node>
         <node pkg="riptide_gazebo" name="thrust_remap" type="thrust_remap.py">
             <param name="vehicle_config" value="$(find riptide_descriptions)/config/$(arg robot).yaml" />
         </node>

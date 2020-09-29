@@ -4,7 +4,7 @@ import rospy
 from sensor_msgs.msg import FluidPressure
 from std_msgs.msg import Header
 from riptide_msgs.msg import Depth
-class depthConverter():
+class DepthRemap():
     def __init__(self):
         self.sub = rospy.Subscriber("depth/pressure", FluidPressure, self.depthCb)
         self.pub = rospy.Publisher("depth/raw", Depth, queue_size=10)
@@ -19,7 +19,7 @@ class depthConverter():
         self.pub.publish(depth)
 
 if __name__ == '__main__':
-    rospy.init_node('depth_converter')
-    depthConverter()
+    rospy.init_node('depth_remap')
+    DepthRemap()
     rospy.spin()
     
