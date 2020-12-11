@@ -3,42 +3,57 @@ import generateRuns
 import generateWorlds
 import automation_handler
 
+# Load in the data file 
+# Eventually, when GUI is done, we will just serialize the JSON and pass it in rather than loading from file
+# .json file is still needed even in that case for GUI because it defines the format that stuff displays in
+import json
+with open("params.json", "r") as read_file: 
+    data = json.load(read_file)
+
 ''' Edit the run and environment parameters then run this script for general usage '''
 
 #Run Parameters
-run_config = "run_config2.xml"
-num_runs = 15
-package = "riptide_bringup"
-launch_file = "simulation.launch"
+run_config = data["general_config"]["fields"]["run_config"]["default"]
+num_runs = data["general_config"]["fields"]["num_runs"]["default"]
+package = data["general_config"]["fields"]["package"]["default"]
+launch_file = data["general_config"]["fields"]["launch_file"]["default"]
 
 #Ambient Color Parameters
-amb_means = [0.01, 0.01, 0.01, 1]
-amb_stds = [0.01, 0.01, 0.1, 0.01]
+amb_means = data["ambient_params"]["fields"]["amb_means"]["default"]
+amb_stds = data["ambient_params"]["fields"]["amb_stds"]["default"]
 
 #Fog Parameters
-fog_profile = 'linear'
-fog_color_mean = [0.1, 0.2, 0.3, 1.0]
-fog_color_std = [0.01, 0.02, 0.03, 0.001]
-fog_start_mean = 2.5
-fog_start_std = 1
-fog_end_mean = 0
-fog_end_std = 1
+fog_profile = data["fog_params"]["fields"]["fog_profile"]["default"]
+fog_color_mean = data["fog_params"]["fields"]["fog_color_mean"]["default"]
+fog_color_std = data["fog_params"]["fields"]["fog_color_std"]["default"]
+fog_start_mean = data["fog_params"]["fields"]["fog_start_mean"]["default"]
+fog_start_std = data["fog_params"]["fields"]["fog_start_std"]["default"]
+fog_end_mean = data["fog_params"]["fields"]["fog_end_mean"]["default"]
+fog_end_std = data["fog_params"]["fields"]["fog_end_std"]["default"]
 
 #Prop Location parameters
 # {'prop_preset_name':[list of locations]}
 # len(prop_locations['gate']) = number of props of type
-props_locations_means = {'gate': [[15, 15, -1.2, 0, 0, 1.57]], 'cutie': [[27, 20, 0, 0, 0, 1.57],[27, 20, 0, 0, 0, 1.57]], 'crucifix_tower': [[25, 25, 1, 0, 0, 1.57]]}
-props_locations_stds = {'gate': [[2, 2, 2, .3, .3, .3]], 'cutie': [[2, 2, 1, .1, .1, .1],[2, 2, 1, .3, .3, .3]], 'crucifix_tower': [[1, 1, 1, 0.1, 0.1, 0.1]]}
+props_locations_means = {
+    'gate': data["prop_positions"]["fields"]["props_locations_means"]["props"]["gate"]["default"], # Definitely not too many, idk what you're talking about
+    'cutie': data["prop_positions"]["fields"]["props_locations_means"]["props"]["cutie"]["default"],
+    'crucifix_tower': data["prop_positions"]["fields"]["props_locations_means"]["props"]["crucifix_tower"]["default"]
+}
+props_locations_stds = {
+    'gate': data["prop_positions"]["fields"]["props_locations_stds"]["props"]["gate"]["default"], # Definitely not too many, idk what you're talking about
+    'cutie': data["prop_positions"]["fields"]["props_locations_stds"]["props"]["cutie"]["default"], 
+    'crucifix_tower': data["prop_positions"]["fields"]["props_locations_stds"]["props"]["crucifix_tower"]["default"]
+}
 
 #Light Parameters
-light_pose_mean = [0, 0, 0, 0, 0, 0]
-light_pose_std = [10, 10, 10, 1.2, 1.2, 1.2]
-light_diffuse_mean = [1, 1, 1, 1]
-light_diffuse_std = [.1, .1, .1, .1]
-light_direction_mean = [0, 0, -1]
-light_direction_std = [0.2, 0.2, 0.2]
-light_specular_mean = [0.1, 0.1, 0.1, 1]
-light_specular_std = [0.01, 0.01, 0.01, 0.01]
+light_pose_mean = data["light_params"]["fields"]["light_pose_mean"]["default"]
+light_pose_std = data["light_params"]["fields"]["light_pose_std"]["default"]
+light_diffuse_mean = data["light_params"]["fields"]["light_diffuse_mean"]["default"]
+light_diffuse_std = data["light_params"]["fields"]["light_diffuse_std"]["default"]
+light_direction_mean = data["light_params"]["fields"]["light_direction_mean"]["default"]
+light_direction_std = data["light_params"]["fields"]["light_direction_std"]["default"]
+light_specular_mean = data["light_params"]["fields"]["light_specular_mean"]["default"]
+light_specular_std = data["light_params"]["fields"]["light_specular_std"]["default"]
 
 #package parameters into lists
 amb_params = [amb_means, amb_stds]
