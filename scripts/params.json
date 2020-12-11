@@ -1,221 +1,189 @@
-{
-    "sections": [
-        
-        {
-            "header": "General Configuration", 
-            "fields": [
-                {
-                    "name": "Run Config File",
-                    "param_name": "run_config",
-                    "type": "string", 
-                    "default": "run_config2.xml"
-                },
-                {
-                    "name": "Number of Runs",
-                    "param_name": "num_runs", 
-                    "type": "number",
-                    "default": 15
-                },
-                {
-                    "name": "Package Name",
-                    "param_name": "package",
-                    "type": "string",
-                    "default": "riptide_bringup"
-                }, 
-                {
-                    "name": "Launch File",
-                    "param_name": "launch_file",
-                    "type": "string",
-                    "default": "simulation.launch"
-                }
-            ]
-        }, 
-
-
-        {
-            "header": "Ambient Color Parameters",
-            "fields": [
-                {
-                    "name": "Ambient Color Means",
-                    "param_name": "amb_means", 
-                    "type": "array-of-number",
-                    "size": 4, 
-                    "default": [0.01, 0.01, 0.01, 1]
-                },
-                {
-                    "name": "Ambient Color Std. Deviations",
-                    "param_name": "amb_stds", 
-                    "type": "array-of-number",
-                    "size": 4, 
-                    "default": [0.01, 0.01, 0.1, 0.01]
-                }
-            ]
-        },
-
-
-        {
-            "header": "Fog Parameters",
-            "fields": [
-                {
-                    "name": "Fog Profile", 
-                    "param_name": "fog_profile", 
-                    "type": "multi-select", 
-                    "options": ["linear", "x", "y", "z"],
-                    "default": "linear"
-                }, 
-                {
-                    "name": "Fog Color Means", 
-                    "param_name": "fog_color_mean", 
-                    "type": "array-of-number", 
-                    "size": 4,
-                    "default": [0.1, 0.2, 0.3, 1.0]
-                }, 
-                {
-                    "name": "Fog Color Std. Deviations", 
-                    "param_name": "fog_color_stds", 
-                    "type": "array-of-number", 
-                    "size": 4,
-                    "default": [0.01, 0.02, 0.03, 0.001]
-                },
-                {
-                    "name": "Fog Start Mean", 
-                    "param_name": "fog_start_mean", 
-                    "type": "number", 
-                    "default": 2.5
-                }, 
-                {
-                    "name": "Fog Start Std. Deviation", 
-                    "param_name": "fog_start_std", 
-                    "type": "number", 
-                    "default": 1
-                },
-                {
-                    "name": "Fog End Mean", 
-                    "param_name": "fog_end_mean", 
-                    "type": "number", 
-                    "default": 0
-                }, 
-                {
-                    "name": "Fog End Std. Deviation", 
-                    "param_name": "fog_end_std", 
-                    "type": "number", 
-                    "default": 1
-                }
-            ]
-        },
-
-
-        {
-            "header": "Prop Positioning", 
-            "fields": [
-                {
-                    "name": "Prop Location Means", 
-                    "param_name": "props_locations_means", 
-                    "type": "props", 
-                    "props": [
-                        {
-                            "name": "Gate", 
-                            "param_name": "gate",
-                            "default": [[15, 15, -1.2, 0, 0, 1.57]]
-                        },
-                        {
-                            "name": "Cutie", 
-                            "param_name": "cutie",
-                            "default": [[27, 20, 0, 0, 0, 1.57],[27, 20, 0, 0, 0, 1.57]]
-                        }, 
-                        {
-                            "name": "Crucifix Tower", 
-                            "param_name": "crucifix_tower", 
-                            "default": [[25, 25, 1, 0, 0, 1.57]]
-                        }
-                    ]
-                }, 
-                {
-                    "name": "Prop Location Std. Deviations", 
-                    "param_name": "props_locations_stds", 
-                    "type": "props", 
-                    "props": [
-                        {
-                            "name": "Gate", 
-                            "param_name": "gate",
-                            "default": [[2, 2, 2, 0.3, 0.3, 0.3]]
-                        },
-                        {
-                            "name": "Cutie", 
-                            "param_name": "cutie",
-                            "default": [[2, 2, 1, 0.1, 0.1, 0.1],[2, 2, 1, 0.3, 0.3, 0.3]]
-                        }, 
-                        {
-                            "name": "Crucifix Tower", 
-                            "param_name": "crucifix_tower", 
-                            "default": [[1, 1, 1, 0.1, 0.1, 0.1]]
-                        }
-                    ]
-                }
-            ]
-        },
-
-
-        {
-            "header": "Light Parameters", 
-            "fields": [
-                {
-                    "name": "Light Pose Means", 
-                    "param_name": "light_pose_mean", 
-                    "type": "array-of-number", 
-                    "size": 6,
-                    "default": [0, 0, 0, 0, 0, 0]
-                }, 
-                {
-                    "name": "Light Pose Std. Deviations", 
-                    "param_name": "light_pose_stds", 
-                    "type": "array-of-number", 
-                    "size": 6,
-                    "default": [10, 10, 10, 1.2, 1.2, 1.2]
-                }, 
-                {
-                    "name": "Light Diffuse Means", 
-                    "param_name": "light_diffuse_mean", 
-                    "type": "array-of-number", 
-                    "size": 4,
-                    "default": [1, 1, 1, 1]
-                }, 
-                {
-                    "name": "Light Diffuse Std. Deviations", 
-                    "param_name": "light_diffuse_stds", 
-                    "type": "array-of-number", 
-                    "size": 4,
-                    "default": [0.1, 0.1, 0.1, 0.1]
-                },
-                {
-                    "name": "Light Direction Means", 
-                    "param_name": "light_direction_mean", 
-                    "type": "array-of-number", 
-                    "size": 3,
-                    "default": [0, 0, -1]
-                }, 
-                {
-                    "name": "Light Direction Std. Deviations", 
-                    "param_name": "light_direction_stds", 
-                    "type": "array-of-number", 
-                    "size": 3,
-                    "default": [0.2, 0.2, 0.2]
-                }, 
-                {
-                    "name": "Light Specular Means", 
-                    "param_name": "light_specular_mean", 
-                    "type": "array-of-number", 
-                    "size": 4,
-                    "default": [0.1, 0.1, 0.1, 1]
-                }, 
-                {
-                    "name": "Light Specular Std. Deviations", 
-                    "param_name": "light_specular_stds", 
-                    "type": "array-of-number", 
-                    "size": 4,
-                    "default": [0.01, 0.01, 0.01, 0.01]
-                }
-            ]
+{      
+    "general_config": {
+        "header": "General Configuration", 
+        "fields": {
+            "run_config": {
+                "name": "Run Config File",
+                "type": "string", 
+                "default": "run_config2.xml"
+            },
+            "num_runs": {
+                "name": "Number of Runs",
+                "type": "number",
+                "default": 15
+            },
+            "package": {
+                "name": "Package Name",
+                "type": "string",
+                "default": "riptide_bringup"
+            }, 
+            "launch_file": {
+                "name": "Launch File",
+                "type": "string",
+                "default": "simulation.launch"
+            }
         }
-    ]
+    }, 
+
+
+    "ambient_params": {
+        "header": "Ambient Color Parameters",
+        "fields": {
+            "amb_means": {
+                "name": "Ambient Color Means",
+                "type": "array-of-number",
+                "size": 4, 
+                "default": [0.01, 0.01, 0.01, 1]
+            },
+            "amb_stds": {
+                "name": "Ambient Color Std. Deviations",
+                "type": "array-of-number",
+                "size": 4, 
+                "default": [0.01, 0.01, 0.1, 0.01]
+            }
+        }
+    },
+
+
+    "fog_params": {
+        "header": "Fog Parameters",
+        "fields": {
+            "fog_profile": {
+                "name": "Fog Profile", 
+                "type": "multi-select", 
+                "options": ["linear", "x", "y", "z"],
+                "default": "linear"
+            }, 
+            "fog_color_mean": {
+                "name": "Fog Color Means", 
+                "type": "array-of-number", 
+                "size": 4,
+                "default": [0.1, 0.2, 0.3, 1.0]
+            }, 
+            "fog_color_std": {
+                "name": "Fog Color Std. Deviations", 
+                "type": "array-of-number", 
+                "size": 4,
+                "default": [0.01, 0.02, 0.03, 0.001]
+            },
+            "fog_start_mean": {
+                "name": "Fog Start Mean", 
+                "type": "number", 
+                "default": 2.5
+            }, 
+            "fog_start_std": {
+                "name": "Fog Start Std. Deviation", 
+                "type": "number", 
+                "default": 1
+            },
+            "fog_end_mean": {
+                "name": "Fog End Mean", 
+                "type": "number", 
+                "default": 0
+            }, 
+            "fog_end_std": {
+                "name": "Fog End Std. Deviation", 
+                "type": "number", 
+                "default": 1
+            }
+        }
+    },
+
+
+    "prop_positions": {
+        "header": "Prop Positioning", 
+        "fields": {
+            "props_locations_means": {
+                "name": "Prop Location Means", 
+                "type": "props", 
+                "props": {
+                    "gate": {
+                        "name": "Gate", 
+                        "default": [[15, 15, -1.2, 0, 0, 1.57]]
+                    },
+                    "cutie": {
+                        "name": "Cutie", 
+                        "default": [[27, 20, 0, 0, 0, 1.57],[27, 20, 0, 0, 0, 1.57]]
+                    }, 
+                    "crucifix_tower": {
+                        "name": "Crucifix Tower", 
+                        "default": [[25, 25, 1, 0, 0, 1.57]]
+                    }
+                }
+            }, 
+            "props_locations_stds": {
+                "name": "Prop Location Std. Deviations", 
+                "type": "props", 
+                "props": {
+                    "gate": {
+                        "name": "Gate", 
+                        "default": [[2, 2, 2, 0.3, 0.3, 0.3]]
+                    },
+                    "cutie": {
+                        "name": "Cutie", 
+                        "default": [[2, 2, 1, 0.1, 0.1, 0.1],[2, 2, 1, 0.3, 0.3, 0.3]]
+                    }, 
+                    "crucifix_tower": {
+                        "name": "Crucifix Tower", 
+                        "default": [[1, 1, 1, 0.1, 0.1, 0.1]]
+                    }
+                }
+            }
+        }
+    },
+
+
+    "light_params": {
+        "header": "Light Parameters", 
+        "fields": {
+            "light_pose_mean": {
+                "name": "Light Pose Means", 
+                "type": "array-of-number", 
+                "size": 6,
+                "default": [0, 0, 0, 0, 0, 0]
+            }, 
+            "light_pose_std": {
+                "name": "Light Pose Std. Deviations",
+                "type": "array-of-number", 
+                "size": 6,
+                "default": [10, 10, 10, 1.2, 1.2, 1.2]
+            }, 
+            "light_diffuse_mean": {
+                "name": "Light Diffuse Means", 
+                "type": "array-of-number", 
+                "size": 4,
+                "default": [1, 1, 1, 1]
+            }, 
+            "light_diffuse_std": {
+                "name": "Light Diffuse Std. Deviations",
+                "type": "array-of-number", 
+                "size": 4,
+                "default": [0.1, 0.1, 0.1, 0.1]
+            },
+            "light_direction_mean": {
+                "name": "Light Direction Means", 
+                "type": "array-of-number", 
+                "size": 3,
+                "default": [0, 0, -1]
+            }, 
+            "light_direction_std": {
+                "name": "Light Direction Std. Deviations", 
+                "type": "array-of-number", 
+                "size": 3,
+                "default": [0.2, 0.2, 0.2]
+            }, 
+            "light_specular_mean": {
+                "name": "Light Specular Means", 
+                "type": "array-of-number", 
+                "size": 4,
+                "default": [0.1, 0.1, 0.1, 1]
+            }, 
+            "light_specular_std": {
+                "name": "Light Specular Std. Deviations", 
+                "type": "array-of-number", 
+                "size": 4,
+                "default": [0.01, 0.01, 0.01, 0.01]
+            }
+        }
+    }
 }
