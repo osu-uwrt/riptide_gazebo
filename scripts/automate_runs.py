@@ -3,6 +3,14 @@ import generateRuns
 import generateWorlds
 import automation_handler
 
+'''
+EXPLANATION OF NEW DATA LOADING SCHEME:
+With the GUI in development, we need a defined way to transfer data between them. This way will be JSON.
+- automate_runs.py will be passed a JSON object that is similar to params.json and will draw its data from that. Currently, while the GUI is in development, it draws its data from the defaults of the .json file.
+- The GUI uses params.json to figure out the input fields it should provide and to determine what the JSON file it should pass looks like.
+The JSON file is kept here, rather than the GUI, because this should work without the GUI, not the other way around.
+'''
+
 # Load in the data file 
 # Eventually, when GUI is done, we will just serialize the JSON and pass it in rather than loading from file
 # .json file is still needed even in that case for GUI because it defines the format that stuff displays in
