@@ -246,10 +246,6 @@
       <pose frame=''>1.94744 0.032804 0 0 -0 0</pose>
     </model>
     <state world_name='lake'>
-      <sim_time>260 104000000</sim_time>
-      <real_time>224 501256851</real_time>
-      <wall_time>1574207848 24681644</wall_time>
-      <iterations>103126</iterations>
       <model name='buoy'>
         <pose frame=''>2.03149 2.15982 -0.826071 0 -0 1.48658</pose>
         <scale>1 1 1</scale>
