@@ -18,6 +18,7 @@
   <depend>riptide_msgs</depend>
   <depend>rospy</depend>
   <depend>gazebo_ros</depend>
+  <depend>pymap3d-pip</depend>
   <exec_depend>gazebo</exec_depend>
 
   <export>
