@@ -6,7 +6,7 @@ from std_msgs.msg import Header
 from riptide_msgs.msg import Depth
 class DepthRemap():
     def __init__(self):
-        self.sub = rospy.Subscriber("depth/pressure", FluidPressure, self.depthCb)
+        self.sub = rospy.Subscriber("depth/pressure", FluidPressure, self.depthCb, queue_size=1)
         self.pub = rospy.Publisher("depth/raw", Depth, queue_size=10)
         self.surfacePressure = 101.325
         self.kPaPerM = 9.80638

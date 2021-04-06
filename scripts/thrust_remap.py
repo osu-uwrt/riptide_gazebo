@@ -22,7 +22,7 @@ class ThrustRemap(object):
             input_topic = "thrusters/%d/input" % i
             pub = rospy.Publisher(input_topic, FloatStamped, queue_size=1)
             self._pubs[i] = pub
-        self._sub = rospy.Subscriber("thruster_forces", Float32MultiArray, self.command_cb)
+        self._sub = rospy.Subscriber("thruster_forces", Float32MultiArray, self.command_cb, queue_size=1)
         
 
     def command_cb(self, msg):
