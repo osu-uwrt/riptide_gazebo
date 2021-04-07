@@ -13,7 +13,7 @@ class ImuRemap():
             vehicle = yaml.safe_load(stream)
             imu_topic = vehicle["imu"]["topic"]
 
-        self.sub = rospy.Subscriber(imu_topic + "/sim", Imu, self.imuCb)
+        self.sub = rospy.Subscriber(imu_topic + "/sim", Imu, self.imuCb, queue_size=1)
         self.pub = rospy.Publisher(imu_topic, Imu, queue_size=10)
 
     def imuCb(self, msg):
