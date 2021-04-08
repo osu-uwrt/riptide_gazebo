@@ -11,7 +11,7 @@
   
   <group ns="$(arg robot)">
     <param name="robot_description"
-            command="$(find xacro)/xacro '$(find riptide_descriptions)/robots/$(arg robot).xacro' --inorder
+            command="$(find xacro)/xacro '$(find riptide_descriptions)/robots/$(arg robot).xacro'
                     debug:=$(arg debug)
                     namespace:=$(arg robot)
                     inertial_reference_frame:=world" />
