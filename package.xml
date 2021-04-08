@@ -13,18 +13,13 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   
-  <depend>uuv_sensor_ros_plugins_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>std_msgs</depend>
   <depend>riptide_msgs</depend>
   <depend>rospy</depend>
   <depend>gazebo_ros</depend>
+  <depend>pymap3d-pip</depend>
   <exec_depend>gazebo</exec_depend>
-  <exec_depend>uuv_simulator</exec_depend>
-  <exec_depend>uuv_assistants</exec_depend>
-  <exec_depend>uuv_sensor_ros_plugins</exec_depend>
-  <exec_depend>uuv_gazebo_ros_plugins</exec_depend>
-  <exec_depend>uuv_descriptions</exec_depend>
 
   <export>
     <gazebo_ros gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>
