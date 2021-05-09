@@ -3,7 +3,7 @@
 import rospy
 from sensor_msgs.msg import Imu
 from std_msgs.msg import Header
-from riptide_msgs.msg import Depth
+from riptide_hardware.msg import Depth
 import yaml
 
 class ImuRemap():

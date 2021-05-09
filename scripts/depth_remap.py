@@ -3,7 +3,7 @@
 import rospy
 from sensor_msgs.msg import FluidPressure
 from std_msgs.msg import Header
-from riptide_msgs.msg import Depth
+from riptide_hardware.msg import Depth
 class DepthRemap():
     def __init__(self):
         self.sub = rospy.Subscriber("depth/pressure", FluidPressure, self.depthCb, queue_size=1)
