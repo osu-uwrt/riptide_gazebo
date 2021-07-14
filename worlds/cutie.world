@@ -245,6 +245,45 @@
       </link>
       <pose frame=''>1.94744 0.032804 0 0 -0 0</pose>
     </model>
+    <model name='alphabet_soup'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <must_be_base_link>1</must_be_base_link>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://alphabet_soup/meshes/textured.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://alphabet_soup/meshes/textured.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>1.94744 0.032804 0 0 -0 0</pose>
+    </model>
     <state world_name='lake'>
       <model name='buoy'>
         <pose frame=''>2.03149 2.15982 -0.826071 0 -0 1.48658</pose>
@@ -259,6 +298,16 @@
       <model name='cutie'>
         <pose frame=''>1.94744 0.032804 -0.663487 0 0 -1.53723</pose>
         <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>1.94744 0.032804 -0.663487 0 0 -1.53723</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='alphabet_soup'>
+        <pose frame=''>1.94744 0.032804 -0.663487 0 0 -1.53723</pose>
+        <scale>0.01 0.01 0.01</scale>
         <link name='link'>
           <pose frame=''>1.94744 0.032804 -0.663487 0 0 -1.53723</pose>
           <velocity>0 0 0 0 -0 0</velocity>
