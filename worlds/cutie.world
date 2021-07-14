@@ -306,10 +306,10 @@
         </link>
       </model>
       <model name='alphabet_soup'>
-        <pose frame=''>1.94744 0.032804 -0.663487 0 0 -1.53723</pose>
-        <scale>0.01 0.01 0.01</scale>
+        <pose frame=''>1.94744 -1 -0.8 1.5708 0 -1.5708</pose>
+        <scale>0.01 0.01  0.01</scale>
         <link name='link'>
-          <pose frame=''>1.94744 0.032804 -0.663487 0 0 -1.53723</pose>
+          <pose frame=''>1.94744 -1 -0.8 1.5708 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
