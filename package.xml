@@ -7,18 +7,22 @@
   <maintainer email="osu.uwrt@gmail.com">OSU UWRT</maintainer>
 
   <license>BSD</license>
+  <license>Apache 2.0</license>
 
   <url type="website">http://go.osu.edu/uwrt</url>
   <url type="repository">http://github.com/uwrt-osu/riptide_gazebo</url>
 
   <buildtool_depend>catkin</buildtool_depend>
   
+  <build_depend>message_generation</build_depend>
   <depend>sensor_msgs</depend>
   <depend>std_msgs</depend>
   <depend>rospy</depend>
   <depend>gazebo_ros</depend>
   <depend>pymap3d-pip</depend>
   <exec_depend>gazebo</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>ros_tcp_endpoint</exec_depend>
 
   <export>
     <gazebo_ros gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>
