@@ -1,6 +1,6 @@
 <!-- Spawns vehicle in the simulation -->
 <launch>
-  <arg name="robot" default="puddles" doc="Name of the vehicle to spawn"/>
+  <arg name="robot" default="tempest" doc="Name of the vehicle to spawn"/>
   <arg name="debug" default="0" doc="Starts the Gazebo plugins in debug mode for more verbose output"/>
   <arg name="x" default="0" doc="X coordinate of the vehicle's initial position (in ENU)"/>
   <arg name="y" default="0" doc="Y coordinate of the vehicle's initial position (in ENU)"/>    
