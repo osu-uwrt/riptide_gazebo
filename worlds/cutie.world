@@ -245,7 +245,7 @@
       </link>
       <pose frame=''>1.94744 0.032804 0 0 -0 0</pose>
     </model>
-    <model name='alphabet_soup'>
+    <model name='bootlegger'>
       <static>1</static>
       <link name='link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -253,7 +253,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://alphabet_soup/meshes/textured.obj</uri>
+              <uri>model://bootlegger/meshes/bootlegger.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -274,7 +274,7 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <mesh>
-              <uri>model://alphabet_soup/meshes/textured.obj</uri>
+              <uri>model://bootlegger/meshes/bootlegger.obj</uri>
             </mesh>
           </geometry>
         </visual>
@@ -305,16 +305,49 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='alphabet_soup'>
-        <pose frame=''>1.94744 -1 -0.8 1.5708 0 -1.5708</pose>
-        <scale>0.01 0.01  0.01</scale>
+      <model name='bootlegger'>
+        <pose frame=''>1.94744 -1 -0.8 0 0 0</pose>
+        <scale>1 1  1</scale>
         <link name='link'>
-          <pose frame=''>1.94744 -1 -0.8 1.5708 0 -1.5708</pose>
+          <pose frame=''>2 2 2 0 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      
+    <state world_name='lake'>
+      <model name='buoy'>
+        <pose frame=''>2.03149 2.15982 -0.826071 0 -0 1.48658</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>2.03149 2.15982 -0.826071 0 -0 1.48658</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='cutie'>
+        <pose frame=''>1.94744 0.032804 -0.663487 0 0 -1.53723</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>1.94744 0.032804 -0.663487 0 0 -1.53723</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='bootlegger'>
+        <pose frame=''>1.94744 -1 -0.8 0 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>2 2 2 0 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+
       <model name='world_ned'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
