@@ -1,6 +1,6 @@
-# Blender v2.93.4 OBJ File: 'bootlegger.blend'
+# Blender v2.93.4 OBJ File: 'gman.blend'
 # www.blender.org
-mtllib bootlegger.mtl
+mtllib gman.mtl
 o Plane
 v 0.000000 -0.304500 -0.615500
 v 0.000000 0.304500 -0.615500
