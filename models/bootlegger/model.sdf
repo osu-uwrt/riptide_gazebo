@@ -8,7 +8,7 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://bootlegger/meshes/bootlegger.obj</uri>
+            <uri>model://bootlegger/meshes/bootlegger.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -16,7 +16,7 @@
         <cast_shadows>false</cast_shadows>
         <geometry>
           <mesh>
-            <uri>model://bootlegger/meshes/bootlegger.obj</uri>
+            <uri>model://bootlegger/meshes/bootlegger.dae</uri>
           </mesh>
         </geometry>
       </visual>

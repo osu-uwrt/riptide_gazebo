@@ -8,7 +8,7 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://gman/meshes/gman.obj</uri>
+            <uri>model://gman/meshes/gman.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -16,7 +16,7 @@
         <cast_shadows>false</cast_shadows>
         <geometry>
           <mesh>
-            <uri>model://gman/meshes/gman.obj</uri>
+            <uri>model://gman/meshes/gman.dae</uri>
           </mesh>
         </geometry>
       </visual>
