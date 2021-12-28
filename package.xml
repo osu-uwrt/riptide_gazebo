@@ -1,26 +1,31 @@
 <?xml version="1.0"?>
-<package format="2">
-  <name>riptide_gazebo</name>
-  <version>0.0.1</version>
-  <description>Worlds, models, and code to interface with the robot simulator gazebo</description>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>riptide_gazebo2</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="cjtucker321@gmail.com">coalman321</maintainer>
+  <license>TODO: License declaration</license>
 
-  <maintainer email="osu.uwrt@gmail.com">OSU UWRT</maintainer>
-
-  <license>BSD</license>
-
-  <url type="website">http://go.osu.edu/uwrt</url>
-  <url type="repository">http://github.com/uwrt-osu/riptide_gazebo</url>
-
-  <buildtool_depend>catkin</buildtool_depend>
-  
+  <depend>uuv_sensor_ros_plugins_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>std_msgs</depend>
-  <depend>rospy</depend>
+  <depend>riptide_msgs</depend>
+  <depend>rclpy</depend>
   <depend>gazebo_ros</depend>
-  <depend>pymap3d-pip</depend>
   <exec_depend>gazebo</exec_depend>
+  <exec_depend>uuv_simulator</exec_depend>
+  <exec_depend>uuv_assistants</exec_depend>
+  <exec_depend>uuv_sensor_ros_plugins</exec_depend>
+  <exec_depend>uuv_gazebo_ros_plugins</exec_depend>
+  <exec_depend>uuv_descriptions</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
 
   <export>
-    <gazebo_ros gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>
+    <build_type>ament_python</build_type>
   </export>
 </package>
