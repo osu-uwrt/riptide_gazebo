@@ -1,27 +1,41 @@
 #!/usr/bin/env python3
 
-import rospy
+import rclpy
+from rclpy.node import Node
+from rclpy.qos import qos_profile_system_default, qos_profile_sensor_data
 from sensor_msgs.msg import Imu
-from std_msgs.msg import Header
-from riptide_hardware.msg import Depth
 import yaml
 
-class ImuRemap():
+class ImuRemap(Node):
     def __init__(self):
-        # Get the mass and COM
-        with open(rospy.get_param('~vehicle_config'), 'r') as stream:
+        super().__init__('imu_remap')
+
+        self.declare_parameter('vehicle_config', '/config/tempest.yaml')
+        self._vehicle_config_path = self.get_parameter("vehicle_config")
+
+        # pull vehicle parameters
+        with open(self._vehicle_config_path, 'r') as stream:
             vehicle = yaml.safe_load(stream)
             imu_topic = vehicle["imu"]["topic"]
 
-        self.sub = rospy.Subscriber(imu_topic + "/sim", Imu, self.imuCb, queue_size=1)
-        self.pub = rospy.Publisher(imu_topic, Imu, queue_size=10)
+        self.sub = self.create_subscription(Imu, imu_topic + "/sim", self.imuCb, qos_profile_sensor_data)
+        self.pub = self.create_publisher(Imu, imu_topic, qos_profile_sensor_data)
 
     def imuCb(self, msg):
         msg.header.frame_id = msg.header.frame_id.replace("_revolute", "")
         self.pub.publish(msg)
 
+def main(args=None):
+    rclpy.init(args=args)
+
+    node = ImuRemap()
+
+    rclpy.spin(node)
+
+    rclpy.shutdown()
+
+
 if __name__ == '__main__':
-    rospy.init_node('imu_remap')
-    ImuRemap()
-    rospy.spin()
+    main()
+    
     

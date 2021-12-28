@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
 
-import rospy
+import rclpy
+from rclpy.node import Node
+from rclpy.qos import qos_profile_system_default, qos_profile_sensor_data
 import yaml
 import math
-import numpy
 from std_msgs.msg import Float32MultiArray, Header
-from uuv_gazebo_ros_plugins_msgs.msg import FloatStamped
+from gazebo_msgs.msg import FloatStamped
 
-class ThrustRemap(object):
-
+class ThrustRemap(Node):
     def __init__(self):
-        self._vehicle_config_path = rospy.get_param("~vehicle_config")
+        super().__init__('thrust_remap')
+
+        self.declare_parameter('vehicle_config', '/config/tempest.yaml')
+
+        self._vehicle_config_path = self.get_parameter("vehicle_config")
         self._pubs = {}
         
         with open(self._vehicle_config_path, 'r') as stream:
@@ -20,10 +24,9 @@ class ThrustRemap(object):
 
         for i in range(self.num_of_thrusters):
             input_topic = "thrusters/%d/input" % i
-            pub = rospy.Publisher(input_topic, FloatStamped, queue_size=1)
-            self._pubs[i] = pub
-        self._sub = rospy.Subscriber("thruster_forces", Float32MultiArray, self.command_cb, queue_size=1)
-        
+            self._pubs[i] = self.create_publisher(FloatStamped, input_topic, qos_profile_sensor_data)
+
+        self._sub = self.create_subscription(Float32MultiArray, "thruster_forces", self.command_cb, qos_profile_system_default)
 
     def command_cb(self, msg):
         """Convert thrust to angular velocity commands for uuv_thruster_ros_plugin"""
@@ -38,7 +41,15 @@ class ThrustRemap(object):
             cmd.data = ang_vel
             self._pubs[i].publish(cmd)
 
-if __name__ == "__main__":
-    rospy.init_node('thrust_remap')
-    tc = ThrustRemap()
-    rospy.spin()
+def main(args=None):
+    rclpy.init(args=args)
+
+    node = ThrustRemap()
+
+    rclpy.spin(node)
+
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
