@@ -2,17 +2,19 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>riptide_gazebo2</name>
-  <version>0.0.0</version>
+  <version>0.0.1</version>
   <description>TODO: Package description</description>
   <maintainer email="cjtucker321@gmail.com">coalman321</maintainer>
   <license>TODO: License declaration</license>
 
-  <depend>uuv_sensor_ros_plugins_msgs</depend>
+  <depend>uuv_sensor_ros_plugins</depend>
+  <depend>uuv_gazebo_ros_plugins_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>std_msgs</depend>
-  <depend>riptide_msgs</depend>
+  <depend>riptide_msgs2</depend>
   <depend>rclpy</depend>
   <depend>gazebo_ros</depend>
+
   <exec_depend>gazebo</exec_depend>
   <exec_depend>uuv_simulator</exec_depend>
   <exec_depend>uuv_assistants</exec_depend>
