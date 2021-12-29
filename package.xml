@@ -18,8 +18,6 @@
   <exec_depend>gazebo</exec_depend>
   <exec_depend>uuv_simulator</exec_depend>
   <exec_depend>uuv_assistants</exec_depend>
-  <exec_depend>uuv_sensor_ros_plugins</exec_depend>
-  <exec_depend>uuv_gazebo_ros_plugins</exec_depend>
   <exec_depend>uuv_descriptions</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
