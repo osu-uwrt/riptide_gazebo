@@ -17,15 +17,15 @@ class ThrustRemap(Node):
         
         self._pubs = {}
         
-        self.get_logger().info('Thrust remmaping using config file {}'.format(self._vehicle_config_path))
+        self.get_logger().info('Thrust remapping using config file {}'.format(self._vehicle_config_path))
         with open(self._vehicle_config_path, 'r') as stream:
             config = yaml.safe_load(stream)
             self.num_of_thrusters = len(config['thrusters'])
             self._coeff = config['thruster']['rotor_constant']
 
         for i in range(self.num_of_thrusters):
-            input_topic = "thrusters/thruster%d/input" % i
-            self._pubs[i] = self.create_publisher(FloatStamped, input_topic, qos_profile_sensor_data)
+            input_topic = "thrusters/id_%d/input" % i
+            self._pubs[i] = self.create_publisher(FloatStamped, input_topic, 10)
 
         self._sub = self.create_subscription(Float32MultiArray, "thruster_forces", self.command_cb, qos_profile_system_default)
 

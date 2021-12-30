@@ -1,8 +1,10 @@
 import launch
-from launch.actions import DeclareLaunchArgument
+import os
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
 from ament_index_python.packages import get_package_share_directory
-from launch_ros.actions import ComposableNodeContainer, Node
-from launch_ros.descriptions import ComposableNode
+from launch.actions.group_action import GroupAction
+from launch_ros.actions import Node, PushRosNamespace
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
 
@@ -12,7 +14,7 @@ def generate_launch_description():
     ld.add_action(
         DeclareLaunchArgument(
             'robot',
-            default_value='puddles',
+            default_value='tempest',
             description='name of the robot to use'
         )
     )
@@ -28,89 +30,40 @@ def generate_launch_description():
         launch.substitutions.TextSubstitution(text='.yaml')
     ]
 
-    # add the depth remap
-    ld.add_action(  
-        Node(
-            package='riptide_gazebo2',
-            executable='depth_remap',
-            name='depth_remap',
-            respawn=True,
-            output='screen',
-            namespace=robot,
-        )
+    stereoLaunch = os.path.join(
+        get_package_share_directory('stereo_image_proc'),
+        'launch',
+        'stereo_image_proc.launch.py'
     )
 
-    # add the kill switch publisher
-    ld.add_action(
-        Node(
-            package='riptide_gazebo2',
-            executable='kill_switch_publisher',
-            name='kill_switch_publisher',
-            respawn=True,
-            output='screen',
-            namespace=robot,
-        )
+    ld.add_action( 
+        GroupAction([
+            PushRosNamespace(robot), 
+            Node(package='riptide_gazebo2', executable='depth_remap', name='depth_remap', respawn=True, output='screen'),
+            Node( 
+                package='riptide_gazebo2', executable='imu_remap', name='imu_remap', respawn=True, output='screen',
+                parameters = [
+                    {'vehicle_config': configFile}
+                ]
+            ),
+            Node(
+                package='riptide_gazebo2', executable='thrust_remap', name='thrust_remap', respawn=True, output='screen',
+                parameters = [
+                    {'vehicle_config': configFile}
+                ]
+            )
+        ])
     )
 
-    # add the Imu republisher
-    ld.add_action(  
-        Node(
-            package='riptide_gazebo2',
-            executable='imu_remap',
-            name='imu_remap',
-            respawn=True,
-            output='screen',
-            namespace=robot,
-            
-            # use the parameters on the node
-            parameters = [
-                {'vehicle_config': configFile}
-            ]
+    ld.add_action(IncludeLaunchDescription(
+            launch_description_source= PythonLaunchDescriptionSource(stereoLaunch),
+            launch_arguments={
+                'launch_image_proc': 'true',
+                'approximate_sync': 'true',
+                'left_namespace': [robot, '/stereo/left'],
+                'right_namespace': [robot, '/stereo/right'],
+            }.items(),
         )
-    )
-
-    # add the thrust republisher
-    ld.add_action(  
-        Node(
-            package='riptide_gazebo2',
-            executable='thrust_remap',
-            name='thrust_remap',
-            respawn=True,
-            output='screen',
-            namespace=robot,
-            
-            # use the parameters on the node
-            parameters = [
-                {'vehicle_config': configFile}
-            ]
-        )
-    )
-
-    # add the camera publisher
-    ld.add_action(  
-        ComposableNodeContainer(
-            package='rclcpp_components', executable='component_container',
-            name='stereo_image_proc_container', 
-            namespace=[robot, "/stereo"],
-            composable_node_descriptions=[
-                ComposableNode(
-                    package='stereo_image_proc',
-                    plugin='stereo_image_proc::DisparityNode',
-                    parameters=[{
-                        'approximate_sync': True,
-                        'use_system_default_qos': False,
-                    }]
-                ),
-                ComposableNode(
-                    package='stereo_image_proc',
-                    plugin='stereo_image_proc::PointCloudNode',
-                    parameters=[{
-                        'approximate_sync': True,
-                        'use_system_default_qos': False,
-                    }]
-                ),
-            ],
-        ),
     )
     
     return ld

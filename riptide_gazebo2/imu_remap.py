@@ -13,7 +13,7 @@ class ImuRemap(Node):
         self.declare_parameter('vehicle_config', '/config/tempest.yaml')
         self._vehicle_config_path = self.get_parameter("vehicle_config").value
 
-        self.get_logger().info('IMU remmaping using config file {}'.format(self._vehicle_config_path))
+        self.get_logger().info('IMU remapping using config file {}'.format(self._vehicle_config_path))
 
         # pull vehicle parameters
         with open(self._vehicle_config_path, 'r') as stream:

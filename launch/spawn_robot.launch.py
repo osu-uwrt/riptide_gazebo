@@ -3,7 +3,6 @@ from launch.launch_description import LaunchDescription
 import xacro
 from launch.actions import DeclareLaunchArgument, OpaqueFunction, GroupAction
 from ament_index_python.packages import get_package_share_directory, get_package_prefix
-from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node, PushRosNamespace
 from launch.substitutions import LaunchConfiguration as LC
 import os
@@ -19,15 +18,13 @@ def evaluate_xacro(context, *args, **kwargs):
     pitch = LC('pitch').perform(context)
     yaw = LC('yaw').perform(context)
 
-    xacroPrefix = get_package_prefix('xacro')
-
     modelPath = launch.substitutions.PathJoinSubstitution([
         get_package_share_directory('riptide_descriptions2'),
         'robots',
         robot + '.xacro'
     ]).perform(context)
 
-    print('using model', modelPath)
+    print('using model definition', modelPath)
 
     xacroData = xacro.process_file(modelPath,  mappings={'debug': debug, 'namespace': robot, 'inertial_reference_frame':'world'}).toxml()
     xacroFilePath = os.path.join(
@@ -38,6 +35,8 @@ def evaluate_xacro(context, *args, **kwargs):
     f = open(xacroFilePath, "w")
     f.write(xacroData)
     f.close()
+
+    print('Converted model path', xacroFilePath)
 
    # URDF spawner
     args=('-gazebo_namespace /gazebo '
