@@ -1,0 +1,2 @@
+# Riptide Gazebo 2
+ROS2 release of riptide gazebo simulation package. Sometimes there may be an issue running the launch file. if that occurs, run the following command or add it to your `.bashrc` file. `source /usr/share/gazebo/setup.sh`
