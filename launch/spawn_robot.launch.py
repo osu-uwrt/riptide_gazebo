@@ -91,15 +91,29 @@ def evaluate_xacro(context, *args, **kwargs):
     ]
 
 def generate_launch_description():
-        return LaunchDescription([
-        DeclareLaunchArgument('robot', default_value='tempest', description='name of the robot to spawn'),
-        DeclareLaunchArgument('debug', default_value='0', description='whether to put gazebo into debug mode'),
-        DeclareLaunchArgument('x', default_value='0.0', description="X coordinate of the vehicle's initial position (in ENU)"),
-        DeclareLaunchArgument('y', default_value='0.0',  description="Y coordinate of the vehicle's initial position (in ENU)"),
-        DeclareLaunchArgument('z', default_value='0.0',  description="Z coordinate of the vehicle's initial position (in ENU)"),
-        DeclareLaunchArgument('roll', default_value='0.0', description="Z coordinate of the vehicle's initial position (in ENU)"),
-        DeclareLaunchArgument('pitch', default_value='0.0', description="Z coordinate of the vehicle's initial position (in ENU)"),
-        DeclareLaunchArgument('yaw', default_value='0.0', description="Z coordinate of the vehicle's initial position (in ENU)"),
-        OpaqueFunction(function=evaluate_xacro)
+
+    # Message to tf
+    sensor_remap = os.path.join(
+        get_package_share_directory('riptide_gazebo2'),
+        'launch',
+        'sensor_remap.launch.py'
+    )
+
+    return LaunchDescription([
+    DeclareLaunchArgument('robot', default_value='tempest', description='name of the robot to spawn'),
+    DeclareLaunchArgument('debug', default_value='0', description='whether to put gazebo into debug mode'),
+    DeclareLaunchArgument('x', default_value='0.0', description="X coordinate of the vehicle's initial position (in ENU)"),
+    DeclareLaunchArgument('y', default_value='0.0',  description="Y coordinate of the vehicle's initial position (in ENU)"),
+    DeclareLaunchArgument('z', default_value='0.0',  description="Z coordinate of the vehicle's initial position (in ENU)"),
+    DeclareLaunchArgument('roll', default_value='0.0', description="Z coordinate of the vehicle's initial position (in ENU)"),
+    DeclareLaunchArgument('pitch', default_value='0.0', description="Z coordinate of the vehicle's initial position (in ENU)"),
+    DeclareLaunchArgument('yaw', default_value='0.0', description="Z coordinate of the vehicle's initial position (in ENU)"),
+    OpaqueFunction(function=evaluate_xacro),
+    IncludeLaunchDescription(
+        AnyLaunchDescriptionSource(sensor_remap),
+        launch_arguments=[
+            ('robot', LC('robot')),
+        ]
+    )
     ]) 
 
