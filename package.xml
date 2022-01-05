@@ -19,6 +19,8 @@
   <exec_depend>uuv_simulator</exec_depend>
   <exec_depend>uuv_assistants</exec_depend>
   <exec_depend>uuv_descriptions</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>riptide_descriptions2</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
@@ -26,6 +28,7 @@
   <test_depend>python3-pytest</test_depend>
 
   <export>
+    <gazebo_ros gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models" />
     <build_type>ament_python</build_type>
   </export>
 </package>
