@@ -1,5 +1,5 @@
 <launch>
-    <arg name="robot" default="puddles" doc="Name of the vehicle"/>
+    <arg name="robot" default="tempest" doc="Name of the vehicle"/>
 
     <group ns="$(arg robot)">
         <node pkg="riptide_gazebo" name="depth_remap" type="depth_remap.py" />

@@ -20,6 +20,10 @@
   <depend>pymap3d-pip</depend>
   <exec_depend>gazebo</exec_depend>
 
+  <exec_depend>robot_localization</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+
   <export>
     <gazebo_ros gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>
   </export>

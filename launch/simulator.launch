@@ -1,0 +1,9 @@
+<launch>  
+    <node name="tf2_server" pkg="tf2_ros" type="buffer_server" output="screen"/>
+    <include file="$(find riptide_gazebo)/launch/world.launch">
+        <arg name="world" value="prequal"/>
+    </include>
+    <include file="$(find riptide_gazebo)/launch/spawn_robot.launch"/>
+    <include ns="tempest" file="$(find riptide_localization)/launch/navigation.launch"/>
+</launch>
+  

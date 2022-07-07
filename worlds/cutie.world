@@ -26,7 +26,7 @@
           <speed>12</speed>
         </clouds>
       </sky>
-      <shadows>1</shadows>
+      <shadows>0</shadows>
       <background>0.7 0.7 0.7 1</background>
     </scene>
     <spherical_coordinates>
@@ -41,10 +41,10 @@
       <diffuse>1 1 1 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <direction>0.3 0.3 -1</direction>
-      <cast_shadows>1</cast_shadows>
+      <cast_shadows>0</cast_shadows>
     </light>
     <light name='sun' type='directional'>
-      <cast_shadows>1</cast_shadows>
+      <cast_shadows>0</cast_shadows>
       <pose frame=''>0 0 10 0 -0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.2 0.2 0.2 1</specular>
