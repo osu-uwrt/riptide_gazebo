@@ -20,6 +20,7 @@
                     </geometry>
                 </visual>
             </link>
+            <plugin name="Tempest_Move_Plugin" filename="libTempest_Move_Plugin.so"></plugin>
         </model>
     </world>
 </sdf>

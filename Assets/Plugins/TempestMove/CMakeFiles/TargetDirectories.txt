@@ -1,0 +1,3 @@
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestMove/CMakeFiles/Tempest_Move_Plugin.dir
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestMove/CMakeFiles/edit_cache.dir
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestMove/CMakeFiles/rebuild_cache.dir

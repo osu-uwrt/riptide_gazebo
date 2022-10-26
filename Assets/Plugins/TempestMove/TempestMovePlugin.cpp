@@ -1,5 +1,5 @@
-#ifndef _TEMPEST_MOVE_PLUGIN_
-#define _TEMPEST_MOVE_PLUGIN_
+#ifndef _TEMPEST_MOVE_PLUGIN_HH_
+#define _TEMPEST_MOVE_PLUGIN_HH_
 
 #include <gazebo/gazebo.hh>
 #include <gazebo/physics/physics.hh>
@@ -8,19 +8,13 @@
 namespace gazebo{
     class TempestMovePlugin : public ModelPlugin{
         public: TempestMovePlugin() : ModelPlugin(){
-            printf("This is the tempest move plugin!")
-        }
-
-        public: void Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/){
-            this->model = _parent;
-
-            this->updateConnection = event::Events::ConnectWorldUpdateBegin(std::bind(&ModelPush::OnUpdate, this))
+            printf("This is the tempest move plugin!");
         }
 
         public: void OnUpdate(){
 
         }
-    }
+    };
 }
 
 #endif
