@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
-<sdf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="sim.xsd" version="1.9">
+<sdf version="1.9">
     <world name="riptide_sim">
         <physics name="1ms" type="ignored">
             <max_step_size>0.001</max_step_size>
             <real_time_factor>1.0</real_time_factor>
         </physics>
+        <gravity>0 0 0</gravity>
         <model name="tempest">
             <pose>0 0 0 0 0 0</pose>
             <link name="tempest_link">
-                <gravity>false</gravity>
+                <!-- <gravity>0</gravity> -->
                 <!-- <must_be_base_link>true</must_be_base_link> Force this link to control model...???  -->
                 <visual name="tempestMesh">
                     <geometry>
@@ -20,7 +20,6 @@
                     </geometry>
                 </visual>
             </link>
-            <plugin name="Tempest_Move_Plugin" filename="libTempest_Move_Plugin.so"></plugin>
         </model>
     </world>
 </sdf>

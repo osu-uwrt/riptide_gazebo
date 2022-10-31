@@ -5,7 +5,7 @@
       <real_time_factor>1</real_time_factor>
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
-    <gravity>0 0 -9.8000000000000007</gravity>
+    <gravity>0 0 0</gravity>
     <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
     <scene>
@@ -60,5 +60,21 @@
       <static>false</static>
       <self_collide>false</self_collide>
     </model>
+    <model name="tempest">
+      <pose>0 0 0 0 0 0</pose>
+      <link name="tempest_link">
+          <!-- <gravity>0</gravity> -->
+          <!-- <must_be_base_link>true</must_be_base_link> Force this link to control model...???  -->
+          <visual name="tempestMesh">
+              <geometry>
+                  <mesh>
+                      <scale>.05 .05 .05</scale>
+                      <uri>Assets/Models/Tempest_Culled_Decimated.fbx</uri>
+                  </mesh>
+              </geometry>
+          </visual>
+      </link>
+      <!-- <plugin name="Tempest_Move_Plugin" filename="libTempest_Move_Plugin.so"></plugin> -->
+  </model>
   </world>
 </sdf>
