@@ -1,0 +1,45 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/toby/osu-uwrt/riptide_software/install/riptide_msgs2/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_world_ros_plugins/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_world_ros_plugins_msgs/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_world_plugins/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_thruster_manager/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_sensor_ros_plugins/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_sensor_ros_plugins_msgs/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_gazebo_ros_plugins/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_gazebo_ros_plugins_msgs/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_gazebo_plugins/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_control_msgs/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/uuv_auv_control_allocator/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/stereo_image_proc/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/nortek_dvl/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/mynteye_wrapper_d/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_msgs/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/micro_ros_agent/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/micro_ros_msgs/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/image_view/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/image_rotate/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/image_publisher/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/image_proc/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/drive_base_msgs/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/depth_image_proc/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/toby/osu-uwrt/riptide_software/src/riptide_autonomy/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

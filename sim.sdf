@@ -7,14 +7,14 @@
         </physics>
         <gravity>0 0 0</gravity>
         <model name="tempest">
-            <pose>0 0 0 0 0 0</pose>
+            <pose>0 0 0 1.5 0 1.5</pose>
             <link name="tempest_link">
                 <!-- <gravity>0</gravity> -->
                 <!-- <must_be_base_link>true</must_be_base_link> Force this link to control model...???  -->
                 <visual name="tempestMesh">
                     <geometry>
                         <mesh>
-                            <scale>.05 .05 .05</scale>
+                            <scale>1 1 1</scale>
                             <uri>Assets/Models/Tempest_Culled_Decimated.fbx</uri>
                         </mesh>
                     </geometry>
