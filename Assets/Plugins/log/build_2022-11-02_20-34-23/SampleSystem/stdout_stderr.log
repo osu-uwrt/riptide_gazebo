@@ -1,0 +1,237 @@
+-- Looking for gz-plugin2 -- found version 2.0.0
+-- Searching for dependencies of gz-plugin2
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Searching for dependencies of gz-utils2
+-- Searching for <gz-utils2> component [cli]
+-- Looking for gz-utils2-cli -- found version 2.0.0
+-- Searching for dependencies of gz-utils2-cli
+-- Searching for <gz-plugin2> component [register]
+-- Looking for gz-plugin2-register -- found version 2.0.0
+-- Searching for dependencies of gz-plugin2-register
+-- Looking for gz-sim7 -- found version 7.0.0
+-- Searching for dependencies of gz-sim7
+-- Looking for sdformat13 -- found version 13.0.1
+-- Searching for dependencies of sdformat13
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 9.0.0
+-- Looking for gz-math7 -- found version 7.0.2
+-- Searching for dependencies of gz-math7
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Looking for gz-plugin2 -- found version 2.0.0
+-- Searching for dependencies of gz-plugin2
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Searching for <gz-plugin2> component [loader]
+-- Looking for gz-plugin2-loader -- found version 2.0.0
+-- Searching for dependencies of gz-plugin2-loader
+-- Searching for <gz-plugin2> component [register]
+-- Looking for gz-transport12 -- found version 12.0.0
+-- Searching for dependencies of gz-transport12
+-- Config-file not installed for ZeroMQ -- checking for pkg-config
+-- Checking for module 'libzmq >= 4'
+--   Found libzmq , version 4.3.4
+-- Checking for module 'uuid'
+--   Found uuid, version 2.37.2
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Looking for gz-msgs9 -- found version 9.0.0
+-- Searching for dependencies of gz-msgs9
+-- Looking for gz-math7 -- found version 7.0.2
+-- Searching for <gz-transport12> component [log]
+-- Looking for gz-transport12-log -- found version 12.0.0
+-- Searching for dependencies of gz-transport12-log
+-- Looking for gz-msgs9 -- found version 9.0.0
+-- Looking for gz-common5 -- found version 5.0.0
+-- Searching for dependencies of gz-common5
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <gz-common5> component [profiler]
+-- Looking for gz-common5-profiler -- found version 5.0.0
+-- Searching for dependencies of gz-common5-profiler
+-- Searching for <gz-common5> component [events]
+-- Looking for gz-common5-events -- found version 5.0.0
+-- Searching for dependencies of gz-common5-events
+-- Looking for gz-math7 -- found version 7.0.2
+-- Searching for <gz-common5> component [av]
+-- Looking for gz-common5-av -- found version 5.0.0
+-- Searching for dependencies of gz-common5-av
+-- Checking for module 'libswscale'
+--   Found libswscale, version 5.9.100
+-- Checking for module 'libavdevice >= 56.4.100'
+--   Found libavdevice , version 58.13.100
+-- Checking for module 'libavformat'
+--   Found libavformat, version 58.76.100
+-- Checking for module 'libavcodec'
+--   Found libavcodec, version 58.134.100
+-- Checking for module 'libavutil'
+--   Found libavutil, version 56.70.100
+-- Looking for gz-fuel_tools8 -- found version 8.0.0
+-- Searching for dependencies of gz-fuel_tools8
+-- Checking for module 'jsoncpp'
+--   Found jsoncpp, version 1.9.5
+-- Checking for module 'libzip'
+--   Found libzip, version 1.7.3
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Looking for gz-common5 -- found version 5.0.0
+-- Looking for gz-math7 -- found version 7.0.2
+-- Looking for gz-msgs9 -- found version 9.0.0
+-- Looking for gz-gui7 -- found version 7.0.0
+-- Searching for dependencies of gz-gui7
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Looking for gz-math7 -- found version 7.0.2
+-- Looking for gz-common5 -- found version 5.0.0
+-- Looking for gz-plugin2 -- found version 2.0.0
+-- Looking for gz-transport12 -- found version 12.0.0
+-- Looking for gz-rendering7 -- found version 7.0.0
+-- Searching for dependencies of gz-rendering7
+-- Looking for gz-math7 -- found version 7.0.2
+-- Searching for dependencies of gz-math7
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Searching for <gz-math7> component [eigen3]
+-- Looking for gz-math7-eigen3 -- found version 7.0.2
+-- Searching for dependencies of gz-math7-eigen3
+-- Looking for gz-common5 -- found version 5.0.0
+-- Searching for dependencies of gz-common5
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <gz-common5> component [graphics]
+-- Looking for gz-common5-graphics -- found version 5.0.0
+-- Searching for dependencies of gz-common5-graphics
+-- Looking for gz-math7 -- found version 7.0.2
+-- Found GzAssimp: TRUE (found version "5.2.0") 
+-- Searching for <gz-common5> component [events]
+-- Searching for <gz-common5> component [geospatial]
+-- Looking for gz-common5-geospatial -- found version 5.0.0
+-- Searching for dependencies of gz-common5-geospatial
+-- Looking for gz-math7 -- found version 7.0.2
+-- Looking for gz-common5 -- found version 5.0.0
+-- Looking for gz-plugin2 -- found version 2.0.0
+-- Searching for dependencies of gz-plugin2
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Searching for <gz-plugin2> component [all]
+-- Looking for all libraries of gz-plugin2 -- found version 2.0.0
+-- Looking for gz-plugin2 -- found version 2.0.0
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Looking for gz-msgs9 -- found version 9.0.0
+-- Looking for gz-physics6 -- found version 6.0.0
+-- Searching for dependencies of gz-physics6
+-- Looking for gz-math7 -- found version 7.0.2
+-- Looking for gz-plugin2 -- found version 2.0.0
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Searching for <gz-physics6> component [heightmap]
+-- Looking for gz-physics6-heightmap -- found version 6.0.0
+-- Searching for dependencies of gz-physics6-heightmap
+-- Looking for gz-common5 -- found version 5.0.0
+-- Searching for <gz-physics6> component [mesh]
+-- Looking for gz-physics6-mesh -- found version 6.0.0
+-- Searching for dependencies of gz-physics6-mesh
+-- Looking for gz-common5 -- found version 5.0.0
+-- Searching for <gz-physics6> component [sdf]
+-- Looking for gz-physics6-sdf -- found version 6.0.0
+-- Searching for dependencies of gz-physics6-sdf
+-- Looking for sdformat13 -- found version 13.0.1
+-- Looking for gz-sensors7 -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7
+-- Looking for gz-math7 -- found version 7.0.2
+-- Looking for gz-common5 -- found version 5.0.0
+-- Looking for gz-transport12 -- found version 12.0.0
+-- Looking for gz-rendering7 -- found version 7.0.0
+-- Looking for gz-msgs9 -- found version 9.0.0
+-- Looking for sdformat13 -- found version 13.0.1
+-- Searching for <gz-sensors7> component [air_pressure]
+-- Looking for gz-sensors7-air_pressure -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-air_pressure
+-- Searching for <gz-sensors7> component [altimeter]
+-- Looking for gz-sensors7-altimeter -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-altimeter
+-- Searching for <gz-sensors7> component [imu]
+-- Looking for gz-sensors7-imu -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-imu
+-- Searching for <gz-sensors7> component [force_torque]
+-- Looking for gz-sensors7-force_torque -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-force_torque
+-- Searching for <gz-sensors7> component [logical_camera]
+-- Looking for gz-sensors7-logical_camera -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-logical_camera
+-- Searching for <gz-sensors7> component [magnetometer]
+-- Looking for gz-sensors7-magnetometer -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-magnetometer
+-- Searching for <gz-sensors7> component [navsat]
+-- Looking for gz-sensors7-navsat -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-navsat
+-- Searching for <gz-sensors7> component [rendering]
+-- Looking for gz-sensors7-rendering -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-rendering
+-- Searching for <gz-sensors7> component [lidar]
+-- Looking for gz-sensors7-lidar -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-lidar
+-- Searching for <gz-sensors7> component [gpu_lidar]
+-- Looking for gz-sensors7-gpu_lidar -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-gpu_lidar
+-- Searching for <gz-sensors7> component [camera]
+-- Looking for gz-sensors7-camera -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-camera
+-- Searching for <gz-sensors7> component [boundingbox_camera]
+-- Looking for gz-sensors7-boundingbox_camera -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-boundingbox_camera
+-- Searching for <gz-sensors7> component [segmentation_camera]
+-- Looking for gz-sensors7-segmentation_camera -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-segmentation_camera
+-- Searching for <gz-sensors7> component [depth_camera]
+-- Looking for gz-sensors7-depth_camera -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-depth_camera
+-- Searching for <gz-sensors7> component [rgbd_camera]
+-- Looking for gz-sensors7-rgbd_camera -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-rgbd_camera
+-- Searching for <gz-sensors7> component [thermal_camera]
+-- Looking for gz-sensors7-thermal_camera -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-thermal_camera
+-- Searching for <gz-sensors7> component [wide_angle_camera]
+-- Looking for gz-sensors7-wide_angle_camera -- found version 7.0.0
+-- Searching for dependencies of gz-sensors7-wide_angle_camera
+-- Looking for gz-rendering7 -- found version 7.0.0
+-- Looking for gz-math7 -- found version 7.0.2
+-- Looking for gz-utils2 -- found version 2.0.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem
+[35m[1mConsolidate compiler generated dependencies of target SampleSystem[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/SampleSystem.dir/SampleSystem.cpp.o[0m
+In file included from [01m[K/usr/include/gz/sim7/ignition/gazebo/Model.hh:19[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose/SampleSystem.cpp:5[m[K:
+[01m[K/usr/include/gz/sim7/ignition/gazebo/config.hh:49:72:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: ignition namespace is deprecated! Use gz instead![m[K’
+   49 |     #pragma message("ignition namespace is deprecated! Use gz instead!"[01;36m[K)[m[K
+      |                                                                        [01;36m[K^[m[K
+In file included from [01m[K/usr/include/gz/plugin2/ignition/plugin/Register.hh:19[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose/SampleSystem.cpp:8[m[K:
+[01m[K/usr/include/gz/plugin2/ignition/plugin/config.hh:39:72:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: ignition namespace is deprecated! Use gz instead![m[K’
+   39 |     #pragma message("ignition namespace is deprecated! Use gz instead!"[01;36m[K)[m[K
+      |                                                                        [01;36m[K^[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose/SampleSystem.cpp:15:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kignition::gazebo[m[K’ has not been declared
+   15 |       : public ignition::[01;31m[Kgazebo[m[K::System,
+      |                          [01;31m[K^~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose/SampleSystem.cpp:15:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[KSystem[m[K’
+   15 |       : public ignition::gazebo::[01;31m[KSystem[m[K,
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose/SampleSystem.cpp:16:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kpublic[m[K’
+   16 |         [01;31m[Kpublic[m[K ignition::gazebo::ISystemConfigure,
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose/SampleSystem.cpp:49:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kignition::gazebo[m[K’ has not been declared
+   49 |                     ignition::[01;31m[Kgazebo[m[K::System,
+      |                               [01;31m[K^~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose/SampleSystem.cpp:50:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kuwrt_gz::MyPlugin::ISystemConfigure[m[K’ has not been declared
+   50 |                     [01;31m[Kuwrt_gz[m[K::MyPlugin::ISystemConfigure,
+      |                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose/SampleSystem.cpp:51:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kuwrt_gz::MyPlugin::ISystemPostUpdate[m[K’ has not been declared
+   51 |                     [01;31m[Kuwrt_gz[m[K::MyPlugin::ISystemPostUpdate)
+      |                     [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/plugin2/gz/plugin/Register.hh:22[m[K,
+                 from [01m[K/usr/include/gz/plugin2/ignition/plugin/Register.hh:18[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose/SampleSystem.cpp:8[m[K:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose/SampleSystem.cpp:54:1:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[Knamespace[m[K’
+   54 | [01;31m[KIGNITION_ADD_PLUGIN_ALIAS[m[K(uwrt_gz::MyPlugin, "ignition::gazebo::systems::MyPlugin")
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/SampleSystem.dir/build.make:76: CMakeFiles/SampleSystem.dir/SampleSystem.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/SampleSystem.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

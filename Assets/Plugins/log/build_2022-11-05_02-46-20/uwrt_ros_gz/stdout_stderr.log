@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target uwrt_ros_gz_bridge[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/uwrt_ros_gz_bridge.dir/src/bridge.cpp.o[0m
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:[m[K In member function ‘[01m[Kvoid uwrt_ros_gz::BridgeNode::publishToGazebo()[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:68:36:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’})
+   68 |             msg.set_allocated_name([01;31m[K*pose_name[m[K);
+      |                                    [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/uwrt_ros_gz_bridge.dir/build.make:76: CMakeFiles/uwrt_ros_gz_bridge.dir/src/bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uwrt_ros_gz_bridge.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

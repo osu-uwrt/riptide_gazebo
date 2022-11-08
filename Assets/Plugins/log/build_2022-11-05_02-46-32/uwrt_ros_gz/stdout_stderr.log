@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target uwrt_ros_gz_bridge[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/uwrt_ros_gz_bridge.dir/src/bridge.cpp.o[0m
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:[m[K In member function ‘[01m[Kvoid uwrt_ros_gz::BridgeNode::publishToGazebo()[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:68:36:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kstd::string*[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>*[m[K’}
+   68 |             msg.set_allocated_name([01;31m[Kpose_name[m[K);
+      |                                    [01;31m[K^~~~~~~~~[m[K
+      |                                    [01;31m[K|[m[K
+      |                                    [01;31m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+In file included from [01m[K/usr/include/gz/msgs9/gz/msgs/pose.pb.h:17[m[K,
+                 from [01m[K/usr/include/gz/msgs9/gz/msgs/details/actor.pb.h:37[m[K,
+                 from [01m[K/usr/include/gz/msgs9/gz/msgs/actor.pb.h:17[m[K,
+                 from [01m[K/usr/include/gz/msgs9/gz/msgs/MessageTypes.hh:31[m[K,
+                 from [01m[K/usr/include/gz/msgs9/gz/msgs/Utility.hh:34[m[K,
+                 from [01m[K/usr/include/gz/msgs9/gz/msgs.hh:27[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:8[m[K:
+[01m[K/usr/include/gz/msgs9/gz/msgs/details/pose.pb.h:434:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid gz::msgs::Pose::set_allocated_name(std::string*)[m[K’
+  434 | inline void Pose::set_allocated_name([01;36m[Kstd::string* name[m[K) {
+      |                                      [01;36m[K~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/uwrt_ros_gz_bridge.dir/build.make:76: CMakeFiles/uwrt_ros_gz_bridge.dir/src/bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uwrt_ros_gz_bridge.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

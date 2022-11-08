@@ -1,0 +1,16 @@
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/lib/libMoveEntity.so
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/ament_index/resource_index/package_run_dependencies/uwrt_gz
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/ament_index/resource_index/parent_prefix_path/uwrt_gz
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/environment/ament_prefix_path.sh
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/environment/ament_prefix_path.dsv
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/environment/path.sh
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/environment/path.dsv
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/local_setup.bash
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/local_setup.sh
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/local_setup.zsh
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/local_setup.dsv
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/package.dsv
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/ament_index/resource_index/packages/uwrt_gz
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/cmake/uwrt_gzConfig.cmake
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/cmake/uwrt_gzConfig-version.cmake
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/package.xml

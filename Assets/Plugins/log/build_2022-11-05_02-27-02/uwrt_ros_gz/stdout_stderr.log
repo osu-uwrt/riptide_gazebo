@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target uwrt_ros_gz_bridge[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/uwrt_ros_gz_bridge.dir/src/bridge.cpp.o[0m
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:[m[K In constructor ‘[01m[Kuwrt_ros_gz::BridgeNode::BridgeNode()[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:32:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kuwrt_ros_gz::BridgeNode::publishToGazebo(const char [12])[m[K’
+   32 |             [01;31m[KpublishToGazebo("testing 1 2")[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:37:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid uwrt_ros_gz::BridgeNode::publishToGazebo()[m[K’
+   37 |         public: void [01;36m[KpublishToGazebo[m[K(){
+      |                      [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:37:22:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/uwrt_ros_gz_bridge.dir/build.make:76: CMakeFiles/uwrt_ros_gz_bridge.dir/src/bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uwrt_ros_gz_bridge.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

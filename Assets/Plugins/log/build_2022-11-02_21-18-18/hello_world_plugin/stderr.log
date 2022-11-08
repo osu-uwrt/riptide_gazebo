@@ -1,0 +1,10 @@
+[33mCMake Warning (dev) at CMakeLists.txt:18 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/hello_world_plugin/src/HelloWorld.cc
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m

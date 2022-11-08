@@ -1,0 +1,36 @@
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:[m[K In member function ‘[01m[Kvoid uwrt_ros_gz::BridgeNode::publishToGazebo()[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:66:25:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgz::msgs::Pose::set_name(std::string*)[m[K’
+   66 |             [01;31m[Kmsg.set_name(&pose_name)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/msgs9/gz/msgs/pose.pb.h:17[m[K,
+                 from [01m[K/usr/include/gz/msgs9/gz/msgs/details/actor.pb.h:37[m[K,
+                 from [01m[K/usr/include/gz/msgs9/gz/msgs/actor.pb.h:17[m[K,
+                 from [01m[K/usr/include/gz/msgs9/gz/msgs/MessageTypes.hh:31[m[K,
+                 from [01m[K/usr/include/gz/msgs9/gz/msgs/Utility.hh:34[m[K,
+                 from [01m[K/usr/include/gz/msgs9/gz/msgs.hh:27[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:8[m[K:
+[01m[K/usr/include/gz/msgs9/gz/msgs/details/pose.pb.h:391:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid gz::msgs::Pose::set_name(const string&)[m[K’
+  391 | inline void [01;36m[KPose[m[K::set_name(const std::string& value) {
+      |             [01;36m[K^~~~[m[K
+[01m[K/usr/include/gz/msgs9/gz/msgs/details/pose.pb.h:391:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string*[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>*[m[K’} to ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+  391 | inline void Pose::set_name([01;36m[Kconst std::string& value[m[K) {
+      |                            [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/gz/msgs9/gz/msgs/details/pose.pb.h:406:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid gz::msgs::Pose::set_name(std::string&&)[m[K’
+  406 | inline void [01;36m[KPose[m[K::set_name(std::string&& value) {
+      |             [01;36m[K^~~~[m[K
+[01m[K/usr/include/gz/msgs9/gz/msgs/details/pose.pb.h:406:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string*[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>*[m[K’} to ‘[01m[Kstd::string&&[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>&&[m[K’}
+  406 | inline void Pose::set_name([01;36m[Kstd::string&& value[m[K) {
+      |                            [01;36m[K~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/gz/msgs9/gz/msgs/details/pose.pb.h:412:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid gz::msgs::Pose::set_name(const char*)[m[K’
+  412 | inline void [01;36m[KPose[m[K::set_name(const char* value) {
+      |             [01;36m[K^~~~[m[K
+[01m[K/usr/include/gz/msgs9/gz/msgs/details/pose.pb.h:412:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string*[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>*[m[K’} to ‘[01m[Kconst char*[m[K’
+  412 | inline void Pose::set_name([01;36m[Kconst char* value[m[K) {
+      |                            [01;36m[K~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/gz/msgs9/gz/msgs/details/pose.pb.h:419:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid gz::msgs::Pose::set_name(const char*, size_t)[m[K’
+  419 | inline void [01;36m[KPose[m[K::set_name(const char* value,
+      |             [01;36m[K^~~~[m[K
+[01m[K/usr/include/gz/msgs9/gz/msgs/details/pose.pb.h:419:13:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/uwrt_ros_gz_bridge.dir/build.make:76: CMakeFiles/uwrt_ros_gz_bridge.dir/src/bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uwrt_ros_gz_bridge.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

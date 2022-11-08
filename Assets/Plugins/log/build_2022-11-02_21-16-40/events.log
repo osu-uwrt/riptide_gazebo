@@ -1,0 +1,270 @@
+[0.000000] (-) TimerEvent: {}
+[0.000114] (-) JobUnselected: {'identifier': 'Hello_world'}
+[0.000130] (-) JobUnselected: {'identifier': 'uwrt_gz'}
+[0.000141] (hello_world_plugin) JobQueued: {'identifier': 'hello_world_plugin', 'dependencies': OrderedDict()}
+[0.000151] (hello_world_plugin) JobStarted: {'identifier': 'hello_world_plugin'}
+[0.007381] (hello_world_plugin) JobProgress: {'identifier': 'hello_world_plugin', 'progress': 'cmake'}
+[0.007437] (hello_world_plugin) Command: {'cmd': ['/usr/bin/cmake', '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/hello_world_plugin', '-DCMAKE_INSTALL_PREFIX=/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin'], 'cwd': '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/hello_world_plugin', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hollis'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/lib:/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/SampleSystem/lib:/home/hollis/osu-uwrt/dependencies/install/stereo_image_proc/lib:/home/hollis/osu-uwrt/dependencies/install/image_proc/lib:/home/hollis/osu-uwrt/dependencies/install/tracetools_image_pipeline/lib:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_driver/lib:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_msgs/lib:/home/hollis/osu-uwrt/dependencies/install/micro_ros_agent/lib:/home/hollis/osu-uwrt/dependencies/install/micro_ros_msgs/lib:/home/hollis/osu-uwrt/dependencies/install/image_view/lib:/home/hollis/osu-uwrt/dependencies/install/image_rotate/lib:/home/hollis/osu-uwrt/dependencies/install/image_publisher/lib:/home/hollis/osu-uwrt/dependencies/install/depth_image_proc/lib:/home/hollis/osu-uwrt/riptide_software/install/riptide_msgs2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hollis'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/TempestPose'), ('TERM_PROGRAM_VERSION', '1.72.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1950'), ('SYSTEMD_EXEC_PID', '2583'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4687'), ('COLCON_PREFIX_PATH', '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install:/home/hollis/osu-uwrt/riptide_software/install:/home/hollis/osu-uwrt/dependencies/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hollis'), ('JOURNAL_STREAM', '8:42857'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hollis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/hollis/.local/bin:/home/hollis/osu-uwrt/dependencies/install/image_proc/bin:/opt/ros/humble/bin:/home/hollis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/AlexsOmen:@/tmp/.ICE-unix/2564,unix/AlexsOmen:/tmp/.ICE-unix/2564'), ('INVOCATION_ID', '40bc1677e97e4292afacacff308d96cc'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7fdd38533d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz:/home/hollis/osu-uwrt/dependencies/install/image_pipeline:/home/hollis/osu-uwrt/dependencies/install/stereo_image_proc:/home/hollis/osu-uwrt/dependencies/install/image_proc:/home/hollis/osu-uwrt/dependencies/install/tracetools_image_pipeline:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_rqt:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_examples:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_driver:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_msgs:/home/hollis/osu-uwrt/dependencies/install/micro_ros_setup:/home/hollis/osu-uwrt/dependencies/install/micro_ros_agent:/home/hollis/osu-uwrt/dependencies/install/micro_ros_msgs:/home/hollis/osu-uwrt/dependencies/install/image_view:/home/hollis/osu-uwrt/dependencies/install/image_rotate:/home/hollis/osu-uwrt/dependencies/install/image_publisher:/home/hollis/osu-uwrt/dependencies/install/echo_video:/home/hollis/osu-uwrt/dependencies/install/depth_image_proc:/home/hollis/osu-uwrt/dependencies/install/camera_calibration:/home/hollis/osu-uwrt/riptide_software/install/riptide_teleop2:/home/hollis/osu-uwrt/riptide_software/install/riptide_rqt_plugins2:/home/hollis/osu-uwrt/riptide_software/install/riptide_hardware2:/home/hollis/osu-uwrt/riptide_software/install/riptide_controllers2:/home/hollis/osu-uwrt/riptide_software/install/riptide_autonomy2:/home/hollis/osu-uwrt/riptide_software/install/riptide_msgs2:/home/hollis/osu-uwrt/riptide_software/install/riptide_mapping2:/home/hollis/osu-uwrt/riptide_software/install/riptide_localization2:/home/hollis/osu-uwrt/riptide_software/install/riptide_descriptions2:/home/hollis/osu-uwrt/riptide_software/install/riptide_bringup2:/home/hollis/osu-uwrt/riptide_software/install/riptide_SNIB:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/hello_world_plugin'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_rqt/lib/python3.10/site-packages:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_msgs/local/lib/python3.10/dist-packages:/home/hollis/osu-uwrt/dependencies/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/hollis/osu-uwrt/dependencies/install/echo_video/lib/python3.10/site-packages:/home/hollis/osu-uwrt/dependencies/install/camera_calibration/lib/python3.10/site-packages:/home/hollis/osu-uwrt/riptide_software/install/riptide_teleop2/lib/python3.10/site-packages:/home/hollis/osu-uwrt/riptide_software/install/riptide_rqt_plugins2/lib/python3.10/site-packages:/home/hollis/osu-uwrt/riptide_software/install/riptide_hardware2/lib/python3.10/site-packages:/home/hollis/osu-uwrt/riptide_software/install/riptide_controllers2/lib/python3.10/site-packages:/home/hollis/osu-uwrt/riptide_software/install/riptide_msgs2/local/lib/python3.10/dist-packages:/home/hollis/osu-uwrt/riptide_software/install/riptide_mapping2/lib/python3.10/site-packages:/home/hollis/osu-uwrt/riptide_software/install/riptide_localization2/lib/python3.10/site-packages:/home/hollis/osu-uwrt/riptide_software/install/riptide_bringup2/lib/python3.10/site-packages:/home/hollis/osu-uwrt/riptide_software/install/riptide_SNIB/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz:/home/hollis/osu-uwrt/dependencies/install/image_pipeline:/home/hollis/osu-uwrt/dependencies/install/stereo_image_proc:/home/hollis/osu-uwrt/dependencies/install/image_proc:/home/hollis/osu-uwrt/dependencies/install/tracetools_image_pipeline:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_examples:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_driver:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_msgs:/home/hollis/osu-uwrt/dependencies/install/micro_ros_setup:/home/hollis/osu-uwrt/dependencies/install/micro_ros_agent:/home/hollis/osu-uwrt/dependencies/install/micro_ros_msgs:/home/hollis/osu-uwrt/dependencies/install/image_view:/home/hollis/osu-uwrt/dependencies/install/image_rotate:/home/hollis/osu-uwrt/dependencies/install/image_publisher:/home/hollis/osu-uwrt/dependencies/install/depth_image_proc:/home/hollis/osu-uwrt/riptide_software/install/riptide_autonomy2:/home/hollis/osu-uwrt/riptide_software/install/riptide_msgs2:/home/hollis/osu-uwrt/riptide_software/install/riptide_descriptions2:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_rqt:/home/hollis/osu-uwrt/dependencies/install/echo_video:/home/hollis/osu-uwrt/dependencies/install/camera_calibration:/home/hollis/osu-uwrt/riptide_software/install/riptide_teleop2:/home/hollis/osu-uwrt/riptide_software/install/riptide_rqt_plugins2:/home/hollis/osu-uwrt/riptide_software/install/riptide_hardware2:/home/hollis/osu-uwrt/riptide_software/install/riptide_controllers2:/home/hollis/osu-uwrt/riptide_software/install/riptide_mapping2:/home/hollis/osu-uwrt/riptide_software/install/riptide_localization2:/home/hollis/osu-uwrt/riptide_software/install/riptide_bringup2:/home/hollis/osu-uwrt/riptide_software/install/riptide_SNIB:/opt/ros/humble')]), 'shell': False}
+[0.047885] (hello_world_plugin) StdoutLine: {'line': b'-- The C compiler identification is GNU 12.1.0\n'}
+[0.081889] (hello_world_plugin) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.085538] (hello_world_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.098414] (-) TimerEvent: {}
+[0.131731] (hello_world_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.137572] (hello_world_plugin) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.137705] (hello_world_plugin) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.137898] (hello_world_plugin) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.140139] (hello_world_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.194934] (hello_world_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.198490] (-) TimerEvent: {}
+[0.199413] (hello_world_plugin) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.199692] (hello_world_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.199870] (hello_world_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.202789] (hello_world_plugin) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.298587] (-) TimerEvent: {}
+[0.327131] (hello_world_plugin) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.397143] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[0.397293] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[0.398646] (-) TimerEvent: {}
+[0.399602] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.399842] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.400117] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[0.402393] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.0.0\n'}
+[0.402510] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[0.403248] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[0.405978] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.0\n'}
+[0.406341] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[0.406997] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 - found\n'}
+[0.407103] (hello_world_plugin) StdoutLine: {'line': b'\n'}
+[0.410015] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sim7 -- found version 7.0.0\n'}
+[0.410099] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim7\n'}
+[0.412261] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.0.1\n'}
+[0.412336] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of sdformat13\n'}
+[0.415881] (hello_world_plugin) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.425426] (hello_world_plugin) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[0.447492] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.447642] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[0.447866] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.448424] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.449077] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[0.449428] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[0.449536] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.449599] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [loader]\n'}
+[0.452806] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.0\n'}
+[0.452900] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[0.453199] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[0.456136] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.0.0\n'}
+[0.456211] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12\n'}
+[0.498738] (-) TimerEvent: {}
+[0.568523] (hello_world_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[0.576651] (hello_world_plugin) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.579427] (hello_world_plugin) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.587776] (hello_world_plugin) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[0.598861] (-) TimerEvent: {}
+[0.610374] (hello_world_plugin) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[0.613956] (hello_world_plugin) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.626053] (hello_world_plugin) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[0.646681] (hello_world_plugin) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[0.647022] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.650858] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.0.0\n'}
+[0.651409] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs9\n'}
+[0.663932] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.671279] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-transport12> component [log]\n'}
+[0.673510] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-transport12-log -- found version 12.0.0\n'}
+[0.673781] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12-log\n'}
+[0.674302] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.0.0\n'}
+[0.676769] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.0.0\n'}
+[0.677019] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.677306] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.677471] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.678312] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.679357] (hello_world_plugin) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[0.684413] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[0.686477] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.0.0\n'}
+[0.686794] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[0.687153] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[0.689388] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.0.0\n'}
+[0.689487] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[0.689718] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.689973] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[0.692471] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.0.0\n'}
+[0.692739] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[0.695798] (hello_world_plugin) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[0.698974] (-) TimerEvent: {}
+[0.704669] (hello_world_plugin) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[0.728836] (hello_world_plugin) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[0.731984] (hello_world_plugin) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[0.741530] (hello_world_plugin) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[0.764465] (hello_world_plugin) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[0.768231] (hello_world_plugin) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[0.778426] (hello_world_plugin) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[0.799132] (-) TimerEvent: {}
+[0.800700] (hello_world_plugin) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[0.804946] (hello_world_plugin) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[0.813571] (hello_world_plugin) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[0.834830] (hello_world_plugin) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[0.838734] (hello_world_plugin) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[0.848074] (hello_world_plugin) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[0.873856] (hello_world_plugin) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[0.876574] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-fuel_tools8 -- found version 8.0.0\n'}
+[0.876815] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools8\n'}
+[0.899406] (-) TimerEvent: {}
+[0.939948] (hello_world_plugin) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[0.946803] (hello_world_plugin) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[0.956137] (hello_world_plugin) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[0.979304] (hello_world_plugin) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[0.984905] (hello_world_plugin) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[0.991995] (hello_world_plugin) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[0.999583] (-) TimerEvent: {}
+[1.010226] (hello_world_plugin) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.010679] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.010953] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.0.0\n'}
+[1.011261] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[1.011512] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.0.0\n'}
+[1.014134] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-gui7 -- found version 7.0.0\n'}
+[1.014232] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui7\n'}
+[1.034224] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.034825] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[1.035156] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.0.0\n'}
+[1.035490] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[1.035801] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.0.0\n'}
+[1.038369] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.0.0\n'}
+[1.038486] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering7\n'}
+[1.038945] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[1.039280] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[1.039605] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.039684] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[1.041958] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.0.2\n'}
+[1.042037] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[1.047104] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.0.0\n'}
+[1.047417] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.047515] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.047789] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.047860] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.054422] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.056636] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.0.0\n'}
+[1.056909] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[1.056998] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[1.061883] (hello_world_plugin) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.2.0") \n'}
+[1.061996] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.062211] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[1.064429] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.0.0\n'}
+[1.064721] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[1.064980] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[1.065065] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.0.0\n'}
+[1.065655] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[1.065806] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[1.066036] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.066085] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[1.068270] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.0\n'}
+[1.068508] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[1.069473] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.069823] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.0.0\n'}
+[1.082643] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-physics6 -- found version 6.0.0\n'}
+[1.082728] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6\n'}
+[1.082948] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[1.083177] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[1.083425] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.084229] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [heightmap]\n'}
+[1.086056] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-physics6-heightmap -- found version 6.0.0\n'}
+[1.086143] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-heightmap\n'}
+[1.086245] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.0.0\n'}
+[1.086715] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [mesh]\n'}
+[1.088776] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-physics6-mesh -- found version 6.0.0\n'}
+[1.088978] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-mesh\n'}
+[1.089039] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.0.0\n'}
+[1.089291] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [sdf]\n'}
+[1.091608] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-physics6-sdf -- found version 6.0.0\n'}
+[1.091885] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-sdf\n'}
+[1.092052] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.0.1\n'}
+[1.094358] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.0.0\n'}
+[1.095067] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7\n'}
+[1.099693] (-) TimerEvent: {}
+[1.107681] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[1.107833] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.0.0\n'}
+[1.108198] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.0.0\n'}
+[1.108472] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.0.0\n'}
+[1.108921] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.0.0\n'}
+[1.109369] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.0.1\n'}
+[1.109888] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [air_pressure]\n'}
+[1.112377] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-air_pressure -- found version 7.0.0\n'}
+[1.112550] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-air_pressure\n'}
+[1.112843] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [altimeter]\n'}
+[1.115396] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-altimeter -- found version 7.0.0\n'}
+[1.115490] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-altimeter\n'}
+[1.115749] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [imu]\n'}
+[1.119638] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-imu -- found version 7.0.0\n'}
+[1.119956] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-imu\n'}
+[1.120565] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [force_torque]\n'}
+[1.123890] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-force_torque -- found version 7.0.0\n'}
+[1.124112] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-force_torque\n'}
+[1.124426] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [logical_camera]\n'}
+[1.127134] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-logical_camera -- found version 7.0.0\n'}
+[1.127349] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-logical_camera\n'}
+[1.127627] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [magnetometer]\n'}
+[1.129717] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-magnetometer -- found version 7.0.0\n'}
+[1.129916] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-magnetometer\n'}
+[1.130216] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [navsat]\n'}
+[1.133194] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-navsat -- found version 7.0.0\n'}
+[1.133656] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-navsat\n'}
+[1.134603] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rendering]\n'}
+[1.137156] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-rendering -- found version 7.0.0\n'}
+[1.137344] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rendering\n'}
+[1.137798] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [lidar]\n'}
+[1.140436] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-lidar -- found version 7.0.0\n'}
+[1.140710] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-lidar\n'}
+[1.140847] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [gpu_lidar]\n'}
+[1.143131] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-gpu_lidar -- found version 7.0.0\n'}
+[1.143376] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-gpu_lidar\n'}
+[1.143630] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [camera]\n'}
+[1.145580] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-camera -- found version 7.0.0\n'}
+[1.145821] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-camera\n'}
+[1.145981] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [boundingbox_camera]\n'}
+[1.148092] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-boundingbox_camera -- found version 7.0.0\n'}
+[1.148333] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-boundingbox_camera\n'}
+[1.148589] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [segmentation_camera]\n'}
+[1.151417] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-segmentation_camera -- found version 7.0.0\n'}
+[1.151622] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-segmentation_camera\n'}
+[1.151866] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [depth_camera]\n'}
+[1.153815] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-depth_camera -- found version 7.0.0\n'}
+[1.153920] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-depth_camera\n'}
+[1.154030] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rgbd_camera]\n'}
+[1.156278] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-rgbd_camera -- found version 7.0.0\n'}
+[1.156512] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rgbd_camera\n'}
+[1.156634] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [thermal_camera]\n'}
+[1.158963] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-thermal_camera -- found version 7.0.0\n'}
+[1.159156] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-thermal_camera\n'}
+[1.159423] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [wide_angle_camera]\n'}
+[1.161339] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-wide_angle_camera -- found version 7.0.0\n'}
+[1.161499] (hello_world_plugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-wide_angle_camera\n'}
+[1.162019] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.0.0\n'}
+[1.162134] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[1.162611] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.174435] (hello_world_plugin) StdoutLine: {'line': b'-- Looking for gz-sim7 - found\n'}
+[1.174510] (hello_world_plugin) StdoutLine: {'line': b'\n'}
+[1.176282] (hello_world_plugin) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.199866] (-) TimerEvent: {}
+[1.232662] (hello_world_plugin) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.232819] (hello_world_plugin) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.232878] (hello_world_plugin) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.233407] (hello_world_plugin) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.234478] (hello_world_plugin) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.234667] (hello_world_plugin) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.235421] (hello_world_plugin) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.236976] (hello_world_plugin) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.239560] (hello_world_plugin) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:18 (add_library):\n'}
+[1.239638] (hello_world_plugin) StderrLine: {'line': b'  Cannot find source file:\n'}
+[1.239671] (hello_world_plugin) StderrLine: {'line': b'\n'}
+[1.239700] (hello_world_plugin) StderrLine: {'line': b'    HelloWorld\n'}
+[1.239731] (hello_world_plugin) StderrLine: {'line': b'\n'}
+[1.239761] (hello_world_plugin) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[1.239804] (hello_world_plugin) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[1.239832] (hello_world_plugin) StderrLine: {'line': b'\n'}
+[1.240072] (hello_world_plugin) StderrLine: {'line': b'\x1b[0m\n'}
+[1.240128] (hello_world_plugin) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:18 (add_library):\n'}
+[1.240163] (hello_world_plugin) StderrLine: {'line': b'  No SOURCES given to target: HelloWorld\n'}
+[1.240198] (hello_world_plugin) StderrLine: {'line': b'\n'}
+[1.240228] (hello_world_plugin) StderrLine: {'line': b'\x1b[0m\n'}
+[1.240259] (hello_world_plugin) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[1.247538] (hello_world_plugin) CommandEnded: {'returncode': 1}
+[1.259907] (hello_world_plugin) JobEnded: {'identifier': 'hello_world_plugin', 'rc': 1}
+[1.270261] (-) EventReactorShutdown: {}

@@ -1,0 +1,35 @@
+[35m[1mConsolidate compiler generated dependencies of target SampleSystem[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/SampleSystem.dir/src/SampleSystem.cpp.o[0m
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/SampleSystem.cpp:[m[K In member function ‘[01m[Kvirtual void uwrt_gz::MyPlugin::Configure(const Entity&, const std::shared_ptr<const sdf::v13::Element>&, gz::sim::v7::EntityComponentManager&, gz::sim::v7::EventManager&)[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/SampleSystem.cpp:21:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_entity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   21 |     void Configure([01;35m[Kconst gz::sim::Entity &_entity[m[K,
+      |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/SampleSystem.cpp:22:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_sdf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   22 |                           [01;35m[Kconst std::shared_ptr<const sdf::Element> &_sdf[m[K,
+      |                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/SampleSystem.cpp:23:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_ecm[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   23 |                           [01;35m[Kgz::sim::EntityComponentManager & _ecm[m[K,
+      |                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/SampleSystem.cpp:[m[K In member function ‘[01m[Kvirtual void uwrt_gz::MyPlugin::PostUpdate(const gz::sim::v7::UpdateInfo&, const gz::sim::v7::EntityComponentManager&)[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/SampleSystem.cpp:36:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_ecm[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   36 |                             [01;35m[Kconst gz::sim::EntityComponentManager &_ecm[m[K) override
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[100%] [32m[1mLinking CXX shared library libSampleSystem.so[0m
+[100%] Built target SampleSystem
+-- Install configuration: ""
+-- Installing: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/lib/libSampleSystem.so
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/ament_index/resource_index/package_run_dependencies/uwrt_gz
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/ament_index/resource_index/parent_prefix_path/uwrt_gz
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/environment/path.sh
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/environment/path.dsv
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/local_setup.bash
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/local_setup.sh
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/local_setup.zsh
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/local_setup.dsv
+-- Installing: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/package.dsv
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/ament_index/resource_index/packages/uwrt_gz
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/cmake/uwrt_gzConfig.cmake
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/cmake/uwrt_gzConfig-version.cmake
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/share/uwrt_gz/package.xml

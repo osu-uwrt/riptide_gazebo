@@ -1,0 +1,4 @@
+Invoking command in '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem': /usr/bin/cmake --build /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem -- -j20 -l20
+Invoked command in '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem' returned '0': /usr/bin/cmake --build /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem -- -j20 -l20
+Invoking command in '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem': /usr/bin/cmake --install /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem
+Invoked command in '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem' returned '0': /usr/bin/cmake --install /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem

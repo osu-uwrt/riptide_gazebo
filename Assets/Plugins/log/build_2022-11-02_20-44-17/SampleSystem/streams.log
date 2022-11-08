@@ -1,0 +1,10 @@
+[0.012s] Invoking command in '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem': /usr/bin/cmake --build /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem -- -j20 -l20
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target SampleSystem[0m
+[0.048s] [ 50%] [32mBuilding CXX object CMakeFiles/SampleSystem.dir/SampleSystem.cpp.o[0m
+[1.343s] [100%] [32m[1mLinking CXX shared library libSampleSystem.so[0m
+[1.447s] [100%] Built target SampleSystem
+[1.454s] Invoked command in '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem' returned '0': /usr/bin/cmake --build /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem -- -j20 -l20
+[1.475s] Invoking command in '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem': /usr/bin/cmake --install /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem
+[1.479s] -- Install configuration: ""
+[1.479s] -- Installing: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/SampleSystem/lib/libSampleSystem.so
+[1.481s] Invoked command in '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem' returned '0': /usr/bin/cmake --install /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/SampleSystem

@@ -1,0 +1,16 @@
+[31mCMake Error at CMakeLists.txt:18 (add_library):
+  The target name "src/HelloWorld" is reserved or not valid for certain CMake
+  features, such as generator expressions, and may result in undefined
+  behavior.
+
+[0m
+[31mCMake Error at CMakeLists.txt:19 (set_property):
+  set_property could not find TARGET HelloWorld.  Perhaps it has not yet been
+  created.
+
+[0m
+[31mCMake Error at CMakeLists.txt:20 (target_link_libraries):
+  Cannot specify link libraries for target "src/HelloWorld" which is not
+  built by this project.
+
+[0m

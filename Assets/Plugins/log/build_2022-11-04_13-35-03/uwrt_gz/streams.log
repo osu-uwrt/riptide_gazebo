@@ -1,0 +1,25 @@
+[0.015s] Invoking command in '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/uwrt_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_rqt:/home/hollis/osu-uwrt/dependencies/install/echo_video:/home/hollis/osu-uwrt/dependencies/install/camera_calibration:/home/hollis/osu-uwrt/riptide_software/install/riptide_teleop2:/home/hollis/osu-uwrt/riptide_software/install/riptide_rqt_plugins2:/home/hollis/osu-uwrt/riptide_software/install/riptide_hardware2:/home/hollis/osu-uwrt/riptide_software/install/riptide_controllers2:/home/hollis/osu-uwrt/riptide_software/install/riptide_mapping2:/home/hollis/osu-uwrt/riptide_software/install/riptide_localization2:/home/hollis/osu-uwrt/riptide_software/install/riptide_bringup2:/home/hollis/osu-uwrt/riptide_software/install/riptide_SNIB:/opt/ros/humble /usr/bin/cmake --build /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/uwrt_gz -- -j20 -l20
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target MoveEntity[0m
+[0.047s] [ 50%] [32mBuilding CXX object CMakeFiles/MoveEntity.dir/src/MoveEntity.cc.o[0m
+[0.713s] In file included from [01m[K/usr/include/gz/plugin2/gz/plugin/Register.hh:22[m[K,
+[0.713s]                  from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:26[m[K:
+[0.713s] [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:[m[K In constructor ‘[01m[Kgz::plugin::{anonymous}::ExecuteWhenLoadingLibrary0::ExecuteWhenLoadingLibrary0()[m[K’:
+[0.713s] [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveEntity[m[K’ was not declared in this scope; did you mean ‘[01m[Kmove_entity::MoveEntity[m[K’?
+[0.713s]    36 |     [01;31m[KMoveEntity[m[K::MoveEntity::ISystemPostUpdate)
+[0.714s]       |     [01;31m[K^~~~~~~~~~[m[K
+[0.714s] In file included from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:29[m[K:
+[0.714s] [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.hh:33:9:[m[K [01;36m[Knote: [m[K‘[01m[Kmove_entity::MoveEntity[m[K’ declared here
+[0.714s]    33 |   class [01;36m[KMoveEntity[m[K:
+[0.714s]       |         [01;36m[K^~~~~~~~~~[m[K
+[0.714s] In file included from [01m[K/usr/include/gz/plugin2/gz/plugin/Register.hh:22[m[K,
+[0.714s]                  from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:26[m[K:
+[0.714s] [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:33:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[0.714s]    33 | [01;31m[KGZ_ADD_PLUGIN[m[K(
+[0.714s]       | [01;31m[K^~~~~~~~~~~~~[m[K
+[0.714s] [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:33:1:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[0.714s]    33 | [01;31m[KGZ_ADD_PLUGIN[m[K(
+[0.714s]       | [01;31m[K^~~~~~~~~~~~~[m[K
+[0.848s] gmake[2]: *** [CMakeFiles/MoveEntity.dir/build.make:76: CMakeFiles/MoveEntity.dir/src/MoveEntity.cc.o] Error 1
+[0.848s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MoveEntity.dir/all] Error 2
+[0.848s] gmake: *** [Makefile:146: all] Error 2
+[0.850s] Invoked command in '/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/uwrt_gz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hollis/osu-uwrt/dependencies/install/microstrain_inertial_rqt:/home/hollis/osu-uwrt/dependencies/install/echo_video:/home/hollis/osu-uwrt/dependencies/install/camera_calibration:/home/hollis/osu-uwrt/riptide_software/install/riptide_teleop2:/home/hollis/osu-uwrt/riptide_software/install/riptide_rqt_plugins2:/home/hollis/osu-uwrt/riptide_software/install/riptide_hardware2:/home/hollis/osu-uwrt/riptide_software/install/riptide_controllers2:/home/hollis/osu-uwrt/riptide_software/install/riptide_mapping2:/home/hollis/osu-uwrt/riptide_software/install/riptide_localization2:/home/hollis/osu-uwrt/riptide_software/install/riptide_bringup2:/home/hollis/osu-uwrt/riptide_software/install/riptide_SNIB:/opt/ros/humble /usr/bin/cmake --build /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/uwrt_gz -- -j20 -l20

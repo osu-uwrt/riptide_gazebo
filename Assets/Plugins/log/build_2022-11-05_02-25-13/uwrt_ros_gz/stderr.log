@@ -1,0 +1,87 @@
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:[m[K In constructor ‘[01m[Kuwrt_ros_gz::BridgeNode::BridgeNode()[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:25:79:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgz::transport::v12::Node::Advertise<gz::msgs::StringMsg>(gz::transport::v12::Node::Publisher&)[m[K’
+   25 |             gz_tempest_pose_publisher = [01;31m[Kgz_node.Advertise<gz::msgs::StringMsg>(gz_tempest_pose_publisher)[m[K;
+      |                                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport/Node.hh:773[m[K,
+                 from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:9[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/detail/Node.hh:32:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgz::transport::v12::Node::Publisher gz::transport::v12::Node::Advertise(const string&, const gz::transport::v12::AdvertiseMessageOptions&) [with MessageT = gz::msgs::StringMsg; std::string = std::__cxx11::basic_string<char>][m[K’
+   32 |     Node::Publisher [01;36m[KNode[m[K::Advertise(
+      |                     [01;36m[K^~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/detail/Node.hh:33:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgz::transport::v12::Node::Publisher[m[K’ to ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+   33 |         [01;36m[Kconst std::string &_topic[m[K,
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:9[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:363:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class RequestT, class ReplyT> bool gz::transport::v12::Node::Advertise(const string&, bool (*)(const RequestT&, ReplyT&), const gz::transport::v12::AdvertiseServiceOptions&)[m[K’
+  363 |       bool [01;36m[KAdvertise[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:363:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:25:79:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+   25 |             gz_tempest_pose_publisher = [01;36m[Kgz_node.Advertise<gz::msgs::StringMsg>(gz_tempest_pose_publisher)[m[K;
+      |                                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport/Node.hh:773[m[K,
+                 from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:9[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/detail/Node.hh:195:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool gz::transport::v12::Node::Advertise(const string&, bool (*)(ReplyT&), const gz::transport::v12::AdvertiseServiceOptions&) [with ReplyT = gz::msgs::StringMsg; std::string = std::__cxx11::basic_string<char>][m[K’
+  195 |     bool [01;36m[KNode[m[K::Advertise(
+      |          [01;36m[K^~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/detail/Node.hh:195:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/usr/include/gz/transport12/gz/transport/detail/Node.hh:210:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool gz::transport::v12::Node::Advertise(const string&, void (*)(const RequestT&), const gz::transport::v12::AdvertiseServiceOptions&) [with RequestT = gz::msgs::StringMsg; std::string = std::__cxx11::basic_string<char>][m[K’
+  210 |     bool [01;36m[KNode[m[K::Advertise(
+      |          [01;36m[K^~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/detail/Node.hh:210:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:9[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:414:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class RequestT, class ReplyT> bool gz::transport::v12::Node::Advertise(const string&, std::function<bool(const Req&, Rep&)>, const gz::transport::v12::AdvertiseServiceOptions&)[m[K’
+  414 |       bool [01;36m[KAdvertise[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:414:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:25:79:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+   25 |             gz_tempest_pose_publisher = [01;36m[Kgz_node.Advertise<gz::msgs::StringMsg>(gz_tempest_pose_publisher)[m[K;
+      |                                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport/Node.hh:773[m[K,
+                 from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:9[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/detail/Node.hh:285:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool gz::transport::v12::Node::Advertise(const string&, std::function<bool(ReplyT&)>&, const gz::transport::v12::AdvertiseServiceOptions&) [with ReplyT = gz::msgs::StringMsg; std::string = std::__cxx11::basic_string<char>][m[K’
+  285 |     bool [01;36m[KNode[m[K::Advertise(
+      |          [01;36m[K^~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/detail/Node.hh:285:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/usr/include/gz/transport12/gz/transport/detail/Node.hh:300:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool gz::transport::v12::Node::Advertise(const string&, std::function<void(const T&)>&, const gz::transport::v12::AdvertiseServiceOptions&) [with RequestT = gz::msgs::StringMsg; std::string = std::__cxx11::basic_string<char>][m[K’
+  300 |     bool [01;36m[KNode[m[K::Advertise(
+      |          [01;36m[K^~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/detail/Node.hh:300:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:9[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:467:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ClassT, class RequestT, class ReplyT> bool gz::transport::v12::Node::Advertise(const string&, bool (ClassT::*)(const RequestT&, ReplyT&), ClassT*, const gz::transport::v12::AdvertiseServiceOptions&)[m[K’
+  467 |       bool [01;36m[KAdvertise[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:467:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:25:79:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+   25 |             gz_tempest_pose_publisher = [01;36m[Kgz_node.Advertise<gz::msgs::StringMsg>(gz_tempest_pose_publisher)[m[K;
+      |                                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:9[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:486:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ClassT, class ReplyT> bool gz::transport::v12::Node::Advertise(const string&, bool (ClassT::*)(ReplyT&), ClassT*, const gz::transport::v12::AdvertiseServiceOptions&)[m[K’
+  486 |       bool [01;36m[KAdvertise[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:486:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:25:79:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+   25 |             gz_tempest_pose_publisher = [01;36m[Kgz_node.Advertise<gz::msgs::StringMsg>(gz_tempest_pose_publisher)[m[K;
+      |                                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:9[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:504:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ClassT, class RequestT> bool gz::transport::v12::Node::Advertise(const string&, void (ClassT::*)(const RequestT&), ClassT*, const gz::transport::v12::AdvertiseServiceOptions&)[m[K’
+  504 |       bool [01;36m[KAdvertise[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:504:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:25:79:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+   25 |             gz_tempest_pose_publisher = [01;36m[Kgz_node.Advertise<gz::msgs::StringMsg>(gz_tempest_pose_publisher)[m[K;
+      |                                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:[m[K In member function ‘[01m[Kvoid uwrt_ros_gz::BridgeNode::publishToGazebo(std::string)[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:37:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KMsg_Data[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   37 |         public: void publishToGazebo([01;35m[Kstd::string Msg_Data[m[K){
+      |                                      [01;35m[K~~~~~~~~~~~~^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/uwrt_ros_gz_bridge.dir/build.make:76: CMakeFiles/uwrt_ros_gz_bridge.dir/src/bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uwrt_ros_gz_bridge.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,29 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/MoveEntity.dir/src/MoveEntity.cc.o[0m
+In file included from [01m[K/usr/include/gz/plugin2/gz/plugin/Register.hh:22[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:26[m[K:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:[m[K In constructor ‘[01m[Kgz::plugin::{anonymous}::ExecuteWhenLoadingLibrary0::ExecuteWhenLoadingLibrary0()[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveEntity[m[K’ was not declared in this scope; did you mean ‘[01m[Kmove_entity::MoveEntity[m[K’?
+   36 |     [01;31m[KMoveEntity[m[K::MoveEntity::ISystemPostUpdate)
+      |     [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:29[m[K:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.hh:33:9:[m[K [01;36m[Knote: [m[K‘[01m[Kmove_entity::MoveEntity[m[K’ declared here
+   33 |   class [01;36m[KMoveEntity[m[K:
+      |         [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/plugin2/gz/plugin/Register.hh:22[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:26[m[K:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:33:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+   33 | [01;31m[KGZ_ADD_PLUGIN[m[K(
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:33:1:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+   33 | [01;31m[KGZ_ADD_PLUGIN[m[K(
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:[m[K At global scope:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:38:17:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveEntity[m[K’ is not a namespace-name
+   38 | using namespace [01;31m[KMoveEntity[m[K;
+      |                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:42:6:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveEntity[m[K’ has not been declared
+   42 | void [01;31m[KMoveEntity[m[K::PostUpdate(const gz::sim::UpdateInfo &_info,
+      |      [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/MoveEntity.dir/build.make:76: CMakeFiles/MoveEntity.dir/src/MoveEntity.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MoveEntity.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <!--
+      System plugins can be loaded from <plugin> tags attached to entities like
+      the world, models, visuals, etc.
+    -->
+    <plugin filename="/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/hello_world_plugin/libHelloWorld.so" name="hello_world::HelloWorld">
+    </plugin>
+  </world>
+</sdf>

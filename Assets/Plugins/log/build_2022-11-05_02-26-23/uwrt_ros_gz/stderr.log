@@ -1,0 +1,4 @@
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:[m[K In member function ‘[01m[Kvoid uwrt_ros_gz::BridgeNode::publishToGazebo(std::string)[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:37:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KMsg_Data[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   37 |         public: void publishToGazebo([01;35m[Kstd::string Msg_Data[m[K){
+      |                                      [01;35m[K~~~~~~~~~~~~^~~~~~~~[m[K

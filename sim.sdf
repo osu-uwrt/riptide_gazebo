@@ -1,13 +1,17 @@
 <?xml version="1.0" ?>
 <sdf version="1.9">
     <world name="riptide_sim">
+        <plugin
+            filename="/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/hello_world_plugin/libHelloWorld.so"
+            name="hello_world::HelloWorld">
+        </plugin>
         <physics name="1ms" type="ignored">
             <max_step_size>0.001</max_step_size>
             <real_time_factor>1.0</real_time_factor>
         </physics>
         <gravity>0 0 0</gravity>
         <model name="tempest">
-            <pose>0 0 0 0 0 0</pose>
+            <pose>0 0 0 1 0 0</pose>
             <link name="tempest_link">
                 <!-- <gravity>0</gravity> -->
                 <!-- <must_be_base_link>true</must_be_base_link> Force this link to control model...???  -->
@@ -21,5 +25,9 @@
                 </visual>
             </link>
         </model>
+        <!-- <plugin
+            filename="/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_gz/lib/libSampleSystem.so"
+            name="uwrt_gz::MyPlugin">
+        </plugin> -->
     </world>
 </sdf>

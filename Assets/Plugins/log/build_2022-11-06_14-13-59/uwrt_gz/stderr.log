@@ -1,0 +1,108 @@
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:[m[K In member function ‘[01m[Kvirtual void move_entity::MoveEntity::PostUpdate(const gz::sim::v7::UpdateInfo&, const gz::sim::v7::EntityComponentManager&)[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:46:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_info[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   46 | void MoveEntity::PostUpdate([01;35m[Kconst gz::sim::UpdateInfo &_info[m[K,
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:[m[K In member function ‘[01m[Kvirtual void move_entity::MoveEntity::Configure(const Entity&, const std::shared_ptr<const sdf::v13::Element>&, gz::sim::v7::EntityComponentManager&, gz::sim::v7::EventManager&)[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:75:36:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Ks[m[K’
+   75 |   std::string orentation_sub_topic [01;31m[Ks[m[K= "/bridge/tempest/orentation"; // the topic to subcribe to get position
+      |                                    [01;31m[K^[m[K
+In file included from [01m[K/usr/include/gz/common5/gz/common/SystemPaths.hh:20[m[K,
+                 from [01m[K/usr/include/gz/common5/gz/common/Util.hh:30[m[K,
+                 from [01m[K/usr/include/gz/common5/gz/common/Console.hh:26[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:23[m[K:
+/usr/include/c++/11/functional: In instantiation of ‘[01m[Kstruct std::_Bind_check_arity<void (move_entity::MoveEntity::*)(const gz::msgs::Vector3d&)>[m[K’:
+[01m[K/usr/include/c++/11/functional:768:12:[m[K   required from ‘[01m[Kstruct std::_Bind_helper<false, void (move_entity::MoveEntity::*)(const gz::msgs::Vector3d&)>[m[K’
+[01m[K/usr/include/c++/11/functional:789:5:[m[K   required by substitution of ‘[01m[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (move_entity::MoveEntity::*)(const gz::msgs::Vector3d&); _BoundArgs = {}][m[K’
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:78:22:[m[K   required from here
+[01m[K/usr/include/c++/11/functional:756:21:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Wrong number of arguments for pointer-to-member
+  755 |       static_assert(_Varargs::[01;31m[Kvalue[m[K
+      |                               [01;31m[K~~~~~[m[K
+  756 | [01;31m[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1[m[K
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  757 | [01;31m[K                    : sizeof...(_BoundArgs) == _Arity::value + 1[m[K,
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/functional:756:21:[m[K [01;36m[Knote: [m[K‘[01m[K(false ? (0 >= (((long unsigned int)std::integral_constant<long unsigned int, 1>::value) + 1)) : (0 == (((long unsigned int)std::integral_constant<long unsigned int, 1>::value) + 1)))[m[K’ evaluates to false
+/usr/include/c++/11/functional: In substitution of ‘[01m[Ktemplate<class _Functor, class ... _Bound_args> template<class _Fn, class _CallArgs, class ... _BArgs> using _Res_type_impl = typename std::result_of<_Fn&(decltype (std::_Mu<typename std::remove_cv<_BArgs>::type, std::is_bind_expression<typename std::remove_cv<_BArgs>::type>::value, (std::is_placeholder<typename std::remove_cv<_BArgs>::type>::value > 0)>()(declval<_BArgs&>(), declval<_CallArgs&>()))&& ...)>::type [with _Fn = void (move_entity::MoveEntity::*)(const gz::msgs::Vector3d&); _CallArgs = _CallArgs; _BArgs = {}; _Functor = void (move_entity::MoveEntity::*)(const gz::msgs::Vector3d&); _Bound_args = {}][m[K’:
+[01m[K/usr/include/c++/11/functional:468:8:[m[K   required from ‘[01m[Kclass std::_Bind<void (move_entity::MoveEntity::*())(const gz::msgs::Vector3d&)>[m[K’
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:78:22:[m[K   required from here
+[01m[K/usr/include/c++/11/functional:464:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::result_of<void (move_entity::MoveEntity::*&())(const gz::msgs::Vector3d&)>[m[K’
+  464 |         using [01;31m[K_Res_type_impl[m[K
+      |               [01;31m[K^~~~~~~~~~~~~~[m[K
+/usr/include/c++/11/functional: In substitution of ‘[01m[Ktemplate<class _Functor, class ... _Bound_args> template<class _Fn, class _CallArgs, class ... _BArgs> using _Res_type_impl = typename std::result_of<_Fn&(decltype (std::_Mu<typename std::remove_cv<_BArgs>::type, std::is_bind_expression<typename std::remove_cv<_BArgs>::type>::value, (std::is_placeholder<typename std::remove_cv<_BArgs>::type>::value > 0)>()(declval<_BArgs&>(), declval<_CallArgs&>()))&& ...)>::type [with _Fn = void (move_entity::MoveEntity::*)(const gz::msgs::Vector3d&); _CallArgs = std::tuple<_Tps ...>; _BArgs = {}; _Functor = void (move_entity::MoveEntity::*)(const gz::msgs::Vector3d&); _Bound_args = {}][m[K’:
+[01m[K/usr/include/c++/11/functional:468:8:[m[K   required by substitution of ‘[01m[Ktemplate<class _Functor, class ... _Bound_args> template<class _CallArgs> using _Res_type = std::_Bind<_Functor(_Bound_args ...)>::_Res_type_impl<_Functor, _CallArgs, _Bound_args ...> [with _CallArgs = std::tuple<_Tps ...>; _Functor = void (move_entity::MoveEntity::*)(const gz::msgs::Vector3d&); _Bound_args = {}][m[K’
+[01m[K/usr/include/c++/11/functional:501:2:[m[K   required from ‘[01m[Kclass std::_Bind<void (move_entity::MoveEntity::*())(const gz::msgs::Vector3d&)>[m[K’
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:78:22:[m[K   required from here
+[01m[K/usr/include/c++/11/functional:464:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::result_of<void (move_entity::MoveEntity::*&())(const gz::msgs::Vector3d&)>[m[K’
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:79:21:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgz::transport::v12::Node::Subscribe(std::string&, std::_Bind<void (move_entity::MoveEntity::*())(const gz::msgs::Vector3d&)>&, move_entity::MoveEntity*)[m[K’
+   79 |   if(![01;31m[Knode.Subscribe(position_sub_topic, cb, this)[m[K){
+      |       [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.hh:25[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:31[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:251:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT> bool gz::transport::v12::Node::Subscribe(const string&, void (*)(const MessageT&), const gz::transport::v12::SubscribeOptions&)[m[K’
+  251 |       bool [01;36m[KSubscribe[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:251:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:79:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(const MessageT&)[m[K’ and ‘[01m[Kstd::_Bind<void (move_entity::MoveEntity::*())(const gz::msgs::Vector3d&)>[m[K’
+   79 |   if(![01;36m[Knode.Subscribe(position_sub_topic, cb, this)[m[K){
+      |       [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.hh:25[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:31[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:265:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT> bool gz::transport::v12::Node::Subscribe(const string&, std::function<void(const T&)>&, const gz::transport::v12::SubscribeOptions&)[m[K’
+  265 |       bool [01;36m[KSubscribe[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:265:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:79:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::_Bind<void (move_entity::MoveEntity::*())(const gz::msgs::Vector3d&)>[m[K’ is not derived from ‘[01m[Kstd::function<void(const T&)>[m[K’
+   79 |   if(![01;36m[Knode.Subscribe(position_sub_topic, cb, this)[m[K){
+      |       [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.hh:25[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:31[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:281:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ClassT, class MessageT> bool gz::transport::v12::Node::Subscribe(const string&, void (ClassT::*)(const MessageT&), ClassT*, const gz::transport::v12::SubscribeOptions&)[m[K’
+  281 |       bool [01;36m[KSubscribe[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:281:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:79:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (ClassT::*)(const MessageT&)[m[K’ and ‘[01m[Kstd::_Bind<void (move_entity::MoveEntity::*())(const gz::msgs::Vector3d&)>[m[K’
+   79 |   if(![01;36m[Knode.Subscribe(position_sub_topic, cb, this)[m[K){
+      |       [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.hh:25[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:31[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:298:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT> bool gz::transport::v12::Node::Subscribe(const string&, void (*)(const MessageT&, const gz::transport::v12::MessageInfo&), const gz::transport::v12::SubscribeOptions&)[m[K’
+  298 |       bool [01;36m[KSubscribe[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:298:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:79:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(const MessageT&, const gz::transport::v12::MessageInfo&)[m[K’ and ‘[01m[Kstd::_Bind<void (move_entity::MoveEntity::*())(const gz::msgs::Vector3d&)>[m[K’
+   79 |   if(![01;36m[Knode.Subscribe(position_sub_topic, cb, this)[m[K){
+      |       [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.hh:25[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:31[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:313:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT> bool gz::transport::v12::Node::Subscribe(const string&, std::function<void(const T&, const gz::transport::v12::MessageInfo&)>&, const gz::transport::v12::SubscribeOptions&)[m[K’
+  313 |       bool [01;36m[KSubscribe[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:313:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:79:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::_Bind<void (move_entity::MoveEntity::*())(const gz::msgs::Vector3d&)>[m[K’ is not derived from ‘[01m[Kstd::function<void(const T&, const gz::transport::v12::MessageInfo&)>[m[K’
+   79 |   if(![01;36m[Knode.Subscribe(position_sub_topic, cb, this)[m[K){
+      |       [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/transport12/gz/transport.hh:31[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.hh:25[m[K,
+                 from [01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:31[m[K:
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:331:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ClassT, class MessageT> bool gz::transport::v12::Node::Subscribe(const string&, void (ClassT::*)(const MessageT&, const gz::transport::v12::MessageInfo&), ClassT*, const gz::transport::v12::SubscribeOptions&)[m[K’
+  331 |       bool [01;36m[KSubscribe[m[K(
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/gz/transport12/gz/transport/Node.hh:331:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:79:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (ClassT::*)(const MessageT&, const gz::transport::v12::MessageInfo&)[m[K’ and ‘[01m[Kstd::_Bind<void (move_entity::MoveEntity::*())(const gz::msgs::Vector3d&)>[m[K’
+   79 |   if(![01;36m[Knode.Subscribe(position_sub_topic, cb, this)[m[K){
+      |       [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:61:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_sdf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   61 |     [01;35m[Kconst std::shared_ptr<const sdf::Element> &_sdf[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:[m[K In member function ‘[01m[Kvirtual void move_entity::MoveEntity::PreUpdate(const gz::sim::v7::UpdateInfo&, gz::sim::v7::EntityComponentManager&)[m[K’:
+[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:96:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_info[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   96 | void MoveEntity::PreUpdate([01;35m[Kconst gz::sim::UpdateInfo &_info[m[K,
+      |                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+gmake[2]: *** [CMakeFiles/MoveEntity.dir/build.make:76: CMakeFiles/MoveEntity.dir/src/MoveEntity.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MoveEntity.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

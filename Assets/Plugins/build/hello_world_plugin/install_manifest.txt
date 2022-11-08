@@ -1,0 +1,15 @@
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/ament_index/resource_index/package_run_dependencies/hello_world_plugin
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/ament_index/resource_index/parent_prefix_path/hello_world_plugin
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/environment/ament_prefix_path.sh
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/environment/ament_prefix_path.dsv
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/environment/path.sh
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/environment/path.dsv
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/local_setup.bash
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/local_setup.sh
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/local_setup.zsh
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/local_setup.dsv
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/package.dsv
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/ament_index/resource_index/packages/hello_world_plugin
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/cmake/hello_world_pluginConfig.cmake
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/cmake/hello_world_pluginConfig-version.cmake
+/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/hello_world_plugin/share/hello_world_plugin/package.xml

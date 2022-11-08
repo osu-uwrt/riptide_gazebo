@@ -1,0 +1,18 @@
+[100%] Built target uwrt_ros_gz_bridge
+-- Install configuration: ""
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/lib/uwrt_ros_gz/uwrt_ros_gz_bridge
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/ament_index/resource_index/package_run_dependencies/uwrt_ros_gz
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/ament_index/resource_index/parent_prefix_path/uwrt_ros_gz
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/environment/path.sh
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/environment/path.dsv
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/local_setup.bash
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/local_setup.sh
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/local_setup.zsh
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/local_setup.dsv
+-- Installing: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/package.dsv
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/ament_index/resource_index/packages/uwrt_ros_gz
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/cmake/uwrt_ros_gzConfig.cmake
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/cmake/uwrt_ros_gzConfig-version.cmake
+-- Up-to-date: /home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/uwrt_ros_gz/share/uwrt_ros_gz/package.xml
