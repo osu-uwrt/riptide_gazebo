@@ -1,1 +1,0 @@
-/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/install/SampleSystem/lib/libSampleSystem.so

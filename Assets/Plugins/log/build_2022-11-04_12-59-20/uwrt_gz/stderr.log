@@ -1,4 +1,0 @@
-[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/SampleSystem.cpp:[m[K In member function ‘[01m[Kvirtual void uwrt_gz::MyPlugin::PostUpdate(const gz::sim::v7::UpdateInfo&, const gz::sim::v7::EntityComponentManager&)[m[K’:
-[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/SampleSystem.cpp:36:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_ecm[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   36 |                             [01;35m[Kconst gz::sim::EntityComponentManager &_ecm[m[K) override
-      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K

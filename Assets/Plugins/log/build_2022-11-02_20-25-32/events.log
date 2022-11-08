@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000274] (-) JobUnselected: {'identifier': 'SampleSystem'}
-[0.000300] (-) JobUnselected: {'identifier': 'Tempest_Move_Plugin'}
-[0.000312] (-) EventReactorShutdown: {}

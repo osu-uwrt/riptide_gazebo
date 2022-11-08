@@ -1,8 +1,0 @@
-[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:[m[K In member function ‘[01m[Kvirtual void move_entity::MoveEntity::Configure(const Entity&, const std::shared_ptr<const sdf::v13::Element>&, gz::sim::v7::EntityComponentManager&, gz::sim::v7::EventManager&)[m[K’:
-[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:66:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_sdf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   66 |     [01;35m[Kconst std::shared_ptr<const sdf::Element> &_sdf[m[K,
-      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
-[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:[m[K In member function ‘[01m[Kvirtual void move_entity::MoveEntity::PreUpdate(const gz::sim::v7::UpdateInfo&, gz::sim::v7::EntityComponentManager&)[m[K’:
-[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gz/src/MoveEntity.cc:84:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_info[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   84 | void MoveEntity::PreUpdate([01;35m[Kconst gz::sim::UpdateInfo &_info[m[K,
-      |                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K

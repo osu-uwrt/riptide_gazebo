@@ -1,6 +1,0 @@
-[31mCMake Error at CMakeLists.txt:20 (set_property):
-  set_property could not find TARGET SampleSystem.  Perhaps it has not yet
-  been created.
-
-[0m
-gmake: *** [Makefile:267: cmake_check_build_system] Error 1

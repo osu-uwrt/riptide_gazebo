@@ -349,9 +349,6 @@ SITE:STRING=AlexsOmen
 //Path to a library.
 SWSCALE_LIBRARY_swscale:FILEPATH=/usr/lib/x86_64-linux-gnu/libswscale.so
 
-//Dependencies for the target
-SampleSystem_LIB_DEPENDS:STATIC=general;gz-sim7::gz-sim7;general;gz-plugin2::gz-plugin2;
-
 //Path to a library.
 TINYXML2_LIBRARY_/usr/lib/x86_64-linux-gnu/libtinyxml2.so:FILEPATH=TINYXML2_LIBRARY_/usr/lib/x86_64-linux-gnu/libtinyxml2.so-NOTFOUND
 

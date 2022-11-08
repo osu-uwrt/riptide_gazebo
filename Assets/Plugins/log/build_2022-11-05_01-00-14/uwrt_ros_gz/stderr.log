@@ -1,4 +1,0 @@
-[31mCMake Error at CMakeLists.txt:18 (install):
-  install TARGETS given target "DESINTATION" which does not exist.
-
-[0m

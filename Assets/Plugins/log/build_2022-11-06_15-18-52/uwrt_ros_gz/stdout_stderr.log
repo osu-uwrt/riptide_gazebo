@@ -1,8 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/uwrt_ros_gz_bridge.dir/src/bridge.cpp.o[0m
-[01m[K/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_ros_gz/src/bridge.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/Pose.hpp: No such file or directory
-    6 | #include [01;31m[K"geometry_msgs/msg/Pose.hpp"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/uwrt_ros_gz_bridge.dir/build.make:76: CMakeFiles/uwrt_ros_gz_bridge.dir/src/bridge.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uwrt_ros_gz_bridge.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
