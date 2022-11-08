@@ -16,7 +16,7 @@ namespace uwrt_ros_gz{
     class BridgeNode : public rclcpp::Node{
         
         private: std::string gz_pub_topic_position = "/bridge/tempest/position";
-        private: std::string gz_pub_topic_orentation = "/bridge/tempest/orentation";
+        private: std::string gz_pub_topic_orentation = "/bridge/tempest/orientation";
 
         //gazebo node & accessories
         private: gz::transport::Node gz_node;
@@ -59,8 +59,6 @@ namespace uwrt_ros_gz{
             msg.set_y(y);
             msg.set_z(z);
 
-            RCLCPP_INFO(this->get_logger(), "Publishing Position");
-
             //publish
             gz_tempest_position_publisher.Publish(msg);
 
@@ -81,8 +79,6 @@ namespace uwrt_ros_gz{
             //give it a sec -- REQUIRED
             sleep(.02);
         }
-
-
     };
 }
 

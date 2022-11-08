@@ -55,8 +55,6 @@ void MoveEntity::PositionSubCallback(const gz::msgs::Vector3d &_msg){
 void MoveEntity::OrentationSubCallback(const gz::msgs::Quaternion &_msg){
   //update orentation
   current_orentation = _msg;
-    std::cerr << "recived position msg" << std::endl;
-
 }
 
 void MoveEntity::Configure(const gz::sim::Entity &_entity,
@@ -72,14 +70,14 @@ void MoveEntity::Configure(const gz::sim::Entity &_entity,
 
   //configure ros2 subscriber
   std::string position_sub_topic = "/bridge/tempest/position"; // the topic to subcribe to get position
-  std::string orentation_sub_topic = "/bridge/tempest/orentation"; // the topic to subcribe to get position
+  std::string orentation_sub_topic = "/bridge/tempest/orientation"; // the topic to subcribe to get position
 
   //create sub callback pointer
   void (MoveEntity::*position_cb)(const gz::msgs::Vector3d&);
   position_cb = &MoveEntity::PositionSubCallback;
   
-  void (MoveEntity::*orentation_cb)(const gz::msgs::Vector3d&);
-  orentation_cb = &MoveEntity::PositionSubCallback;
+  void (MoveEntity::*orentation_cb)(const gz::msgs::Quaternion&);
+  orentation_cb = &MoveEntity::OrentationSubCallback;
 
   //subsrcibe to the topics
   if(!gz_node.Subscribe(position_sub_topic, position_cb, this)){
