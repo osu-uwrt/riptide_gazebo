@@ -27,4 +27,9 @@ install(TARGETS
   uwrt_ros_gz_bridge
   DESTINATION lib/${PROJECT_NAME})
 
+#install for launch
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME})
+
 ament_package()
