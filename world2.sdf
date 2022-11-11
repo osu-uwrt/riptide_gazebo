@@ -68,7 +68,7 @@
     </model>
     <model name="tempest">
       <pose rotation_format="quat_xyzw">0 0 0 0 0 0 1</pose>
-      <plugin filename="/home/hollis/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/build/uwrt_gz/libMoveEntity.so" name="move_entity::MoveEntity"/>
+      <plugin filename='libMoveEntity.so' name="move_entity::MoveEntity"/>
       <link name="tempest_link">
         <pose>0 0 -1.72 1.5707963 0 3.14159265</pose>
           <visual name="tempestMesh">

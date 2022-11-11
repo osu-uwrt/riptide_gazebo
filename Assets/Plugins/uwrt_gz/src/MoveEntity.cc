@@ -1,33 +1,13 @@
-/*
- * Copyright (C) 2021 Open Source Robotics Foundation
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
-*/
-
-// We'll use a string and the gzmsg command below for a brief example.
-// Remove these includes if your plugin doesn't need them.
 #include <string>
 #include <iostream>
 #include <memory>
+#include <stdlib.h>
+#include <Python.h>
+
 #include <gz/common/Console.hh>
 #include <gz/sim/components/Pose.hh>
-
-// This header is required to register plugins. It's good practice to place it
-// in the cc file, like it's done here.
 #include <gz/plugin/Register.hh>
 
-// Don't forget to include the plugin's header.
 #include "MoveEntity.hh"
 
 // This is required to register the plugin. Make sure the interfaces match
@@ -92,6 +72,8 @@ void MoveEntity::Configure(const gz::sim::Entity &_entity,
   } else {
     std::cout << "Successfully subscribed to " << orentation_sub_topic << std::endl;
   }
+
+  LoadRobotXacro();
 }
 
 void MoveEntity::PreUpdate(const gz::sim::UpdateInfo &_info,
@@ -104,6 +86,39 @@ void MoveEntity::PreUpdate(const gz::sim::UpdateInfo &_info,
 
     _ecm.SetChanged(this->entity, gz::sim::components::Pose::typeId, gz::sim::ComponentState::OneTimeChange);
 };
+
+void MoveEntity::LoadRobotXacro(){
+  //need to do this in python -- alternative method could be to do in SNIB and create a service call
+
+  PyObject *pName, *pModule, *pDict, *pFunc, *pValue, pResult;
+
+  setenv("PYTHONPATH",".",1);
+
+  //Initialize the python interpreter
+  Py_Initialize();
+
+  //Build the python name object -- environment for python to run in
+  pName = PyUnicode_FromString((char*)"loadXacro");
+
+  //load the py module
+  pModule = PyImport_Import(pName);
+
+  //?
+  pDict = PyModule_GetDict(pModule);
+
+  //get the function to be ran
+  pFunc = PyDict_GetItemString(pDict, (char*)"testFunc");
+
+  if(PyCallable_Check(pFunc)){
+    std::cout << "I found the function" << std::endl;
+  } else {
+    std::cout << "Well Poop" << std::endl;
+  }
+
+
+
+}
+
 
 
 

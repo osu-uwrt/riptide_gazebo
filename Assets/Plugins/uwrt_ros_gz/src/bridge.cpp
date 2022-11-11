@@ -1,9 +1,13 @@
 #include <string>
 #include <unistd.h>
 
+#include <ament_index_cpp/get_package_share_directory.hpp>
+
+//ros utils
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/string.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
+#include <riptide_msgs2/srv/get_robot_xacro.hpp>
 
 //gazebo untils
 #include <gz/msgs.hh>
@@ -11,12 +15,22 @@
 
 using namespace std::placeholders;
 
+#define ROBOT_NAME "tempest"
+
 namespace uwrt_ros_gz{
     // the bridge between gazebo and ros
     class BridgeNode : public rclcpp::Node{
         
+        //topics to publish to gazebo to 
         private: std::string gz_pub_topic_position = "/bridge/tempest/position";
         private: std::string gz_pub_topic_orentation = "/bridge/tempest/orientation";
+
+        //topics to subcribe to ros from
+        private: std::string ros_sub_topic_pose = "/tempest/simulator/pose";
+        private: std::string ros_cli_service_xacro = "/tempest/load_xacro";
+
+        //xacro data
+        private: std::string robot_xacro = "no data";
 
         //gazebo node & accessories
         private: gz::transport::Node gz_node;
@@ -31,7 +45,7 @@ namespace uwrt_ros_gz{
             RCLCPP_INFO(this->get_logger(), "Creating ros2 gz bridge.");
 
             auto cb = std::bind(&BridgeNode::tempestPoseCallback, this, std::placeholders::_1);
-            ros_pose_subscriber = this->create_subscription<geometry_msgs::msg::PoseStamped>("/tempest/simulator/pose", 10, cb);
+            ros_pose_subscriber = this->create_subscription<geometry_msgs::msg::PoseStamped>(ros_sub_topic_pose, 10, cb);
 
             gz_tempest_position_publisher = gz_node.Advertise<gz::msgs::Vector3d>(gz_pub_topic_position);
             gz_tempest_orentation_publisher = gz_node.Advertise<gz::msgs::Quaternion>(gz_pub_topic_orentation);
