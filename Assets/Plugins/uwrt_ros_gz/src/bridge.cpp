@@ -39,7 +39,7 @@ namespace uwrt_ros_gz{
     
         //ros2 subscribers
         private: std::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::PoseStamped>> ros_pose_subscriber;
-
+        private: std::shared_ptr<rclcpp::Client<riptide_msgs2::srv::GetRobotXacro>> ros_xacro_client;
 
         public: BridgeNode() : Node("bridge_node"){
             RCLCPP_INFO(this->get_logger(), "Creating ros2 gz bridge.");
@@ -49,6 +49,8 @@ namespace uwrt_ros_gz{
 
             gz_tempest_position_publisher = gz_node.Advertise<gz::msgs::Vector3d>(gz_pub_topic_position);
             gz_tempest_orentation_publisher = gz_node.Advertise<gz::msgs::Quaternion>(gz_pub_topic_orentation);
+
+            ros_xacro_client = this->create_client<riptide_msgs2::srv::GetRobotXacro>(ros_cli_service_xacro);
 
             sleep(1);
 

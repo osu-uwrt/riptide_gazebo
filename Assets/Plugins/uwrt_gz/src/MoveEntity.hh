@@ -35,8 +35,6 @@ namespace move_entity
 
     public: void PositionSubCallback(const gz::msgs::Vector3d &_msg);
     public: void OrentationSubCallback(const gz::msgs::Quaternion &_msg);
-
-    private: void LoadRobotXacro();
   };
 }
 #endif

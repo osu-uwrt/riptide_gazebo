@@ -73,7 +73,6 @@ void MoveEntity::Configure(const gz::sim::Entity &_entity,
     std::cout << "Successfully subscribed to " << orentation_sub_topic << std::endl;
   }
 
-  LoadRobotXacro();
 }
 
 void MoveEntity::PreUpdate(const gz::sim::UpdateInfo &_info,
@@ -86,40 +85,6 @@ void MoveEntity::PreUpdate(const gz::sim::UpdateInfo &_info,
 
     _ecm.SetChanged(this->entity, gz::sim::components::Pose::typeId, gz::sim::ComponentState::OneTimeChange);
 };
-
-void MoveEntity::LoadRobotXacro(){
-  //need to do this in python -- alternative method could be to do in SNIB and create a service call
-
-  PyObject *pName, *pModule, *pDict, *pFunc, *pValue, pResult;
-
-  setenv("PYTHONPATH",".",1);
-
-  //Initialize the python interpreter
-  Py_Initialize();
-
-  //Build the python name object -- environment for python to run in
-  pName = PyUnicode_FromString((char*)"loadXacro");
-
-  //load the py module
-  pModule = PyImport_Import(pName);
-
-  //?
-  pDict = PyModule_GetDict(pModule);
-
-  //get the function to be ran
-  pFunc = PyDict_GetItemString(pDict, (char*)"testFunc");
-
-  if(PyCallable_Check(pFunc)){
-    std::cout << "I found the function" << std::endl;
-  } else {
-    std::cout << "Well Poop" << std::endl;
-  }
-
-
-
-}
-
-
 
 
 

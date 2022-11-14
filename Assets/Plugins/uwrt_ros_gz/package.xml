@@ -15,6 +15,7 @@
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>riptide_msgs2</depend>
   
 
   <export>
