@@ -70,7 +70,7 @@
       <pose rotation_format="quat_xyzw">0 0 0 0 0 0 1</pose>
       <plugin filename='libMoveEntity.so' name="move_entity::MoveEntity"/>
       <link name="tempest_link">
-        <pose>0 0 -1.72 1.5707963 0 3.14159265</pose>
+        <pose>-4.5 0 -1.3 1.5707963 0 4.71238898</pose>
           <visual name="tempestMesh">
               <geometry>
                   <mesh>
