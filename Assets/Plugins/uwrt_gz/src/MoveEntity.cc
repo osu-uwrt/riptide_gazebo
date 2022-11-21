@@ -46,11 +46,21 @@ void MoveEntity::Configure(const gz::sim::Entity &_entity,
   current_position.set_y(0);
   current_position.set_z(0);
 
+  //the default topics to subscribe to 
+  std::string position_sub_topic = "/bridge/tempest/position"; // the topic to subcribe to get position
+  std::string orentation_sub_topic = "/bridge/tempest/orientation"; // the topic to subcribe to get position
+
+  if(_sdf->HasElement("topic_prefix")){
+    std::string prefix = _sdf->Get<std::string>("topic_prefix");
+    position_sub_topic = prefix + "/position";
+    orentation_sub_topic = prefix + "/orientation";
+  } else {
+    std::cout << "Missing topic prefix... using defaults" << std::endl;
+  }
+
   this->entity = _entity;
 
   //configure ros2 subscriber
-  std::string position_sub_topic = "/bridge/tempest/position"; // the topic to subcribe to get position
-  std::string orentation_sub_topic = "/bridge/tempest/orientation"; // the topic to subcribe to get position
 
   //create sub callback pointer
   void (MoveEntity::*position_cb)(const gz::msgs::Vector3d&);
