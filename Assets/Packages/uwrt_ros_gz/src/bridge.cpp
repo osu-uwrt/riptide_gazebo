@@ -7,7 +7,9 @@
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/string.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
+#include <geometry_msgs/msg/pose_with_covariance.hpp>
 #include <riptide_msgs2/srv/get_robot_xacro.hpp>
+#include <nav_msgs/msg/odometry.hpp>
 
 //gazebo untils
 #include <gz/msgs.hh>
@@ -52,7 +54,7 @@ namespace uwrt_ros_gz{
         private: std::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::PoseStamped>> ros_pose_subscriber;
 
         //ros2 ghost subscriber
-        private: private: std::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::PoseStamped>> ros_ghost_pose_subscriber;
+        private: private: std::shared_ptr<rclcpp::Subscription<nav_msgs::msg::Odometry>> ros_ghost_pose_subscriber;
 
 
         public: BridgeNode() : Node("bridge_node"){
@@ -63,7 +65,7 @@ namespace uwrt_ros_gz{
 
             //ghost
             auto cb_tempest_ghost_pose = std::bind(&BridgeNode::tempestGhostPoseCallback, this, std::placeholders::_1);
-            ros_ghost_pose_subscriber = this->create_subscription<geometry_msgs::msg::PoseStamped>(ghost_ros_topic_pose, 10, cb_tempest_ghost_pose);
+            ros_ghost_pose_subscriber = this->create_subscription<nav_msgs::msg::Odometry>(ghost_ros_topic_pose, 10, cb_tempest_ghost_pose);
 
             gz_tempest_position_publisher = gz_node.Advertise<gz::msgs::Vector3d>(gz_pub_topic_position);
             gz_tempest_orentation_publisher = gz_node.Advertise<gz::msgs::Quaternion>(gz_pub_topic_orentation);
@@ -88,9 +90,10 @@ namespace uwrt_ros_gz{
             publishToGazeboTempestOrentation(orientation.x, orientation.y, orientation.z, orientation.w);
         }
 
-        public: void tempestGhostPoseCallback(const geometry_msgs::msg::PoseStamped &_msg){
+        public: void tempestGhostPoseCallback(const nav_msgs::msg::Odometry &_msg){
             //break down the msg
-            geometry_msgs::msg::Pose pose = _msg.pose;
+            geometry_msgs::msg::PoseWithCovariance pose_with_covariance = _msg.pose;
+            geometry_msgs::msg::Pose pose = pose_with_covariance.pose;
             geometry_msgs::msg::Point position = pose.position;
             geometry_msgs::msg::Quaternion orientation = pose.orientation;
 

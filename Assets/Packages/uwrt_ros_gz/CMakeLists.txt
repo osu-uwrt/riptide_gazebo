@@ -12,6 +12,7 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(gz-sim7 REQUIRED)
 find_package(riptide_msgs2 REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 #add bridge to ros2 
 add_executable(uwrt_ros_gz_bridge src/bridge.cpp)
@@ -23,6 +24,7 @@ ament_target_dependencies(uwrt_ros_gz_bridge
   std_msgs 
   gz-sim7
   riptide_msgs2
+  nav_msgs
 )
 
 #install
