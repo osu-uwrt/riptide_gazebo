@@ -51,6 +51,8 @@ void MoveEntity::Configure(const gz::sim::Entity &_entity,
   std::string orentation_sub_topic = "/bridge/tempest/orientation"; // the topic to subcribe to get position
 
   if(_sdf->HasElement("topic_prefix")){
+    //<topic_prefix> determines where to sub to for entity position
+
     std::string prefix = _sdf->Get<std::string>("topic_prefix");
     position_sub_topic = prefix + "/position";
     orentation_sub_topic = prefix + "/orientation";
