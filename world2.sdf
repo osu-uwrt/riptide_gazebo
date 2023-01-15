@@ -68,7 +68,9 @@
     </model>
     <model name="tempest">
       <pose rotation_format="quat_xyzw">0 0 0 0 0 0 1</pose>
-      <plugin filename='libMoveEntity.so' name="move_entity::MoveEntity"/>
+      <plugin filename='libMoveEntity.so' name="move_entity::MoveEntity">
+        <topic_prefix>/bridge/tempest</topic_prefix>
+      </plugin>
       <link name="tempest_link">
         <pose>-4.5 0 -1.3 1.5707963 0 4.71238898</pose>
           <visual name="tempestMesh">
@@ -81,6 +83,24 @@
           </visual>
       </link>
   </model>
+  <model name="tempest_ghost">
+    <pose rotation_format="quat_xyzw">0 0 0 0 0 0 1</pose>
+    <plugin filename='libMoveEntity.so' name="move_entity::MoveEntity">
+      <topic_prefix>/bridge/ghost</topic_prefix>
+    </plugin>
+    <link name="tempest_ghost_link">
+      <pose>-4.5 0 -1.3 1.5707963 0 4.71238898</pose>
+        <visual name="tempestMesh">
+            <transparency>0.3</transparency>
+            <geometry>
+                <mesh>
+                    <scale>.05 .05 .05</scale>
+                    <uri>Assets/Models/Tempest_Culled_Decimated.fbx</uri>
+                </mesh>
+            </geometry>
+        </visual>
+    </link>
+</model>
     <light name='sun' type='directional'>
       <pose>0 0 10 0 0 0</pose>
       <cast_shadows>true</cast_shadows>
