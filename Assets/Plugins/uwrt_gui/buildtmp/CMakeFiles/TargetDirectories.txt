@@ -1,0 +1,4 @@
+/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CMakeFiles/CompObjectsPlugin.dir
+/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CMakeFiles/edit_cache.dir
+/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CMakeFiles/rebuild_cache.dir
+/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CMakeFiles/CompObjectsPlugin_autogen.dir
