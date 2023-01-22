@@ -1,8 +1,8 @@
-# Install script for directory: /home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui
+# Install script for directory: /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/install/CompObjectsPlugin")
+  set(CMAKE_INSTALL_PREFIX "/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/install/CompObjectsPlugin")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,8 +44,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/install" TYPE FILE FILES
-    "/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/CompObjectsPlugin.qrc"
-    "/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/CompObjectsPlugin.qml"
+    "/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/CompObjectsPlugin.qrc"
+    "/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/CompObjectsPlugin.qml"
     )
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/CompObjectsPlugin.cc" "CMakeFiles/CompObjectsPlugin.dir/CompObjectsPlugin.cc.o" "gcc" "CMakeFiles/CompObjectsPlugin.dir/CompObjectsPlugin.cc.o.d"
-  "/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin/CompObjectsPlugin_autogen/mocs_compilation.cpp" "CMakeFiles/CompObjectsPlugin.dir/CompObjectsPlugin_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/CompObjectsPlugin.dir/CompObjectsPlugin_autogen/mocs_compilation.cpp.o.d"
-  "/home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin/qrc_CompObjectsPlugin.cpp" "CMakeFiles/CompObjectsPlugin.dir/qrc_CompObjectsPlugin.cpp.o" "gcc" "CMakeFiles/CompObjectsPlugin.dir/qrc_CompObjectsPlugin.cpp.o.d"
+  "/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/CompObjectsPlugin.cc" "CMakeFiles/CompObjectsPlugin.dir/CompObjectsPlugin.cc.o" "gcc" "CMakeFiles/CompObjectsPlugin.dir/CompObjectsPlugin.cc.o.d"
+  "/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin/CompObjectsPlugin_autogen/mocs_compilation.cpp" "CMakeFiles/CompObjectsPlugin.dir/CompObjectsPlugin_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/CompObjectsPlugin.dir/CompObjectsPlugin_autogen/mocs_compilation.cpp.o.d"
+  "/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin/qrc_CompObjectsPlugin.cpp" "CMakeFiles/CompObjectsPlugin.dir/qrc_CompObjectsPlugin.cpp.o" "gcc" "CMakeFiles/CompObjectsPlugin.dir/qrc_CompObjectsPlugin.cpp.o.d"
   )
 
 # Targets to which this target links.

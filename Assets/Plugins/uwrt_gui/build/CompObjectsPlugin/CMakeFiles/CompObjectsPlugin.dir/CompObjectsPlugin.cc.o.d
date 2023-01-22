@@ -1,7 +1,7 @@
 CMakeFiles/CompObjectsPlugin.dir/CompObjectsPlugin.cc.o: \
- /home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/CompObjectsPlugin.cc \
+ /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/CompObjectsPlugin.cc \
  /usr/include/stdc-predef.h \
- /home/toby/osu-uwrt/riptide_software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/CompObjectsPlugin.hh \
+ /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/CompObjectsPlugin.hh \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

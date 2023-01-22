@@ -1,5 +1,0 @@
-[31mCMake Error at CMakeLists.txt:26 (install):
-  install DIRECTORY given non-directory "CompObjectsPlugin.qrc" to install.
-
-[0m
-gmake: *** [Makefile:247: cmake_check_build_system] Error 1
