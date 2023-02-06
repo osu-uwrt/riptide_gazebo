@@ -1,0 +1,1 @@
+Invoking command in '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/build/CompObjectsPlugin': /usr/bin/cmake /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui -DCMAKE_INSTALL_PREFIX=/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/install/CompObjectsPlugin
