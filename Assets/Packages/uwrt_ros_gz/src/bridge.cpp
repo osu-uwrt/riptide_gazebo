@@ -24,8 +24,8 @@ namespace uwrt_ros_gz{
     class BridgeNode : public rclcpp::Node{
         
         //topics to publish to gazebo to 
-        private: std::string gz_pub_topic_position = "/bridge/tempest/position";
-        private: std::string gz_pub_topic_orentation = "/bridge/tempest/orientation";
+        private: std::string gz_pub_topic_position = "/bridge/talos/position";
+        private: std::string gz_pub_topic_orentation = "/bridge/talos/orientation";
 
         //topics to subcribe to ros from
         private: std::string ros_sub_topic_pose = "/tempest/simulator/pose";

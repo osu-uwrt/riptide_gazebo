@@ -47,8 +47,8 @@ void MoveEntity::Configure(const gz::sim::Entity &_entity,
   current_position.set_z(0);
 
   //the default topics to subscribe to 
-  std::string position_sub_topic = "/bridge/tempest/position"; // the topic to subcribe to get position
-  std::string orentation_sub_topic = "/bridge/tempest/orientation"; // the topic to subcribe to get position
+  std::string position_sub_topic = "/bridge/talos/position"; // the topic to subcribe to get position
+  std::string orentation_sub_topic = "/bridge/talos/orientation"; // the topic to subcribe to get position
 
   if(_sdf->HasElement("topic_prefix")){
     //<topic_prefix> determines where to sub to for entity position
