@@ -28,11 +28,11 @@ namespace uwrt_ros_gz{
         private: std::string gz_pub_topic_orentation = "/bridge/talos/orientation";
 
         //topics to subcribe to ros from
-        private: std::string ros_sub_topic_pose = "/tempest/simulator/pose";
-        private: std::string ros_cli_service_xacro = "/tempest/load_xacro";
+        private: std::string ros_sub_topic_pose = "/talos/simulator/pose";
+        private: std::string ros_cli_service_xacro = "/talos/load_xacro";
 
         //topics to subscribe to ros from (for tempest ghost)
-        private: std::string ghost_ros_topic_pose = "/tempest/odometry/filtered";
+        private: std::string ghost_ros_topic_pose = "/talos/odometry/filtered";
 
         //topics to publish to gazebo to (for tempest ghost)
         private: std::string ghost_gz_pub_topic_position = "/bridge/ghost/position";

@@ -72,7 +72,7 @@
         <topic_prefix>/bridge/talos</topic_prefix>
       </plugin>
       <link name="tempest_link">
-        <pose>-4.5 0 -1.3 1.5707963 0 4.71238898</pose>
+        <pose>-0 0 -.2 1.5707963 0 4.71238898</pose>
           <visual name="tempestMesh">
               <geometry>
                   <mesh>
@@ -89,7 +89,7 @@
       <topic_prefix>/bridge/ghost</topic_prefix>
     </plugin>
     <link name="tempest_ghost_link">
-      <pose>-0 0 0 1.5707963 0 4.71238898</pose>
+      <pose>-0 0 -.2 1.5707963 0 4.71238898</pose>
         <visual name="tempestMesh">
             <transparency>0.3</transparency>
             <geometry>
