@@ -1,0 +1,242 @@
+[0.000000] (-) TimerEvent: {}
+[0.000553] (CompObjectsPlugin) JobQueued: {'identifier': 'CompObjectsPlugin', 'dependencies': OrderedDict()}
+[0.001743] (CompObjectsPlugin) JobStarted: {'identifier': 'CompObjectsPlugin'}
+[0.036519] (CompObjectsPlugin) JobProgress: {'identifier': 'CompObjectsPlugin', 'progress': 'cmake'}
+[0.037752] (CompObjectsPlugin) JobProgress: {'identifier': 'CompObjectsPlugin', 'progress': 'build'}
+[0.039116] (CompObjectsPlugin) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin', '--', '-j12', '-l12'], 'cwd': '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'toby'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/toby/osu-uwrt/riptide_software/install/uwrt_gz/lib:/home/toby/osu-uwrt/riptide_software/install/riptide_msgs2/lib:/home/toby/osu-uwrt/dependencies/install/stereo_image_proc/lib:/home/toby/osu-uwrt/dependencies/install/image_proc/lib:/home/toby/osu-uwrt/dependencies/install/tracetools_image_pipeline/lib:/home/toby/osu-uwrt/dependencies/install/nortek_dvl_msgs/lib:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_msgs/lib:/home/toby/osu-uwrt/dependencies/install/micro_ros_agent/lib:/home/toby/osu-uwrt/dependencies/install/micro_ros_msgs/lib:/home/toby/osu-uwrt/dependencies/install/image_view/lib:/home/toby/osu-uwrt/dependencies/install/image_rotate/lib:/home/toby/osu-uwrt/dependencies/install/image_publisher/lib:/home/toby/osu-uwrt/dependencies/install/depth_image_proc/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/toby'), ('OLDPWD', '/home/toby/osu-uwrt/development/software/src/riptide_gazebo'), ('DESKTOP_SESSION', 'ubuntu'), ('JFLEX_DIR', '/home/toby/jflex-1.7.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/toby/osu-uwrt/riptide_software/install:/home/toby/osu-uwrt/dependencies/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'toby'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'toby'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/toby/osu-uwrt/dependencies/install/image_proc/bin:/opt/ros/humble/bin:/home/toby/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/TobyPc:@/tmp/.ICE-unix/1694,unix/TobyPc:/tmp/.ICE-unix/1694'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b3cea6b4_ca70_4f8a_b611_3b834610d1d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CUP_DIR', '/home/toby/cup'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7DYG21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/toby/osu-uwrt/riptide_software/install/uwrt_ros_gz:/home/toby/osu-uwrt/riptide_software/install/uwrt_gz:/home/toby/osu-uwrt/riptide_software/install/riptide_teleop2:/home/toby/osu-uwrt/riptide_software/install/riptide_rqt_plugins2:/home/toby/osu-uwrt/riptide_software/install/riptide_hardware2:/home/toby/osu-uwrt/riptide_software/install/riptide_controllers2:/home/toby/osu-uwrt/riptide_software/install/riptide_autonomy2:/home/toby/osu-uwrt/riptide_software/install/riptide_msgs2:/home/toby/osu-uwrt/riptide_software/install/riptide_mapping2:/home/toby/osu-uwrt/riptide_software/install/riptide_localization2:/home/toby/osu-uwrt/riptide_software/install/riptide_descriptions2:/home/toby/osu-uwrt/riptide_software/install/riptide_bringup2:/home/toby/osu-uwrt/riptide_software/install/riptide_SNIB:/home/toby/osu-uwrt/dependencies/install/image_pipeline:/home/toby/osu-uwrt/dependencies/install/stereo_image_proc:/home/toby/osu-uwrt/dependencies/install/image_proc:/home/toby/osu-uwrt/dependencies/install/tracetools_image_pipeline:/home/toby/osu-uwrt/dependencies/install/nortek_dvl_msgs:/home/toby/osu-uwrt/dependencies/install/nortek_dvl:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_rqt:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_examples:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_driver:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_msgs:/home/toby/osu-uwrt/dependencies/install/micro_ros_setup:/home/toby/osu-uwrt/dependencies/install/micro_ros_agent:/home/toby/osu-uwrt/dependencies/install/micro_ros_msgs:/home/toby/osu-uwrt/dependencies/install/image_view:/home/toby/osu-uwrt/dependencies/install/image_rotate:/home/toby/osu-uwrt/dependencies/install/image_publisher:/home/toby/osu-uwrt/dependencies/install/depth_image_proc:/home/toby/osu-uwrt/dependencies/install/camera_calibration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/toby/osu-uwrt/riptide_software/install/riptide_teleop2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_rqt_plugins2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_hardware2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_controllers2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_msgs2/local/lib/python3.10/dist-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_mapping2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_localization2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_bringup2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_SNIB/lib/python3.10/site-packages:/home/toby/osu-uwrt/dependencies/install/nortek_dvl_msgs/local/lib/python3.10/dist-packages:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_rqt/lib/python3.10/site-packages:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_msgs/local/lib/python3.10/dist-packages:/home/toby/osu-uwrt/dependencies/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/toby/osu-uwrt/dependencies/install/camera_calibration/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/toby/osu-uwrt/riptide_software/install/uwrt_ros_gz:/home/toby/osu-uwrt/riptide_software/install/uwrt_gz:/home/toby/osu-uwrt/riptide_software/install/riptide_autonomy2:/home/toby/osu-uwrt/riptide_software/install/riptide_msgs2:/home/toby/osu-uwrt/riptide_software/install/riptide_descriptions2:/home/toby/osu-uwrt/dependencies/install/image_pipeline:/home/toby/osu-uwrt/dependencies/install/stereo_image_proc:/home/toby/osu-uwrt/dependencies/install/image_proc:/home/toby/osu-uwrt/dependencies/install/tracetools_image_pipeline:/home/toby/osu-uwrt/dependencies/install/nortek_dvl_msgs:/home/toby/osu-uwrt/dependencies/install/nortek_dvl:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_examples:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_driver:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_msgs:/home/toby/osu-uwrt/dependencies/install/micro_ros_setup:/home/toby/osu-uwrt/dependencies/install/micro_ros_agent:/home/toby/osu-uwrt/dependencies/install/micro_ros_msgs:/home/toby/osu-uwrt/dependencies/install/image_view:/home/toby/osu-uwrt/dependencies/install/image_rotate:/home/toby/osu-uwrt/dependencies/install/image_publisher:/home/toby/osu-uwrt/dependencies/install/depth_image_proc')]), 'shell': False}
+[0.099927] (-) TimerEvent: {}
+[0.108563] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sim7 -- found version 7.0.0\n'}
+[0.117346] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim7\n'}
+[0.118128] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.2.0\n'}
+[0.118832] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of sdformat13\n'}
+[0.124960] (CompObjectsPlugin) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.140478] (CompObjectsPlugin) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[0.169047] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.169652] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[0.170472] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.171093] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.172828] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.173396] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.173711] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[0.174293] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.0.0\n'}
+[0.174820] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[0.176951] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[0.177424] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[0.177819] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.178551] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [loader]\n'}
+[0.179231] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.0\n'}
+[0.179867] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[0.180696] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[0.181424] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.0\n'}
+[0.181926] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[0.183217] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.0.0\n'}
+[0.183887] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12\n'}
+[0.200065] (-) TimerEvent: {}
+[0.228450] (CompObjectsPlugin) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.233038] (CompObjectsPlugin) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.248479] (CompObjectsPlugin) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[0.286076] (CompObjectsPlugin) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.299218] (CompObjectsPlugin) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[0.300161] (-) TimerEvent: {}
+[0.329924] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.330801] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.0.0\n'}
+[0.331460] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs9\n'}
+[0.353492] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.377445] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-transport12> component [log]\n'}
+[0.378203] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-transport12-log -- found version 12.0.0\n'}
+[0.378826] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12-log\n'}
+[0.380053] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.0.0\n'}
+[0.380931] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.2.2\n'}
+[0.381532] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.382043] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.382407] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.382530] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.393581] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[0.394358] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.2.2\n'}
+[0.394983] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[0.395777] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[0.396732] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.2.2\n'}
+[0.397315] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[0.397824] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.398713] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[0.399533] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.2.2\n'}
+[0.400138] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[0.400283] (-) TimerEvent: {}
+[0.405827] (CompObjectsPlugin) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[0.419001] (CompObjectsPlugin) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[0.454996] (CompObjectsPlugin) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[0.468938] (CompObjectsPlugin) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[0.500391] (-) TimerEvent: {}
+[0.507654] (CompObjectsPlugin) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[0.520295] (CompObjectsPlugin) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[0.556900] (CompObjectsPlugin) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[0.569585] (CompObjectsPlugin) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[0.600507] (-) TimerEvent: {}
+[0.605793] (CompObjectsPlugin) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[0.618899] (CompObjectsPlugin) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[0.652294] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-fuel_tools8 -- found version 8.0.0\n'}
+[0.652837] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools8\n'}
+[0.693854] (CompObjectsPlugin) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[0.700592] (-) TimerEvent: {}
+[0.707201] (CompObjectsPlugin) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[0.745387] (CompObjectsPlugin) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[0.758369] (CompObjectsPlugin) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[0.789624] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.790125] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.2.2\n'}
+[0.790606] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.791071] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.0.0\n'}
+[0.792785] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-gui7 -- found version 7.0.0\n'}
+[0.793316] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui7\n'}
+[0.800688] (-) TimerEvent: {}
+[0.821698] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.822252] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.822807] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.2.2\n'}
+[0.823315] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[0.823942] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.0.0\n'}
+[0.824711] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.1.0\n'}
+[0.825193] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering7\n'}
+[0.825544] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.825999] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[0.826350] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.826619] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[0.827295] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.0.2\n'}
+[0.828081] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[0.830127] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.2.2\n'}
+[0.830658] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.831148] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.831458] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.831613] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.841691] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[0.842460] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.2.2\n'}
+[0.843069] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[0.843585] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.847653] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[0.848163] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[0.848941] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.2.2\n'}
+[0.849526] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[0.850008] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.850523] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.2.2\n'}
+[0.851872] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[0.852443] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[0.852978] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.853249] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[0.853925] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.0\n'}
+[0.854508] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[0.856377] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.857597] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.0.0\n'}
+[0.884650] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-physics6 -- found version 6.1.0\n'}
+[0.885277] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6\n'}
+[0.885812] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.886374] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.0\n'}
+[0.886934] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.888367] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [heightmap]\n'}
+[0.889160] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-physics6-heightmap -- found version 6.1.0\n'}
+[0.889640] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-heightmap\n'}
+[0.890016] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.2.2\n'}
+[0.890633] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [mesh]\n'}
+[0.891302] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-physics6-mesh -- found version 6.1.0\n'}
+[0.891818] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-mesh\n'}
+[0.892186] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.2.2\n'}
+[0.892667] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [sdf]\n'}
+[0.893371] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-physics6-sdf -- found version 6.1.0\n'}
+[0.893838] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-sdf\n'}
+[0.894322] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.2.0\n'}
+[0.895660] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.0.0\n'}
+[0.896193] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7\n'}
+[0.900793] (-) TimerEvent: {}
+[0.917373] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.917955] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.2.2\n'}
+[0.918523] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.0.0\n'}
+[0.919065] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.1.0\n'}
+[0.919614] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.0.0\n'}
+[0.920115] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.2.0\n'}
+[0.921002] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [air_pressure]\n'}
+[0.921811] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-air_pressure -- found version 7.0.0\n'}
+[0.922399] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-air_pressure\n'}
+[0.923182] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [altimeter]\n'}
+[0.924002] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-altimeter -- found version 7.0.0\n'}
+[0.924621] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-altimeter\n'}
+[0.925425] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [imu]\n'}
+[0.926174] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-imu -- found version 7.0.0\n'}
+[0.926839] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-imu\n'}
+[0.927725] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [force_torque]\n'}
+[0.928551] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-force_torque -- found version 7.0.0\n'}
+[0.929149] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-force_torque\n'}
+[0.929911] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [logical_camera]\n'}
+[0.930986] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-logical_camera -- found version 7.0.0\n'}
+[0.931663] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-logical_camera\n'}
+[0.932561] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [magnetometer]\n'}
+[0.933348] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-magnetometer -- found version 7.0.0\n'}
+[0.933925] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-magnetometer\n'}
+[0.934654] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [navsat]\n'}
+[0.935536] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-navsat -- found version 7.0.0\n'}
+[0.936118] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-navsat\n'}
+[0.936797] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rendering]\n'}
+[0.937485] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-rendering -- found version 7.0.0\n'}
+[0.938036] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rendering\n'}
+[0.938799] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [lidar]\n'}
+[0.939563] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-lidar -- found version 7.0.0\n'}
+[0.940127] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-lidar\n'}
+[0.940927] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [gpu_lidar]\n'}
+[0.941592] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-gpu_lidar -- found version 7.0.0\n'}
+[0.942144] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-gpu_lidar\n'}
+[0.942986] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [camera]\n'}
+[0.943892] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-camera -- found version 7.0.0\n'}
+[0.944521] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-camera\n'}
+[0.945348] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [boundingbox_camera]\n'}
+[0.946133] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-boundingbox_camera -- found version 7.0.0\n'}
+[0.946697] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-boundingbox_camera\n'}
+[0.947570] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [segmentation_camera]\n'}
+[0.948401] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-segmentation_camera -- found version 7.0.0\n'}
+[0.948974] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-segmentation_camera\n'}
+[0.949732] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [depth_camera]\n'}
+[0.950356] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-depth_camera -- found version 7.0.0\n'}
+[0.950825] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-depth_camera\n'}
+[0.951590] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rgbd_camera]\n'}
+[0.952378] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-rgbd_camera -- found version 7.0.0\n'}
+[0.952847] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rgbd_camera\n'}
+[0.953630] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [thermal_camera]\n'}
+[0.954314] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-thermal_camera -- found version 7.0.0\n'}
+[0.954860] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-thermal_camera\n'}
+[0.955663] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [wide_angle_camera]\n'}
+[0.956427] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sensors7-wide_angle_camera -- found version 7.0.0\n'}
+[0.957014] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-wide_angle_camera\n'}
+[0.958152] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.1.0\n'}
+[0.958656] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.0.2\n'}
+[0.959158] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[0.981626] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for <gz-sim7> component [gui]\n'}
+[0.982408] (CompObjectsPlugin) StdoutLine: {'line': b'-- Looking for gz-sim7-gui -- found version 7.0.0\n'}
+[0.982993] (CompObjectsPlugin) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim7-gui\n'}
+[0.984667] (CompObjectsPlugin) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.000902] (-) TimerEvent: {}
+[1.026513] (CompObjectsPlugin) StdoutLine: {'line': b'-- Generating done\n'}
+[1.028657] (CompObjectsPlugin) StdoutLine: {'line': b'-- Build files have been written to: /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin\n'}
+[1.065182] (CompObjectsPlugin) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mAutomatic MOC for target CompObjectsPlugin\x1b[0m\n'}
+[1.085649] (CompObjectsPlugin) StdoutLine: {'line': b'[ 16%] Built target CompObjectsPlugin_autogen\n'}
+[1.096329] (CompObjectsPlugin) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating qrc_CompObjectsPlugin.cpp\x1b[0m\n'}
+[1.100976] (-) TimerEvent: {}
+[1.143669] (CompObjectsPlugin) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target CompObjectsPlugin\x1b[0m\n'}
+[1.166786] (CompObjectsPlugin) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/CompObjectsPlugin.dir/qrc_CompObjectsPlugin.cpp.o\x1b[0m\n'}
+[1.201102] (-) TimerEvent: {}
+[1.301418] (-) TimerEvent: {}
+[1.401724] (-) TimerEvent: {}
+[1.502047] (-) TimerEvent: {}
+[1.602381] (-) TimerEvent: {}
+[1.702710] (-) TimerEvent: {}
+[1.803024] (-) TimerEvent: {}
+[1.903338] (-) TimerEvent: {}
+[1.996284] (CompObjectsPlugin) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libCompObjectsPlugin.so\x1b[0m\n'}
+[2.003440] (-) TimerEvent: {}
+[2.103753] (-) TimerEvent: {}
+[2.204091] (-) TimerEvent: {}
+[2.246748] (CompObjectsPlugin) StdoutLine: {'line': b'[100%] Built target CompObjectsPlugin\n'}
+[2.257592] (CompObjectsPlugin) CommandEnded: {'returncode': 0}
+[2.292877] (CompObjectsPlugin) JobProgress: {'identifier': 'CompObjectsPlugin', 'progress': 'install'}
+[2.301975] (CompObjectsPlugin) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin'], 'cwd': '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'toby'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/toby/osu-uwrt/riptide_software/install/uwrt_gz/lib:/home/toby/osu-uwrt/riptide_software/install/riptide_msgs2/lib:/home/toby/osu-uwrt/dependencies/install/stereo_image_proc/lib:/home/toby/osu-uwrt/dependencies/install/image_proc/lib:/home/toby/osu-uwrt/dependencies/install/tracetools_image_pipeline/lib:/home/toby/osu-uwrt/dependencies/install/nortek_dvl_msgs/lib:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_msgs/lib:/home/toby/osu-uwrt/dependencies/install/micro_ros_agent/lib:/home/toby/osu-uwrt/dependencies/install/micro_ros_msgs/lib:/home/toby/osu-uwrt/dependencies/install/image_view/lib:/home/toby/osu-uwrt/dependencies/install/image_rotate/lib:/home/toby/osu-uwrt/dependencies/install/image_publisher/lib:/home/toby/osu-uwrt/dependencies/install/depth_image_proc/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/toby'), ('OLDPWD', '/home/toby/osu-uwrt/development/software/src/riptide_gazebo'), ('DESKTOP_SESSION', 'ubuntu'), ('JFLEX_DIR', '/home/toby/jflex-1.7.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/toby/osu-uwrt/riptide_software/install:/home/toby/osu-uwrt/dependencies/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'toby'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'toby'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/toby/osu-uwrt/dependencies/install/image_proc/bin:/opt/ros/humble/bin:/home/toby/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/TobyPc:@/tmp/.ICE-unix/1694,unix/TobyPc:/tmp/.ICE-unix/1694'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b3cea6b4_ca70_4f8a_b611_3b834610d1d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CUP_DIR', '/home/toby/cup'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7DYG21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/toby/osu-uwrt/riptide_software/install/uwrt_ros_gz:/home/toby/osu-uwrt/riptide_software/install/uwrt_gz:/home/toby/osu-uwrt/riptide_software/install/riptide_teleop2:/home/toby/osu-uwrt/riptide_software/install/riptide_rqt_plugins2:/home/toby/osu-uwrt/riptide_software/install/riptide_hardware2:/home/toby/osu-uwrt/riptide_software/install/riptide_controllers2:/home/toby/osu-uwrt/riptide_software/install/riptide_autonomy2:/home/toby/osu-uwrt/riptide_software/install/riptide_msgs2:/home/toby/osu-uwrt/riptide_software/install/riptide_mapping2:/home/toby/osu-uwrt/riptide_software/install/riptide_localization2:/home/toby/osu-uwrt/riptide_software/install/riptide_descriptions2:/home/toby/osu-uwrt/riptide_software/install/riptide_bringup2:/home/toby/osu-uwrt/riptide_software/install/riptide_SNIB:/home/toby/osu-uwrt/dependencies/install/image_pipeline:/home/toby/osu-uwrt/dependencies/install/stereo_image_proc:/home/toby/osu-uwrt/dependencies/install/image_proc:/home/toby/osu-uwrt/dependencies/install/tracetools_image_pipeline:/home/toby/osu-uwrt/dependencies/install/nortek_dvl_msgs:/home/toby/osu-uwrt/dependencies/install/nortek_dvl:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_rqt:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_examples:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_driver:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_msgs:/home/toby/osu-uwrt/dependencies/install/micro_ros_setup:/home/toby/osu-uwrt/dependencies/install/micro_ros_agent:/home/toby/osu-uwrt/dependencies/install/micro_ros_msgs:/home/toby/osu-uwrt/dependencies/install/image_view:/home/toby/osu-uwrt/dependencies/install/image_rotate:/home/toby/osu-uwrt/dependencies/install/image_publisher:/home/toby/osu-uwrt/dependencies/install/depth_image_proc:/home/toby/osu-uwrt/dependencies/install/camera_calibration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/toby/osu-uwrt/riptide_software/install/riptide_teleop2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_rqt_plugins2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_hardware2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_controllers2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_msgs2/local/lib/python3.10/dist-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_mapping2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_localization2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_bringup2/lib/python3.10/site-packages:/home/toby/osu-uwrt/riptide_software/install/riptide_SNIB/lib/python3.10/site-packages:/home/toby/osu-uwrt/dependencies/install/nortek_dvl_msgs/local/lib/python3.10/dist-packages:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_rqt/lib/python3.10/site-packages:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_msgs/local/lib/python3.10/dist-packages:/home/toby/osu-uwrt/dependencies/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/toby/osu-uwrt/dependencies/install/camera_calibration/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/toby/osu-uwrt/riptide_software/install/uwrt_ros_gz:/home/toby/osu-uwrt/riptide_software/install/uwrt_gz:/home/toby/osu-uwrt/riptide_software/install/riptide_autonomy2:/home/toby/osu-uwrt/riptide_software/install/riptide_msgs2:/home/toby/osu-uwrt/riptide_software/install/riptide_descriptions2:/home/toby/osu-uwrt/dependencies/install/image_pipeline:/home/toby/osu-uwrt/dependencies/install/stereo_image_proc:/home/toby/osu-uwrt/dependencies/install/image_proc:/home/toby/osu-uwrt/dependencies/install/tracetools_image_pipeline:/home/toby/osu-uwrt/dependencies/install/nortek_dvl_msgs:/home/toby/osu-uwrt/dependencies/install/nortek_dvl:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_examples:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_driver:/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_msgs:/home/toby/osu-uwrt/dependencies/install/micro_ros_setup:/home/toby/osu-uwrt/dependencies/install/micro_ros_agent:/home/toby/osu-uwrt/dependencies/install/micro_ros_msgs:/home/toby/osu-uwrt/dependencies/install/image_view:/home/toby/osu-uwrt/dependencies/install/image_rotate:/home/toby/osu-uwrt/dependencies/install/image_publisher:/home/toby/osu-uwrt/dependencies/install/depth_image_proc')]), 'shell': False}
+[2.304196] (-) TimerEvent: {}
+[2.309720] (CompObjectsPlugin) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.310113] (CompObjectsPlugin) StdoutLine: {'line': b'-- Installing: /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/install/CompObjectsPlugin/install/CompObjectsPlugin.qrc\n'}
+[2.310434] (CompObjectsPlugin) StdoutLine: {'line': b'-- Installing: /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/install/CompObjectsPlugin/install/CompObjectsPlugin.qml\n'}
+[2.312945] (CompObjectsPlugin) CommandEnded: {'returncode': 0}
+[2.327797] (CompObjectsPlugin) JobEnded: {'identifier': 'CompObjectsPlugin', 'rc': 0}
+[2.328202] (-) EventReactorShutdown: {}

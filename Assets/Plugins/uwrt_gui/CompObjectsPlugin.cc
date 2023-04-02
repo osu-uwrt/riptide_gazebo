@@ -1,3 +1,4 @@
+
 #include "CompObjectsPlugin.hh"
 
 #include <gz/msgs/boolean.pb.h>
@@ -66,4 +67,3 @@ void CompObjectsPlugin::OnMode(const QString &_mode)
 // Register this plugin
 GZ_ADD_PLUGIN(gz::sim::CompObjectsPlugin,
                     gz::gui::Plugin)
-

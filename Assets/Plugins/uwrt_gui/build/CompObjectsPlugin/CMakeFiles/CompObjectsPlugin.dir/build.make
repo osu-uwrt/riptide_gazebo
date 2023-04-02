@@ -70,7 +70,17 @@ include CMakeFiles/CompObjectsPlugin.dir/progress.make
 include CMakeFiles/CompObjectsPlugin.dir/flags.make
 
 qrc_CompObjectsPlugin.cpp: ../../CompObjectsPlugin.qml
-qrc_CompObjectsPlugin.cpp: ../../pikachu.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/axe/axe.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/badge/badge.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/binBarrel/binBarrel.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/binPhone/binPhone.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/bootlegger/bootlegger.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/bootleggerTorpedo/bootleggerTorpedo.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/cash/cash.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/gman/gman.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/gmanTorpedo/gmanTorpedo.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/tempest/tempest.png
+qrc_CompObjectsPlugin.cpp: /home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/tommyGun/tommyGun.png
 qrc_CompObjectsPlugin.cpp: CompObjectsPlugin.qrc.depends
 qrc_CompObjectsPlugin.cpp: ../../CompObjectsPlugin.qrc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating qrc_CompObjectsPlugin.cpp"

@@ -16,10 +16,22 @@ namespace gz
     /// \brief Enumeration of available primitive shape types
     enum class GZ_SIM_VISIBLE CompObjectshape
     {
-      kGate,
-      kBouey,
-      kOctagon,
-      kTorpedo,
+axeSdf,
+badgeSdf,
+binBarrelSdf,
+binPhoneSdf,
+bootleggerSdf,
+bootleggerTorpedoSdf,
+cashSdf,
+gmanSdf,
+gmanTorpedoSdf,
+tempestSdf,
+tommyGunSdf,
+      //StartNamedObjects
+      // kGate,
+      // kBouey,
+      // kOctagon,
+      // kTorpedo,
     };
 
     /// \brief Return an SDF string of one of the available primitive

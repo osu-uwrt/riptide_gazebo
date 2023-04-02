@@ -1,0 +1,7 @@
+[0.018s] Invoking command in '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin': /usr/bin/cmake --build /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin -- -j12 -l12
+[0.066s] [ 16%] [34m[1mAutomatic MOC for target CompObjectsPlugin[0m
+[0.086s] [ 16%] Built target CompObjectsPlugin_autogen
+[0.088s] gmake[2]: *** No rule to make target '../../meshes/bootlegger/bootlegger.png', needed by 'qrc_CompObjectsPlugin.cpp'.  Stop.
+[0.089s] gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/CompObjectsPlugin.dir/all] Error 2
+[0.089s] gmake: *** [Makefile:136: all] Error 2
+[0.091s] Invoked command in '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin' returned '2': /usr/bin/cmake --build /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin -- -j12 -l12
