@@ -1,0 +1,3 @@
+gmake[2]: *** No rule to make target '/home/toby/osu-uwrt/development/software/src/riptide_gui/riptide_meshes/meshes/tempest/*.png', needed by 'qrc_CompObjectsPlugin.cpp'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/CompObjectsPlugin.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

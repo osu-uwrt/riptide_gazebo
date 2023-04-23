@@ -1,0 +1,14 @@
+[0.018s] Invoking command in '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin': /usr/bin/cmake --build /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin -- -j12 -l12
+[0.064s] [ 16%] [34m[1mAutomatic MOC for target CompObjectsPlugin[0m
+[0.091s] [ 16%] Built target CompObjectsPlugin_autogen
+[0.102s] [ 33%] [34m[1mGenerating qrc_CompObjectsPlugin.cpp[0m
+[0.142s] [35m[1mConsolidate compiler generated dependencies of target CompObjectsPlugin[0m
+[0.164s] [ 50%] [32mBuilding CXX object CMakeFiles/CompObjectsPlugin.dir/qrc_CompObjectsPlugin.cpp.o[0m
+[0.799s] [ 66%] [32m[1mLinking CXX shared library libCompObjectsPlugin.so[0m
+[0.983s] [100%] Built target CompObjectsPlugin
+[0.993s] Invoked command in '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin' returned '0': /usr/bin/cmake --build /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin -- -j12 -l12
+[1.035s] Invoking command in '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin': /usr/bin/cmake --install /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin
+[1.044s] -- Install configuration: ""
+[1.044s] -- Up-to-date: /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/install/CompObjectsPlugin/install/CompObjectsPlugin.qrc
+[1.044s] -- Installing: /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/install/CompObjectsPlugin/install/CompObjectsPlugin.qml
+[1.046s] Invoked command in '/home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin' returned '0': /usr/bin/cmake --install /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/build/CompObjectsPlugin

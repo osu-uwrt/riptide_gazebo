@@ -1,0 +1,38 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/toby/osu-uwrt/development/software/install/riptide_msgs2/include/**",
+        "/home/toby/osu-uwrt/development/software/install/launch_msgs/include/**",
+        "/home/toby/osu-uwrt/development/dependencies/install/vectornav/include/**",
+        "/home/toby/osu-uwrt/development/dependencies/install/vectornav_msgs/include/**",
+        "/home/toby/osu-uwrt/development/dependencies/install/nortek_dvl_msgs/include/**",
+        "/home/toby/osu-uwrt/development/dependencies/install/chameleon_tf_msgs/include/**",
+        "/home/toby/osu-uwrt/riptide_software/install/riptide_msgs2/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/stereo_image_proc/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/image_proc/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/tracetools_image_pipeline/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/nortek_dvl_msgs/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/microstrain_inertial_msgs/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/micro_ros_agent/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/micro_ros_msgs/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/image_view/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/image_rotate/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/image_publisher/include/**",
+        "/home/toby/osu-uwrt/dependencies/install/depth_image_proc/include/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

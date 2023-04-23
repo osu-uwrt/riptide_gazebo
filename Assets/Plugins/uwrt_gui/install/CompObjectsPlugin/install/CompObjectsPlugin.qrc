@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="CompObjectsPlugin/">
+  <file>CompObjectsPlugin.qml</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/axe/axe.png</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/badge/badge.png</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/binBarrel/binBarrel.png</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/binPhone/binPhone.png</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/bootlegger/bootlegger.png</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/bootleggerTorpedo/bootleggerTorpedo.png</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/cash/cash.png</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/gman/gman.png</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/gmanTorpedo/gmanTorpedo.png</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/tempest/tempest.png</file>
+<file>../../../../riptide_gui/riptide_meshes/meshes/tommyGun/tommyGun.png</file>
+  <!--StartImages-->
+</qresource>
+</RCC>

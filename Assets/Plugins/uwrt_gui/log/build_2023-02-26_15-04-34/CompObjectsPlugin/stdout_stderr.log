@@ -1,0 +1,10 @@
+[ 16%] [34m[1mAutomatic MOC for target CompObjectsPlugin[0m
+[ 16%] Built target CompObjectsPlugin_autogen
+[ 33%] [34m[1mGenerating qrc_CompObjectsPlugin.cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target CompObjectsPlugin[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/CompObjectsPlugin.dir/qrc_CompObjectsPlugin.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library libCompObjectsPlugin.so[0m
+[100%] Built target CompObjectsPlugin
+-- Install configuration: ""
+-- Up-to-date: /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/install/CompObjectsPlugin/install/CompObjectsPlugin.qrc
+-- Installing: /home/toby/osu-uwrt/development/software/src/riptide_gazebo/Assets/Plugins/uwrt_gui/install/CompObjectsPlugin/install/CompObjectsPlugin.qml
